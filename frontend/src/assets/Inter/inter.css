@@ -63,6 +63,13 @@ nav.amazing-tabs {
   border-radius: 2.5rem;
   user-select: none;
   padding-top: 1rem;
+  position: fixed;
+bottom: 0;
+  height:100px;
+}
+.h-screen
+{
+max-height:calc(100vh - 100px);
 }
 
 .main-tabs-container {
