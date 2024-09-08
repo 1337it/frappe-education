@@ -53,7 +53,18 @@ body {
   transition: background-color 0.4s ease-in-out;
   background-color: var(--background-color);
 }
-
+.min-w-\[600px\] {
+min-width: 0;
+}
+.min-h-\[600px\] {
+min-height: 0;
+}
+.overflow-auto {
+overflow: auto;
+padding: 10px;
+background-color: white;
+margin: 10px;
+}
 button {
   border: none;
   cursor: pointer;
