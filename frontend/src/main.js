@@ -102,8 +102,24 @@ mainTabs.addEventListener("click", (event) => {
       root.style.setProperty("--filters-container-height", "3.8rem");
       root.style.setProperty("--filters-wrapper-opacity", "1");
     }
+
+	  if (!event.target.classList.contains("scheduletab")) {
+window.location.href = "/student-portal/schedule";
+    } 
+else if(!event.target.classList.contains("attendancetab")) {
+window.location.href = "/student-portal/attendance";
+    }
+else if(!event.target.classList.contains("feestab")) {
+window.location.href = "/student-portal/fees";
+    }
+	  else if(!event.target.classList.contains("gradestab")) {
+window.location.href = "/student-portal/grades";
+    }
   }
 });
+
+
+  
 
 const filterTabs = document.querySelector(".filter-tabs");
 const filterButtons = document.querySelectorAll(".filter-button");
