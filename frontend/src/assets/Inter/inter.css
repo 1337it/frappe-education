@@ -65,7 +65,7 @@ nav.amazing-tabs {
   padding-top: 1rem;
   position: fixed;
 bottom: 0;
-  min-height:100px;
+
 }
 .h-screen
 {
@@ -90,7 +90,7 @@ ul.filter-tabs {
 ul.main-tabs li {
   display: inline-flex;
   position: relative;
-  padding: 1.5rem;
+  padding: 0.8rem;
   z-index: 1;
 }
 
@@ -134,7 +134,7 @@ ul.main-tabs li {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 1.5rem;
+  padding: 0.8rem;
   z-index: 0;
   transition: transform 0.4s ease-in-out;
   transform: translateX(var(--translate-main-slider));
