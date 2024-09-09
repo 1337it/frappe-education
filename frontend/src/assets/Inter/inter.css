@@ -58,6 +58,7 @@ min-width: 0!important;
 }
 .min-h-\[600px\] {
 min-height: 0!important;
+  max-height: 50vh;
 }
 .py-2\.5 {
 padding-top: 1.63rem!important;
