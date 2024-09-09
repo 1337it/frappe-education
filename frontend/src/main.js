@@ -21,9 +21,7 @@ let pinia = createPinia()
 const mainTabs = document.querySelector(".main-tabs");
 const mainSliderCircle = document.querySelector(".main-slider-circle");
 const roundButtons = document.querySelectorAll(".round-button");
-var e = document.querySelector('div.flex-1.flex.flex-col.h-full.overflow-auto');
-var f = document.getElementById('amazing-tabs');
-e.appendChild(f);
+
 const colors = {
   blue: {
     50: {
