@@ -8,7 +8,6 @@ const routes = [
     path: '/schedule',
     name: 'Schedule',
     component: () => import('@/pages/Schedule.vue'),
-    component: () => import('@/pages/Attendance.vue'),
 
   },
   {
