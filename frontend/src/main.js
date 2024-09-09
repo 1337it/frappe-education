@@ -107,7 +107,7 @@ mainTabs.addEventListener("click", (event) => {
   }
 });
 
-$('header').parentElement.append($('.amazing-tabs'));
+
   
 
 const filterTabs = document.querySelector(".filter-tabs");
