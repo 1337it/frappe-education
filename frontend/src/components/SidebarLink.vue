@@ -1,6 +1,7 @@
 <template>
 	<button
     class="flex h-7 cursor-pointer items-center rounded text-gray-800 duration-300 ease-in-out focus:outline-none focus:transition-none focus-visible:rounded focus-visible:ring-2 focus-visible:ring-gray-400"
+		id="{{ label }}"
     :class="isActive ? 'bg-white shadow-sm' : 'hover:bg-gray-100'"
 	@click="handleClick"
   >
