@@ -55,10 +55,12 @@ body {
 }
 .min-w-\[600px\] {
 min-width: 0!important;
+  max-width: 100% !important;
 }
 .min-h-\[600px\] {
 min-height: 0!important;
   max-height: 50vh;
+  aspect-ratio: 1/1;
 }
 .py-2\.5 {
 padding-top: 1.63rem!important;
@@ -67,11 +69,17 @@ padding-bottom: 2.63rem!important;
 .justify-between {
 justify-content: center!important;
 }
+.main-tabs-container {
+padding: 0 1rem 0rem!important;
+}
+.px-5 {
+
+padding-top: 3rem!important;
+}
 .overflow-auto {
 overflow: auto;
 padding: 10px;
 background-color: white;
-margin: 10px;
 }
 button {
   border: none;
@@ -203,7 +211,7 @@ ul.main-tabs li {
 
 .filters-container {
   overflow: hidden;
-  padding: 0 3rem;
+ 
   transition: max-height 0.4s ease-in-out;
   max-height: var(--filters-container-height);
 }
@@ -215,7 +223,7 @@ ul.main-tabs li {
 }
 
 .filter-tabs {
-  border-radius: 1rem;
+  border-radius: 0!important;
   padding: 0.3rem;
   overflow: hidden;
   background-color: var(--orange-50);
