@@ -54,10 +54,17 @@ body {
   background-color: var(--background-color);
 }
 .min-w-\[600px\] {
-min-width: 0;
+min-width: 0!important;
 }
 .min-h-\[600px\] {
-min-height: 0;
+min-height: 0!important;
+}
+.py-2\.5 {
+padding-top: 1.63rem!important;
+padding-bottom: 2.63rem!important;
+}
+.justify-between {
+justify-content: center!important;
 }
 .overflow-auto {
 overflow: auto;
