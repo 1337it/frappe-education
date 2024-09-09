@@ -94,7 +94,7 @@ nav.amazing-tabs {
   user-select: none;
   padding-top: 1rem;
 bottom: 0;
-
+position:absolute;
 }
 .h-screen {
 height: auto;
