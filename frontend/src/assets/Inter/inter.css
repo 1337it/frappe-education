@@ -81,10 +81,13 @@ nav.amazing-tabs {
 bottom: 0;
 
 }
-.h-screen
-{
-max-height:calc(100vh - 100px);
-  height:100%;
+.h-screen {
+height: auto;
+position: absolute;
+top: 0;
+left: 0;
+/* max-height: 100vh; */
+overflow: hidden;
 }
 
 .main-tabs-container {
