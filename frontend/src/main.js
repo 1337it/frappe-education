@@ -104,6 +104,8 @@ mainTabs.addEventListener("click", (event) => {
     }
 
 
+  }
+});
 
 
   
