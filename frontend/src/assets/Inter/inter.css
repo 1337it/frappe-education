@@ -45,20 +45,21 @@ body {
 
 display: none;
 }
+.pb-2 {
+padding-bottom: 0.5rem;
+padding-top: 2.5rem;
+}
 
 .border-gray-200 {
 border-color: rgba(237, 237, 237, 0)!important;
 background: #ffffff!important;
 margin: 1px;
-box-shadow: 2px 2px 5px #dbdbdb inset,
--2px -2px 5px #ffffff inset;
 }
 .bg-white {
---tw-bg-opacity: 1;
-background-color: rgba(255, 255, 255, 0)!important;
-text-align: left !important;
-color: black;
-text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+background-color: #12121200!important;
+text-align: right !important;
+color: rgba(0, 0, 0, 0.64);
+text-shadow: 0px 0px 1px rgba(0,0,0,.4);
 }
 body {
   display: flex;
