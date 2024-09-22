@@ -5,6 +5,12 @@ import { studentStore } from '@/stores/student'
 
 const routes = [
   {
+    path: '/home',
+    name: 'Home',
+    component: () => import('@/pages/Home.vue'),
+
+  },
+  {
     path: '/schedule',
     name: 'Schedule',
     component: () => import('@/pages/Schedule.vue'),
@@ -29,7 +35,7 @@ const routes = [
   },
   {
     path :'/:catchAll(.*)',
-    redirect: '/schedule',
+    redirect: '/home',
   }
 ]
 
