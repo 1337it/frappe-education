@@ -1,11 +1,3 @@
-<template>
-  <Dialog
-    v-model="showProfileDialog"
-    :options="{
-      title: 'Profile',
-      size: 'xl',
-    }"
-  >
     <template #body-content>
       <div class="text-base">
         <div class="flex flex-col gap-4">
@@ -64,8 +56,6 @@
         </div>
       </div>
     </template>
-  </Dialog>
-</template>
 
 <script setup>
 import { Dialog, Avatar, FeatherIcon } from 'frappe-ui'
