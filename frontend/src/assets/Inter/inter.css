@@ -176,9 +176,11 @@ ul.filter-tabs {
 ul.main-tabs li {
  display: flex;
 padding-left: .8rem;
-padding-bottom: 10px;
+padding-bottom: 20px;
+	padding-top: 10px;
 z-index: 1;
 justify-content: center;
+	width: calc(1/6 * 100vw);
 }
 
 .avatar,
