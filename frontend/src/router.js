@@ -34,6 +34,11 @@ const routes = [
     component: () => import('@/pages/Attendance.vue'),
   },
   {
+    path: "/post",
+    name: "Post",
+    component: () => import('@/pages/Raven.vue'),
+  },
+  {
     path :'/:catchAll(.*)',
     redirect: '/home',
   }
