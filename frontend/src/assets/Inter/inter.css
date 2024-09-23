@@ -60,7 +60,7 @@ nav.amazing-tabs {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    padding-top: 0;
+padding-top: 0 !important;
     bottom: 0;
     position: absolute;
     filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.05)) drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.05));
@@ -224,12 +224,13 @@ ul.main-tabs li {
   z-index: 0;
   transition: transform 0.4s ease-in-out;
   transform: translateX(var(--translate-main-slider));
+	padding-top: 0px;
 }
 
 .main-slider-circle {
-  height: 4.8rem;
+  height: 2px;
   width: 4.8rem;
-  border-radius: 50%;
+  border-radius: 0%;
   transition: background-color 0.4s ease-in-out;
   background-color: var(--main-slider-color);
 }
