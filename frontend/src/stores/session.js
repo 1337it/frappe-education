@@ -31,7 +31,7 @@ export const sessionStore = defineStore('education-session', () => {
 			student.reload()
 			user.value = sessionUser()
 			login.reset()
-			router.replace({ path: '/' })
+			router.replace({ path: '/student-portal/home' })
 		},
 	})
 
