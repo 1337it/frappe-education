@@ -174,7 +174,7 @@ ul.filter-tabs {
   display: flex;
 }
 ul.main-tabs li {
-    display: flex;
+   isplay: flex;
     padding-left: 10px;
     padding-bottom: 20px;
     padding-top: 10px;
