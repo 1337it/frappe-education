@@ -36,7 +36,7 @@ const routes = [
   {
     path: "/post",
     name: "Post",
-    component: () => import('@/pages/Raven.vue'),
+    component: () => import('@/pages/Post.vue'),
   },
   {
     path :'/:catchAll(.*)',
