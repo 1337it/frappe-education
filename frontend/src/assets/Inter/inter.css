@@ -149,6 +149,7 @@ nav.amazing-tabs {
   padding-top: 1rem;
 bottom: 0;
 position:absolute;
+	width:100vw;
 }
 .h-screen {
 height: auto;
@@ -172,15 +173,15 @@ ul.filter-tabs {
   list-style-type: none;
   display: flex;
 }
-
 ul.main-tabs li {
- display: flex;
-padding-left: .8rem;
-padding-bottom: 20px;
-	padding-top: 10px;
-z-index: 1;
-justify-content: center;
-	width: calc(1/6 * 100vw);
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    z-index: 1;
+    justify-content: center;
+    width: calc(16.66vw - 5px);
+    padding-right: 10px;
 }
 
 .avatar,
