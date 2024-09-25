@@ -31,7 +31,6 @@ const scheduleResource = createResource({
         title: classSchedule.title,
         with: classSchedule.instructor,
         name: classSchedule.name,
-        room: classSchedule.room,
         date: classSchedule.schedule_date,
         from_time: classSchedule.from_time.split('.')[0],
         to_time: classSchedule.to_time.split('.')[0],
