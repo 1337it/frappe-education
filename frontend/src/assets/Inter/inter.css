@@ -134,6 +134,11 @@ padding-top: 3rem!important;
 flex-direction: column;
 padding: 0;
 }
+header
+{
+z-index:99;
+}
+
 .overflow-auto {
 overflow: auto;
 padding: 10px;
