@@ -130,6 +130,10 @@ padding: 0 1rem 1rem!important;
 
 padding-top: 3rem!important;
 }
+.flex-col {
+flex-direction: column;
+padding: 0;
+}
 .overflow-auto {
 overflow: auto;
 padding: 10px;
