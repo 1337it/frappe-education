@@ -12,7 +12,7 @@ export const studentStore = defineStore('education-student', () => {
 		url: 'education.education.api.get_student_info',
 		onSuccess(info) {
 			if (!info) {
-				window.location.href = "/app"
+				window.location.href = "/student-portal"
 			}
 			currentProgram.value = info.current_program 
 			// remove current_program from info
