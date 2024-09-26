@@ -80,9 +80,80 @@
 		</audio>
 	</div>
             <script>
-                	clearTimeout(this.vars._timeoutID);
+                	var JSmetronome = {
+	GUI:{
+		power : document.getElementById("power"),
+		tap : document.getElementById("tap"),
+		tapBkg : document.getElementById("tapBkg"),
+		tempoUp : document.getElementById("tempoUp"),
+		tempoDown : document.getElementById("tempoDown"),
+		tempoDisplay : document.getElementById("tempoDisplay"),
+		metronomeTick : document.getElementById("metronomeTick_1"),
+		metronomeBell : document.getElementById("metronomeBell"),
+		timeSignature : document.getElementById("timeSignature"),
+		beatDisplay : document.getElementById("Beat")
+	},
+	vars:{
+		power : false,
+		tempo : 0,
+		BeatsPerMeasure:0,
+		BeatSubdivision:0,
+		CurrentBeatSubdivision:0,
+		currentBeat : 0,
+		lastTap : 0,
+		_timeoutID : 0,
+		_tempoMin : 1,
+		_tempoMax : 250,
+		_timeSignature:[
+			// name , beats, time subdivision(2 = binary / 3 = ternary)
+			[2,4,2],
+			[3,4,2],
+			[4,4,2],
+			[6,8,3],
+			[9,8,3],
+			[12,8,3]
+		]
+	},
+	setTimeSignature: function(timeSignature){
+		//chekc if it's a number
+		if(!isNaN(parseFloat(timeSignature)) && isFinite(timeSignature)){
+			// if its positive, rotate one step positive or negative the array items. Selected item, result as first of list.
+			if(timeSignature >= 0){
+				// positive array rotation
+				var currentTimeSignature = this.vars._timeSignature.shift();
+				this.vars._timeSignature.push(currentTimeSignature);
+				currentTimeSignature = this.vars._timeSignature[0];
+			}else{
+				// negative array rotation
+				var currentTimeSignature = this.vars._timeSignature.pop();
+				this.vars._timeSignature.unshift(currentTimeSignature);
+				currentTimeSignature = this.vars._timeSignature[0];
+			};
+		}else{
+			// If timesignature provided as String (ex. "4/4"), find coincidences with array items
+			var currentTimeSignature= timeSignature.split("/");
+			for(var i=0; i < this.vars._timeSignature.length; i++) {
+				if(this.vars._timeSignature[i][0]== currentTimeSignature[0] && this.vars._timeSignature[i][1]== currentTimeSignature[1]){
+					currentTimeSignature[2] = this.vars._timeSignature[i][2];
+					for(var r=0; r < i; r++) this.setTimeSignature(+1);
+				};
+			}
+			if(!currentTimeSignature[2]) return false;
+		}
+		//config system with new Time Signature params.
+		this.vars.BeatSubdivision = currentTimeSignature[2];
+		this.vars.BeatsPerMeasure = (this.vars.BeatSubdivision == 3) ? (currentTimeSignature[0]/3) : currentTimeSignature[0];
+		//reinitiate counters
+		this.vars.currentBeat = 0;
+		this.vars.CurrentBeatSubdivision = 0;
+		//draw interface
+		this.GUI.timeSignature.innerHTML = currentTimeSignature[0] + "/" + currentTimeSignature[1];
+		
+		//document.body.style.background='url('+background')';
+		//reset and restart.
+		clearTimeout(this.vars._timeoutID);
 		this.tick();
-		    navigator.vibrate(20);
+		navigator.vibrate(10);
 		return true;
 	},
 	setTempo: function(newTempo,operator){
@@ -95,7 +166,7 @@
 		this.vars.CurrentBeatSubdivision = 0;
 		clearTimeout(this.vars._timeoutID);
 		this.tick();
-		navigator.vibrate(20);
+		navigator.vibrate(10);
 		return true;
 	},
 	tick: function(){
@@ -130,7 +201,7 @@
 		}else{
 			this.vars.power = true;
 			this.tick();
-			navigator.vibrate(20);
+			navigator.vibrate(10);
 		};
 	},
 	init: function(){
@@ -173,6 +244,7 @@ var ProgInterval = {
 		if(position != -1) this._active.splice(position,1);
 	}
 }
+
     </script>
             </body>
     </template>
