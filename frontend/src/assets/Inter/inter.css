@@ -166,7 +166,7 @@ position:absolute;
 }
 .h-screen {
 height: auto!important;
-position: fixed;
+position: absolute;
 top: 0;
 left: 0;
 max-height: 100vh!important;
