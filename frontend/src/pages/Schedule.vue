@@ -56,15 +56,11 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue'
 import { leaveStore } from '@/stores/leave'
-import { studentStore } from '@/stores/student'
 import Calendar from '@/components/Calendar.vue'
-import { createResource } from 'frappe-ui'
-import { ref } from 'vue'
 import { studentStore } from '@/stores/student'
 import { Dialog, createResource, Dropdown, FeatherIcon } from 'frappe-ui'
 import { storeToRefs } from 'pinia'
 import NewLeave from '@/components/NewLeave.vue'
-import Calendar from '@/components/Calendar.vue'
 import { createToast } from '@/utils'
 
 const { getCurrentProgram, getStudentInfo, getStudentGroups } = studentStore()
