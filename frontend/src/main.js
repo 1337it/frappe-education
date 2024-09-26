@@ -110,7 +110,6 @@ navigator.vibrate(10);
   }
 });
 
-$('button#home').click();
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
