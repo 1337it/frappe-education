@@ -96,11 +96,9 @@ navigator.vibrate(20);
     handleActiveTab(roundButtons, event, "active");
 
     if (!event.target.classList.contains("gallery")) {
-      root.style.setProperty("--filters-container-height", "0");
-      root.style.setProperty("--filters-wrapper-opacity", "0");
+   
     } else {
-      root.style.setProperty("--filters-container-height", "3.8rem");
-      root.style.setProperty("--filters-wrapper-opacity", "1");
+
     }
 
 
@@ -110,18 +108,9 @@ navigator.vibrate(20);
 
   
 
-const filterTabs = document.querySelector(".filter-tabs");
-const filterButtons = document.querySelectorAll(".filter-button");
 
-filterTabs.addEventListener("click", (event) => {
-  const root = document.documentElement;
-  const targetTranslateValue = event.target.dataset.translateValue;
 
-  if (event.target.classList.contains("filter-button")) {
-    root.style.setProperty("--translate-filters-slider", targetTranslateValue);
-    handleActiveTab(filterButtons, event, "filter-active");
-  }
-});
+
 
 let app = createApp(App)
 
