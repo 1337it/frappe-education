@@ -55,31 +55,6 @@
           </div>
         </div>
       </div>
-        <body onload="JSmetronome.init()">
-	<div id="JSMetroContainer" class="unselectable">
-		<div id="tempoUp" class="unselectable"></div>
-		<div id="tempoDown" class="unselectable"></div>
-		<div id="Beat" class="unselectable">0</div>
-		<div id="timeSignature" class="unselectable"></div>
-		<div id="TempoContainer" class="unselectable">
-			<span id="tempoDisplay" class="unselectable"></span>
-			<span id="tempoTag" class="unselectable">bpm</span>
-		</div>
-		<div id="tapBkg" class="unselectable"></div>
-		<div id="tap" class="unselectable">TAP</div>
-		<div id="power" class="unselectable"></div>
-		<div id="BellButton" class="unselectable"></div>
-		<audio id="metronomeTick_1" preload="auto">
-	     <source src="https://caljer1.github.io/MetronomeLite/sounds/click.mp3" type="audio/mp3" />
-<!--       <source src="https://caljer1.github.io/MetronomeLite/sounds/clave.mp3" type="audio/mp3" /> -->
-<!--       <source src="https://caljer1.github.io/MetronomeLite/sounds/clap.mp3" type="audio/mp3" /> -->
-<!--       <source src="https://caljer1.github.io/MetronomeLite/sounds/rimshot.mp3" type="audio/mp3" /> -->
-		</audio>
-		<audio id="metronomeBell" preload="auto">
-			<source src="https://caljer1.github.io/MetronomeLite/sounds/bell.mp3" type="audio/mp3" />
-		</audio>
-	</div>
-            </body>
     </template>
 
 <script setup>
