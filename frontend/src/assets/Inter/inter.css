@@ -214,18 +214,18 @@ ul.main-tabs li {
   align-items: center;
   justify-content: center;
   color: var(--grey-900);
-  transition: color, filter scale 0.2s ease-in-out;
+  transition: color, filter, scale 0.2s ease-in-out;
 	position: absolute;
 filter: saturate(0) drop-shadow(0px 0px 0px #ffffff);
-
+color: #000000;
 }
 
 .round-button:hover,
 .round-button.active {
-	scale: 1.2;
+	scale: 1.2!important;
 	transition: color, filter, scale 0.2s ease-in-out;
-filter: saturate(1.5) drop-shadow(0px 6px 5px #555555);
-  color: var(--round-button-active-color);
+filter: saturate(1.5) drop-shadow(0px 4px 5px #555555);
+  color: #000000;
 }
 
 .round-button svg {
