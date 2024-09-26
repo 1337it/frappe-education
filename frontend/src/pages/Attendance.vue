@@ -19,6 +19,8 @@
       <Calendar
         v-if="!attendanceResource.loading && attendanceResource.data"
         :events="attendanceResource.data"
+        v-if="!scheduleResource.loading && scheduleResource.data"
+      :events="events"
       />
       <Calendar v-else :events="[]" />
     </div>
@@ -55,7 +57,10 @@
 import { onMounted, reactive, ref } from 'vue'
 import { leaveStore } from '@/stores/leave'
 import { studentStore } from '@/stores/student'
-
+import Calendar from '@/components/Calendar.vue'
+import { createResource } from 'frappe-ui'
+import { ref } from 'vue'
+import { studentStore } from '@/stores/student'
 import { Dialog, createResource, Dropdown, FeatherIcon } from 'frappe-ui'
 import { storeToRefs } from 'pinia'
 import NewLeave from '@/components/NewLeave.vue'
@@ -70,6 +75,35 @@ let studentInfo = getStudentInfo().value
 // storeToRefs converts isAttendancePage to a ref, hence achieving reactivity
 const { isAttendancePage } = storeToRefs(leaveStore())
 
+const { getCurrentProgram, getStudentGroups } = studentStore()
+
+const programName = ref(getCurrentProgram()?.value?.program)
+const studentGroup = ref(getStudentGroups().value)
+const events = ref([])
+
+const scheduleResource = createResource({
+  url: 'education.education.api.get_course_schedule_for_student',
+  params: {
+    program_name: programName.value,
+    student_groups: studentGroup.value,
+  },
+  onSuccess: (response) => {
+    let schedule = []
+    response.forEach((classSchedule) => {
+      schedule.push({
+        title: classSchedule.title,
+        with: classSchedule.instructor,
+        name: classSchedule.name,
+        date: classSchedule.schedule_date,
+        from_time: classSchedule.from_time.split('.')[0],
+        to_time: classSchedule.to_time.split('.')[0],
+        color: classSchedule.class_schedule_color,
+      })
+    })
+    events.value = schedule
+  },
+  auto: true,
+})
 onMounted(() => {
   setStudentGroup()
 })
