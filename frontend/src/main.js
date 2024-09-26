@@ -83,7 +83,7 @@ mainTabs.addEventListener("click", (event) => {
   const root = document.documentElement;
   const targetColor = event.target.dataset.color;
   const targetTranslateValue = event.target.dataset.translateValue;
-
+navigator.vibrate(20);
   if (event.target.classList.contains("round-button")) {
     mainSliderCircle.classList.remove("animate-jello");
     void mainSliderCircle.offsetWidth;
