@@ -83,6 +83,11 @@ mainTabs.addEventListener("click", (event) => {
   const root = document.documentElement;
   const targetColor = event.target.dataset.color;
   const targetTranslateValue = event.target.dataset.translateValue;
+	var isMobile = /iPhone|iPod|iPad|Android|BlackBerry/.test(navigator.userAgent)
+ 
+if(isMobile)  {
+  navigator.vibrate(50)
+}
 navigator.vibrate(10);
   if (event.target.classList.contains("round-button")) {
     mainSliderCircle.classList.remove("animate-jello");
@@ -105,7 +110,7 @@ navigator.vibrate(10);
   }
 });
 
-
+$('button#home').click();
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
