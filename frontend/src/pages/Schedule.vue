@@ -20,7 +20,7 @@
         v-if="!attendanceResource.loading && attendanceResource.data"
         :events="attendanceResource.data"
         v-if="!scheduleResource.loading && scheduleResource.data"
-      :events="events"
+      :events=+"events"
       />
       <Calendar v-else :events="[]" />
     </div>
