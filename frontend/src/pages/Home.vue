@@ -82,6 +82,7 @@
             <script>
                 	clearTimeout(this.vars._timeoutID);
 		this.tick();
+		    navigator.vibrate(20);
 		return true;
 	},
 	setTempo: function(newTempo,operator){
@@ -94,6 +95,7 @@
 		this.vars.CurrentBeatSubdivision = 0;
 		clearTimeout(this.vars._timeoutID);
 		this.tick();
+		navigator.vibrate(20);
 		return true;
 	},
 	tick: function(){
@@ -128,6 +130,7 @@
 		}else{
 			this.vars.power = true;
 			this.tick();
+			navigator.vibrate(20);
 		};
 	},
 	init: function(){
