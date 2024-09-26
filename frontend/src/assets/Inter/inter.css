@@ -138,6 +138,9 @@ header
 {
 z-index:99;
 	background-color: white;
+	position: fixed;
+width: 100vw;
+top: 0;
 }
 
 .overflow-auto {
