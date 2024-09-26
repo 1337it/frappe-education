@@ -84,6 +84,11 @@ const links = [
 		to: '/post',
 		icon: CalendarCheck,
 	},
+	{
+		label: 'Transport',
+		to: '/transport',
+		icon: CalendarCheck,
+	},
 	// {
 	// 	// TODO: create School Diary Page with card like CRM and from ListView go to Resource Document of each Card
 	// 	label: 'Notes',
