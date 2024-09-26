@@ -165,12 +165,15 @@ position:absolute;
 	width:100vw;
 }
 .h-screen {
-height: auto !important;
-position: static;
+height: auto!important;
+position: fixed;
 top: 0;
 left: 0;
 max-height: 100vh!important;
-overflow: hidden;
+overflow: visible;
+margin-top: 70px;
+margin-left: 20px;
+margin-right: 20px;
 }
 
 .main-tabs-container {
