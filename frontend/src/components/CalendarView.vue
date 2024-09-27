@@ -35,7 +35,7 @@ const config = {
 
 if (props.showMonthlyView) {
   config.defaultMode = 'month'
-  config.disableModes = ['day', 'week']
+  config.enableModes = ['day', 'week']
 }
 </script>
 
