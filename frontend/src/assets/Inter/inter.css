@@ -231,7 +231,7 @@ color: #000000;
 .round-button.active {
 	scale: 1.2!important;
 	transition: color, filter, scale 0.2s ease-in-out;
-filter: saturate(1.5) drop-shadow(0px 4px 5px #555555);
+filter: saturate(1.5) drop-shadow(0px 3px 5px #55555555);
   color: #000000;
 }
 
