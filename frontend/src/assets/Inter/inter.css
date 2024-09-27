@@ -89,6 +89,7 @@ body {
 	.p-2 {
 padding: 0;
 }
+
 	.z-\[100\] {
 z-index: 100;
 transform: translate3d(50%, 50%, 0) !important;
@@ -255,13 +256,16 @@ filter: saturate(1.5) drop-shadow(0px 4px 5px #555555);
 
 .main-slider-circle
 {
-height: 2px;
-width: calc(1/6 * 76vw);
-border-radius: 0%;
-transition: background-color .4s ease-in-out;
-background-color: #8BCE45;
-margin-left: 2vw;
-margin-right: 2vw;
+    height: 2px;
+    width: calc(1 / 6* 76vw);
+    border-radius: 44px;
+    transition: background-color .4s ease-in-out;
+    background-color: #8bce45;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    filter: saturate(1.5) drop-shadow(0px 4px 5px #555555);
+    margin-top: -1px;
+    box-shadow: 0px 30px 30px 0px #00c853;
 }
 
 
