@@ -86,7 +86,7 @@ mainTabs.addEventListener("click", (event) => {
 	var isMobile = /iPhone|iPod|iPad|Android|BlackBerry/.test(navigator.userAgent)
  
 if(isMobile)  {
-  navigator.vibrate(5)
+  navigator.vibrate(10)
 }
 
   if (event.target.classList.contains("round-button")) {
