@@ -3,7 +3,7 @@
         <div class="flex flex-col gap-4">
           <div
             class="flex items-center border-b border-solid border-lightGray pb-4 gap-2"
-          >
+          style="backdrop-filter: blur(3px);background-color: rgba(255, 255, 255, 0.29);border: 2px solid white !important;margin: 10px;border-radius: 21px;box-shadow: 0 0 13px 1px rgba(0, 0, 0, 0.39);">
             <Avatar
               size="3xl"
               class="h-12 w-12"
