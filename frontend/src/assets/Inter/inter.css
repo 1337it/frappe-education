@@ -258,12 +258,12 @@ filter: saturate(1.5) drop-shadow(0px 1px 1px #55555555);
 .main-slider-circle
 {
     height: 2px;
-    width: calc(1 / 6* 76vw);
+  width: calc((1 / 6* 100vw) - 21px);
     border-radius: 44px;
     transition: background-color .4s ease-in-out;
     background-color: #8bce45;
-    margin-left: 2vw;
-    margin-right: 2vw;
+    margin-left: 10px;
+    margin-right: 10px;
     filter: saturate(1.2) drop-shadow(0px 2px 3px #555555aa);
     margin-top: -1px;
 
