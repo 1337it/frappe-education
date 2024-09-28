@@ -120,6 +120,14 @@ text-align: center;
 	.text-black {
 display: none;
 }
+.font-semibold {
+font-weight: 300;
+font-size: 20px;
+line-height: 1.15;
+letter-spacing: .02em;
+font-weight: 500;
+font-family: Verdana;
+}
 	.border-gray-200 {
 border-color: #dadadaff!important;
 }
