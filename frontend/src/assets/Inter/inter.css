@@ -142,8 +142,24 @@ z-index:99;
 	position: fixed;
 width: 100vw;
 top: 0;
+display:none;
 }
-
+.rounded-full {
+filter: drop-shadow(0px 11px 14px #00000055);
+border-radius: 9999px;
+}
+.text-base.overflow-auto {
+overflow: auto;
+background-image: url('/files/profile-bg.png');
+min-height: 80vh;
+background-size: contain;
+background-repeat: no-repeat;
+}
+.w-12 {
+width: 20vw;
+height: 20vw;
+margin: 30px 30px;
+}
 .overflow-auto {
 overflow: auto;
 padding: 10px;
