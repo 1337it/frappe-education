@@ -109,13 +109,6 @@ if(isMobile)  {
 
   }
 
-if (event.target.classList.contains("hometab")) {
-	document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#987667');
-}
-	else
-{
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
-}
 });
 
   var JSmetronome = {
