@@ -184,12 +184,9 @@ height: 20vw !important;
 }
 .text-base.overflow-auto {
 overflow: auto;
-background-image: url(/files/image.svg);
+
 min-height: 100vh;
-background-size: 100vw auto;
-background-repeat: no-repeat;
-backdrop-filter: saturate(2);
-background-position: center;
+
 }
 .w-12 {
 width: 20vw;
