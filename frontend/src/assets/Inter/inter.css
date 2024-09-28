@@ -278,7 +278,7 @@ filter: saturate(1.5) drop-shadow(0px 1px 1px #55555555);
   0% {
     transform: scale3d(1, 1, 1);
   }
-  50% {
+  80% {
     transform: scale3d(1.15, 0.85, 1);
   }
   100% {
