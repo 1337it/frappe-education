@@ -96,6 +96,20 @@ transform: translate3d(50%, 50%, 0) !important;
 background-color: white;
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+.border-solid {
+border-style: solid;
+border: none;
+}
+.gap-1 {
+gap: .25rem;
+align-self: flex-start;
+color: white;
+margin-top: 5vh;
+}
+.text-gray-600 {
+--tw-text-opacity: 1;
+color: rgba(195, 195, 195, 1)!important;
+}
 	.flex.mb-2.justify-between {
 justify-content: center;
 flex-direction: column-reverse;
