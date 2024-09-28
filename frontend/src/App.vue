@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex h-screen w-screen" style="background-size: 100vw auto;background-repeat: no-repeat;backdrop-filter: saturate(2);background-position: center;background-image:url('/files/image.svg');">
+    <div class="flex h-screen w-screen" style="background-size: 100vw auto;background-repeat: no-repeat;background-position: center;background-image:url('/files/image.svg');">
       <div class="h-full border-r bg-gray-50">
         <Sidebar />
       </div>
