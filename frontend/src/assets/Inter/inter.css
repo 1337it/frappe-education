@@ -312,6 +312,7 @@ border-radius: 44px;
 transition: background-color .4s ease-in-out;
 background-color: #8bce45;
 margin-top: 0px;
+	font-size:0px !important;
 border-top-left-radius: 0;
 border-top-right-radius: 0;
 
