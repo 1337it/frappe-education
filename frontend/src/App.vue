@@ -4,10 +4,10 @@
       <div class="h-full border-r bg-gray-50">
         <Sidebar />
       </div>
-      <div class="flex-1 flex flex-col h-full overflow-auto">
+      <div class="flex-1 flex flex-col h-full overflow-auto" style="background:transparent!important;">
         <Navbar />
           <router-view  
-            class="flex-1 overflow-auto"
+            class="flex-1 overflow-auto" style="background:transparent!important;"
           />
       </div>
     </div>
