@@ -67,7 +67,7 @@ const { getStudentInfo } = studentStore()
 const showProfileDialog = inject('showProfileDialog')
 
 const studentInfo = getStudentInfo().value
-
+$("meta[name='theme-color']").attributes.content.value = '#987667';
 const infoFormat = [
   {
     section: 'section 1',
