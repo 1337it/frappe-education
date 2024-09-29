@@ -113,9 +113,9 @@ border-style: none !important;
 
 .gap-1 {
 gap: .25rem;
-align-self: flex-start;
+
 color: black;
-margin-top: 5vh;
+
 }
 .text-gray-600 {
 --tw-text-opacity: 1;
@@ -179,8 +179,8 @@ display:none !important;
 }
 .rounded-full {
 border-radius: 9999px;
-	width: 20vw !important;
-height: 20vw !important;
+	width: 25vw !important;
+height: 25vw !important;
 }
 .text-base.overflow-auto {
 overflow: auto;
@@ -191,7 +191,7 @@ min-height: 100vh;
 .w-12 {
 width: 20vw;
 height: 20vw;
-margin: 30px 30px;
+margin: 10px;
 }
 .overflow-auto {
 overflow: auto;
