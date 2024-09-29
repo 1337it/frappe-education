@@ -1,5 +1,23 @@
 <template>
   <div>
+    <div class="wrapper">
+  <div class="group">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <div class="group">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <div class="group">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+  <div class="group">
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</div>
     <div class="flex h-screen w-screen" style="background-size: 100vw auto;height:100vh !important;background-repeat: no-repeat;background-position: center;background-image:url('/files/image.jpg');">
       <div class="h-full border-r bg-gray-50">
         <Sidebar />
