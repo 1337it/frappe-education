@@ -128,6 +128,12 @@ flex-direction: column;
 justify-content: center;
 text-align: center;
 }
+.border-gray-200 {
+    --tw-border-opacity: 1;
+    border-color: rgb(237 237 237 / var(--tw-border-opacity));
+    background: #ffffff00 !important;
+    backdrop-filter: blur(5px);
+}
 	.text-black {
 display: none;
 }
@@ -156,6 +162,7 @@ font-family: Verdana;
     justify-items: center;
     width: 33.33vw;
     left: calc(33.33vw - 10px);
+	border-radius: 50px;
 }
 	.border-gray-200 {
 border-color: #dadadaff!important;
