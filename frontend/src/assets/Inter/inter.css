@@ -145,7 +145,7 @@ letter-spacing: .02em;
 font-weight: 500;
 font-family: Verdana;
 }
-.gap-2 {
+.gap-2.rounded {
   
     scale: 4;
     margin: 25px;
