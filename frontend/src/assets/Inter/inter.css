@@ -124,7 +124,7 @@ color: rgba(195, 195, 195, 1)!important;
 }
 	.flex.mb-2.justify-between {
 justify-content: center;
-flex-direction: column-reverse;
+flex-direction: column;
 justify-content: center;
 text-align: center;
 }
@@ -138,6 +138,24 @@ line-height: 1.15;
 letter-spacing: .02em;
 font-weight: 500;
 font-family: Verdana;
+}
+.gap-2 {
+  
+    scale: 4;
+    margin: 25px;
+
+
+}
+.gap-x-1 {
+    -moz-column-gap: .25rem;
+    column-gap: .25rem;
+    font-size: 24px;
+    position: absolute;
+    bottom: 100px;
+    background: white;
+    justify-items: center;
+    width: 33.33vw;
+    left: calc(33.33vw - 10px);
 }
 	.border-gray-200 {
 border-color: #dadadaff!important;
