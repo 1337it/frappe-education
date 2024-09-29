@@ -335,6 +335,16 @@ border-top-right-radius: 0;
     transform: scale3d(1, 1, 1);
   }
 }
+@keyframes page-slide {
+  0% {
+    transform: scale3d(0, 1, 1);
+	  opacity:0;
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+	  opacity:1;
+  }
+}
 
 .filters-container {
   overflow: hidden;
