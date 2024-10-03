@@ -89,6 +89,19 @@ if(isMobile)  {
   navigator.vibrate(10)
 }
 
+if (event.target.classList.contains("homeframe")) {
+    setTimeout(() => {
+    const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0];
+  const frame = document.getElementById("frame");
+  frame.src = person;
+  }, 100);
+
+    } else {
+
+    }
+
+
+
   if (event.target.classList.contains("round-button")) {
     mainSliderCircle.classList.remove("animate-jello");
     void mainSliderCircle.offsetWidth;
@@ -100,17 +113,7 @@ if(isMobile)  {
 
     handleActiveTab(roundButtons, event, "active");
 
-    if (event.target.classList.contains("homeframe")) {
-    setTimeout(() => {
-    const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0];
-  const frame = document.getElementById("frame");
-  frame.src = person;
-  }, 50);
-
-    } else {
-
-    }
-
+    
 
   }
 
