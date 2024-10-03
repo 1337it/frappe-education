@@ -100,8 +100,13 @@ if(isMobile)  {
 
     handleActiveTab(roundButtons, event, "active");
 
-    if (!event.target.classList.contains("gallery")) {
-   
+    if (!event.target.classList.contains("homeframe")) {
+    setTimeout(() => {
+    const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0];
+  const frame = document.getElementById("frame");
+  frame.src = person;
+  }, 200);
+
     } else {
 
     }
