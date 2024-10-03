@@ -516,11 +516,11 @@ border-top-right-radius: 0;
 }
 @keyframes page-slide {
   0% {
-    transform: scale3d(0, 1, 1);
+    transform: translateX(50%);
 	  opacity:0;
   }
   100% {
-    transform: scale3d(1, 1, 1);
+    transform: translateX(0%);
 	  opacity:1;
   }
 }
