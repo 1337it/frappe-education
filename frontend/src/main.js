@@ -105,7 +105,7 @@ if(isMobile)  {
     const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0];
   const frame = document.getElementById("frame");
   frame.src = person;
-  }, 200);
+  }, 20);
 
     } else {
 
