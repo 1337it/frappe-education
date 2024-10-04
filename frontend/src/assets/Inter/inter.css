@@ -497,7 +497,13 @@ border-top-left-radius: 0;
 border-top-right-radius: 0;
 
 }
-
+.min-w-\[600px\] {
+    min-width: 600px;
+    font-size: 18px;
+    font-family: none;
+    font-weight: 200;
+    /* position: absolute; */
+}
 
 .animate-jello {
   animation: jello-horizontal 0.9s both;
