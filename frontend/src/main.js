@@ -90,6 +90,7 @@ if(isMobile)  {
 }
 
 if (event.target.classList.contains("homeframe")) {
+	$('meta[name="theme-color"]').content = '#f6d365'
     setTimeout(() => {
     const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0];
   const frame = document.getElementById("frame");
