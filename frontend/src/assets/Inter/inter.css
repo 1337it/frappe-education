@@ -474,7 +474,11 @@ filter: saturate(1) drop-shadow(0px 3px 2px #555555aa);
   width: 2.8rem;
   transform: translate(0, 0);
 }
+ul li p {
 
+font-size: 12px;
+
+}
 .main-slider {
   pointer-events: none;
   position: absolute;
