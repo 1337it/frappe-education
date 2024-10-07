@@ -445,21 +445,24 @@ ul.main-tabs li {
 
 .round-button {
 height: calc((1/18 * 100vw) + 10px);
-width: calc(1/18 * 100vw);
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--grey-900);
-  transition: color, filter, scale 0.2s ease-in-out;
-
+width: calc(1/6 * 100vw);
+border-radius: 50%;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+color: var(--grey-900);
+transition: color,filter,scale .2s ease-in-out;
 filter: saturate(0) drop-shadow(0px 0px 0px #ffffff);
-color: #000000;
+color: #000;
+position: absolute;
+height: 70px;
+bottom: 0;
+padding: calc(1/18 * 100%);
 }
 
 .round-button:hover,
 .round-button.active {
-	scale: 1.2!important;
+
 	transition: color, filter, scale 0.2s ease-in-out;
 filter: saturate(1) drop-shadow(0px 3px 2px #555555aa);
   color: #000000;
