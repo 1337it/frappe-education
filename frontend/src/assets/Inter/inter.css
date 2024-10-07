@@ -423,7 +423,7 @@ ul.filter-tabs {
 ul.main-tabs li {
    display: flex;
     padding-left: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     padding-top: 10px;
     z-index: 1;
     justify-content: center;
