@@ -4,7 +4,7 @@
 <script>
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
     setTimeout(() => {
-    const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0];
+    const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
   const frame = document.getElementById("frame");
   frame.src = person;
   }, 100);
