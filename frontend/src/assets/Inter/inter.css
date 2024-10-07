@@ -338,7 +338,7 @@ padding-bottom: 2.63rem!important;
 justify-content: center!important;
 }
 .main-tabs-container {
-padding: 0 0rem 1rem!important;
+padding: 0 0rem 0rem!important;
 }
 .px-5 {
 
@@ -423,7 +423,7 @@ ul.filter-tabs {
 ul.main-tabs li {
    display: flex;
     padding-left: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     padding-top: 10px;
     z-index: 1;
     justify-content: center;
@@ -457,7 +457,7 @@ color: #000;
 position: absolute;
 height: 70px;
 bottom: 0;
-padding: calc(1/18 * 100%);
+padding:20px calc(1/36 * 100%) 40px calc(1/36 * 100%);
 }
 
 .round-button:hover,
