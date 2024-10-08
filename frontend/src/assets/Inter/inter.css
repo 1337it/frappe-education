@@ -255,12 +255,7 @@ line-height: 1.15;
 letter-spacing: .02em;
 font-weight: 300 !important;
 }
-	.z-\[100\] {
-z-index: 100;
-transform: translate3d(50%, 50%, 0) !important;
-background-color: white;
-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+
 .border-solid {
 border: none !important;
 border-style: none !important;
@@ -449,8 +444,21 @@ position: fixed;
 top: 0;
 /* left: 0; */
 text-align: center!important;
+	z-index:-1;
 }
-
+.popover-container {
+position: fixed !important;
+top: 50% !important;
+left: 16.66vw !important;
+right: 16.66vw !important;
+/* justify-content: center; */
+/* align-content: center; */
+text-align: center;
+width: 66.6vw;
+padding: 10px;
+	transform: none !important;
+border: none !important;
+}
 .round-button {
 height: calc((1/18 * 100vw) + 10px);
 width: calc(1/6 * 100vw);
