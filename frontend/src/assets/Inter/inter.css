@@ -442,6 +442,14 @@ ul.main-tabs li {
 .avatar img {
   object-fit: cover;
 }
+.py-1 {
+padding-top: .25rem;
+padding-bottom: .25rem;
+position: fixed;
+top: 0;
+/* left: 0; */
+text-align: center!important;
+}
 
 .round-button {
 height: calc((1/18 * 100vw) + 10px);
