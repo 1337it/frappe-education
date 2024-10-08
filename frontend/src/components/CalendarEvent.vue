@@ -40,10 +40,6 @@
 						<FeatherIcon name="clock" class="h-4 w-4" />
 						<span class="text-sm font-normal"> {{ event.from_time }} - {{ event.to_time }} </span>
 					</div>
-					<div class="flex gap-2 items-center" v-if="event.room">
-						<FeatherIcon name="circle" class="h-4 w-4" />
-						<span class="text-sm font-normal"> Room No: &nbsp {{ event.room }} </span>
-					</div>
 				</div>
 			</div>
 
@@ -57,9 +53,6 @@
 			<div class="flex flex-col whitespace-nowrap w-fit overflow-hidden">
 				<p class="font-medium text-sm text-gray-800 text-ellipsis">
 					{{ event.title }}
-				</p>
-				<p class="font-normal text-xs text-gray-800 text-ellipsis" v-if="event.from_time">
-					{{ event.from_time }} - {{ event.to_time }}
 				</p>
 			</div>
 		</div>
