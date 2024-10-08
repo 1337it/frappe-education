@@ -496,7 +496,7 @@ filter: saturate(1) drop-shadow(0px 3px 2px #555555aa);
 ul li p {
 
 font-size: 12px;
-
+letter-spacing: 0px!important;
 }
 .main-slider {
   pointer-events: none;
