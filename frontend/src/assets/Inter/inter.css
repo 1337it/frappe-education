@@ -441,9 +441,9 @@ ul.main-tabs li {
 padding-top: .25rem!important;
 padding-bottom: .25rem!important;
 position: fixed!important;
-top: 0!important;
+top: auto!important;
 /* left: 0; */
-text-align: center!important;
+text-align: left!important;
 	z-index:-1!important;
 }
 .popover-container {
@@ -458,6 +458,9 @@ width: 66.6vw;
 padding: 10px;
 	transform: none !important;
 border: none !important;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+background-color: rgba(255, 255, 255, 0.68);
+backdrop-filter: blur(10px);
 }
 .round-button {
 height: calc((1/18 * 100vw) + 10px);
