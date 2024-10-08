@@ -301,6 +301,20 @@ font-family: Verdana;
 
 
 }
+.pb-2 {
+padding-bottom: .5rem;
+background: darkslategrey;
+padding-top: 0.5rem;
+	margin-top: 20px;
+}
+.grid .flex {
+display: flex;
+justify-content: center;
+align-items: true !important;
+text-align: center;
+font-size: 14px;
+color: lightgray;
+}
 .gap-x-1 {
     -moz-column-gap: .25rem;
     column-gap: .25rem;
@@ -310,8 +324,10 @@ font-family: Verdana;
     background: white;
     justify-items: center;
     width: 33.33vw;
-    left: calc(33.33vw - 10px);
-	border-radius: 50px;
+    left: calc(33.33vw - 0px);
+	border-radius: 20px;
+	background-color: lightgray;
+height: 55px;
 }
 	.border-gray-200 {
 border-color: #dadadaff!important;
