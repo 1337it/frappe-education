@@ -64,6 +64,13 @@ router.beforeEach(async (to, from) => {
   if (user.data.length === 0) {
     await user.reload()
   }
+  if(isLoggedIn)
+  {
+window.location.href = '/student-portal/home'
+     await student.reload()
+  }
+
+
   await student.reload()
 
 })
