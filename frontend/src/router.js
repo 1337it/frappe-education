@@ -71,7 +71,7 @@ window.location.href = '/student-portal'
   }
 
 
-  await student.reload()
+  
 
 })
 
