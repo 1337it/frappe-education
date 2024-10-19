@@ -50,7 +50,6 @@ let router = createRouter({
   routes,
 })
 
-
 router.beforeEach(async (to, from) => {
   const { isLoggedIn, user: sessionUser } = sessionStore()
   const { user } = usersStore()
@@ -64,15 +63,7 @@ router.beforeEach(async (to, from) => {
   if (user.data.length === 0) {
     await user.reload()
   }
-  if(isLoggedIn)
-  {
-window.location.href = '/student-portal'
-     await student.reload()
-  }
-
-
-  
-
+  await student.reload()
 })
 
 export default router
