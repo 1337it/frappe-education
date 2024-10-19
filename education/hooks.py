@@ -29,7 +29,7 @@ app_include_js = "education.bundle.js"
 # website_theme_scss = "education/public/scss/website"
 website_route_rules = [
 	{"from_route": "/admissions", "to_route": "Student Admission"},
-	{"from_route": "/student-portal/<path:app_path>", "to_route": "student-portal"},
+	{"from_route": "/<path:app_path>", "to_route": "student-portal"},
 ]
 # website
 update_website_context = []
