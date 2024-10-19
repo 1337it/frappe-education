@@ -86,7 +86,7 @@ mainTabs.addEventListener("click", (event) => {
 	var isMobile = /iPhone|iPod|iPad|Android|BlackBerry/.test(navigator.userAgent)
  
 if(isMobile)  {
-  navigator.vibrate(10)
+  navigator.vibrate(5)
 }
 
 if (event.target.classList.contains("homeframe")) {
