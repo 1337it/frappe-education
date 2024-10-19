@@ -27,7 +27,10 @@ app_include_js = "education.bundle.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "education/public/scss/website"
-
+website_route_rules = [
+	{"from_route": "/admissions", "to_route": "Student Admission"},
+	{"from_route": "/student-portal/<path:app_path>", "to_route": "student-portal"},
+]
 # website
 update_website_context = []
 
