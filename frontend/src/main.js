@@ -101,7 +101,163 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 
     }
 
+if (event.target.classList.contains("homestab")) {
+	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+var transtarget = 0;
+var movement = transtarget - transnow;
 
+if (movement > 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[4].click()
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+}
+}
+
+if (event.target.classList.contains("gradestab")) {
+	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+var transtarget = 100;
+var movement = transtarget - transnow;
+
+if (movement > 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[1].click();
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+}
+if (movement < 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[1].click();
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+}
+
+}
+
+if (event.target.classList.contains("scheduletab")) {
+	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+var transtarget = 200;
+var movement = transtarget - transnow;
+
+if (movement > 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[0].click();
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+}
+if (movement < 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[0].click();
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+}
+
+}
+
+if (event.target.classList.contains("raventab")) {
+	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+var transtarget = 300;
+var movement = transtarget - transnow;
+
+if (movement > 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[5].click()
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+}
+if (movement < 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[5].click()
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+}
+
+}
+
+if (event.target.classList.contains("feestab")) {
+	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+var transtarget = 400;
+var movement = transtarget - transnow;
+
+if (movement > 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[2].click();
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+}
+if (movement < 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[2].click();
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+}
+
+}
+
+if (event.target.classList.contains("transporttab")) {
+	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+var transtarget = 500;
+var movement = transtarget - transnow;
+
+if (movement > 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[6].click();
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+}
+if (movement < 0)
+{
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
+setTimeout(() => {
+document.getElementsByClassName('menutabs')[6].click();
+}, 200);
+
+$('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+	
 
   if (event.target.classList.contains("round-button")) {
     mainSliderCircle.classList.remove("animate-jello");
