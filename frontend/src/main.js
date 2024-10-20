@@ -102,7 +102,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
     }
 
 if (event.target.classList.contains("homestab")) {
-	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
 var transtarget = 0;
 var movement = transtarget - transnow;
 
@@ -118,7 +118,7 @@ $('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animat
 }
 
 if (event.target.classList.contains("gradestab")) {
-	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
 var transtarget = 100;
 var movement = transtarget - transnow;
 
@@ -144,7 +144,7 @@ $('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animat
 }
 
 if (event.target.classList.contains("scheduletab")) {
-	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
 var transtarget = 200;
 var movement = transtarget - transnow;
 
@@ -170,7 +170,7 @@ $('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animat
 }
 
 if (event.target.classList.contains("raventab")) {
-	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
 var transtarget = 300;
 var movement = transtarget - transnow;
 
@@ -196,7 +196,7 @@ $('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animat
 }
 
 if (event.target.classList.contains("feestab")) {
-	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
 var transtarget = 400;
 var movement = transtarget - transnow;
 
@@ -222,7 +222,7 @@ $('.flex-1.flex.flex-col.h-full.overflow-auto').attributes.style.value = 'animat
 }
 
 if (event.target.classList.contains("transporttab")) {
-	var transnow = $('html').style.cssText.split(': ')[1].split(';')[0].split('%')[0];
+	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
 var transtarget = 500;
 var movement = transtarget - transnow;
 
