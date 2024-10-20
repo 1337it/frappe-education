@@ -1,6 +1,6 @@
 <template lang="">
   <div v-if="grades.data?.length > 0">
-    <div class="px-5 py-4">
+    <div class="px-5 py-4" style="animation:page-slide-end-right 0.2s ease">
       <Dropdown class="mb-4" :options="allPrograms">
         <template #default="{ open }">
           <Button :label="selectedProgram">
@@ -30,11 +30,6 @@
     <MissingData message="No grades found" />
   </div>
 </template>
-<script>
-setTimeout(() => {
-  document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-  }, 100);
-</script>
 <script setup>
 import {
   Dropdown,
