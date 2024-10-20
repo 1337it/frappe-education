@@ -111,9 +111,7 @@ document.getElementsByClassName('menutabs')[4].click()
   frame.src = person;
 
 }, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-	}, 210);
+
 }
 }
 
@@ -129,9 +127,7 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
 	setTimeout(() => {
 document.getElementsByClassName('menutabs')[1].click();
 }, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-	}, 210);
+
 }
 if (movement < 0)
 {
@@ -140,9 +136,8 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
 setTimeout(() => {
 document.getElementsByClassName('menutabs')[1].click();
 }, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-	}, 210);
+
+
 }
 
 }
@@ -159,9 +154,7 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
 setTimeout(() => {
 document.getElementsByClassName('menutabs')[0].click();
 }, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-	}, 210);
+
 }
 if (movement < 0)
 {
@@ -170,9 +163,7 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
 setTimeout(() => {
 document.getElementsByClassName('menutabs')[0].click();
 	}, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-	}, 210);
+
 }
 
 }
@@ -189,9 +180,7 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
 setTimeout(() => {
 document.getElementsByClassName('menutabs')[5].click()
 	}, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-	}, 210);
+
 }
 if (movement < 0)
 {
@@ -199,9 +188,9 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
 setTimeout(() => {
 document.getElementsByClassName('menutabs')[5].click()
 	}, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-	}, 210);
+
+
+
 }
 
 }
@@ -218,9 +207,7 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
 setTimeout(() => {
 document.getElementsByClassName('menutabs')[2].click();
 	}, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-	}, 210);
+
 }
 if (movement < 0)
 {
@@ -229,9 +216,9 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
 setTimeout(() => {
 document.getElementsByClassName('menutabs')[2].click();
 	}, 200);
-setTimeout(() => {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-	}, 210);
+
+
+
 }
 
 }
