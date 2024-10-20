@@ -1,16 +1,11 @@
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full" style="animation:page-slide-end-right 0.2s ease">
     <Calendar
       v-if="!scheduleResource.loading && scheduleResource.data"
       :events="events"
     />
   </div>
 </template>
-<script>
-setTimeout(() => {
-  document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-  }, 100);
-</script>
 <script setup>
 import Calendar from '@/components/Calendar.vue'
 import { createResource } from 'frappe-ui'
