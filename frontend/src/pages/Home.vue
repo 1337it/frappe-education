@@ -3,14 +3,17 @@
 </template>
 <script>
   document.addEventListener("DOMContentLoaded", function(event) {
-const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
-  const frame = document.getElementById("frame");
-  frame.src = person;
+
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
   });
 </script>
 <script setup>
-    
+    document.addEventListener("DOMContentLoaded", function(event) {
+const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
+  const frame = document.getElementById("frame");
+  frame.src = person;
+    });
+
 </script>
