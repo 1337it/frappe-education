@@ -10,10 +10,10 @@ document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].
   });
 </script>
 <script setup>
-    document.addEventListener("DOMContentLoaded", function(event) {
+setTimeout(() => {
 const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
   const frame = document.getElementById("frame");
   frame.src = person;
-    });
+   }, 100);
 
 </script>
