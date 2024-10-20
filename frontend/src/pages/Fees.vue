@@ -1,5 +1,5 @@
 <template>
-  <div v-if="tableData.rows.length > 0" class="px-5 py-4">
+  <div v-if="tableData.rows.length > 0" class="px-5 py-4" style="animation:page-slide-end-right 0.2s ease">
     <ListView
       :columns="tableData.columns"
       :rows="tableData.rows"
@@ -68,13 +68,6 @@
     <MissingData message="No Fees found" />
   </div>
 </template>
-<script>
-setTimeout(() => {
- document.getElementsByClassName('flex-1 overflow-auto')[1].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-  }, 100);
-	
-
-</script>
 <script setup>
 import { useRoute } from 'vue-router'
 import {
