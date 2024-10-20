@@ -108,12 +108,14 @@ var movement = transtarget - transnow;
 
 if (movement > 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[4].click()
 }, 200);
+document.getElementsByClassName('menutabs')[4].click()
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+	}, 200);
 }
 }
 
@@ -124,21 +126,25 @@ var movement = transtarget - transnow;
 
 if (movement > 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[1].click();
 }, 200);
+document.getElementsByClassName('menutabs')[1].click();
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+	}, 200);
 }
 if (movement < 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[1].click();
 }, 200);
+document.getElementsByClassName('menutabs')[1].click();
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+	}, 200);
 }
 
 }
@@ -150,21 +156,25 @@ var movement = transtarget - transnow;
 
 if (movement > 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[0].click();
 }, 200);
+document.getElementsByClassName('menutabs')[0].click();
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+	}, 200);
 }
 if (movement < 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[0].click();
 }, 200);
+document.getElementsByClassName('menutabs')[0].click();
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+	}, 200);
 }
 
 }
@@ -176,21 +186,25 @@ var movement = transtarget - transnow;
 
 if (movement > 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[5].click()
 }, 200);
+document.getElementsByClassName('menutabs')[5].click()
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+	}, 200);
 }
 if (movement < 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[5].click()
 }, 200);
+document.getElementsByClassName('menutabs')[5].click()
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+	}, 200);
 }
 
 }
@@ -202,21 +216,25 @@ var movement = transtarget - transnow;
 
 if (movement > 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[2].click();
 }, 200);
+document.getElementsByClassName('menutabs')[2].click();
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+	}, 200);
 }
 if (movement < 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[2].click();
 }, 200);
+document.getElementsByClassName('menutabs')[2].click();
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+	}, 200);
 }
 
 }
@@ -228,21 +246,25 @@ var movement = transtarget - transnow;
 
 if (movement > 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[6].click();
 }, 200);
+document.getElementsByClassName('menutabs')[6].click();
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+	}, 200);
 }
 if (movement < 0)
 {
+	setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
-setTimeout(() => {
-document.getElementsByClassName('menutabs')[6].click();
 }, 200);
+document.getElementsByClassName('menutabs')[6].click();
 
+setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+	}, 200);
 }
 
 }
