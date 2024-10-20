@@ -89,17 +89,9 @@ if(isMobile)  {
   navigator.vibrate(5)
 }
 
-if (event.target.classList.contains("homeframe")) {
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
-    setTimeout(() => {
-  const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
-  const frame = document.getElementById("frame");
-  frame.src = person;
-  }, 100);
 
-    } else {
 
-    }
+
 
 if (event.target.classList.contains("homestab")) {
 	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
@@ -111,7 +103,13 @@ if (movement > 0)
 
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
 	setTimeout(() => {
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+
 document.getElementsByClassName('menutabs')[4].click()
+ const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
+  const frame = document.getElementById("frame");
+  frame.src = person;
+
 }, 200);
 setTimeout(() => {
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
