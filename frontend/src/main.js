@@ -98,7 +98,7 @@ if (event.target.classList.contains("homestab")) {
 var transtarget = 0;
 var movement = transtarget - transnow;
 
-if (movement > 0)
+if (movement < 0)
 {
 
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
