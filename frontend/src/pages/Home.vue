@@ -3,10 +3,12 @@
 </template>
 <script>
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
-  setTimeout(() => {
+
+document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+
+</script>
+<script setup>
     const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
   const frame = document.getElementById("frame");
   frame.src = person;
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-	}, 210);
 </script>
