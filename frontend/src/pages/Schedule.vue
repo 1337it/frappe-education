@@ -7,9 +7,9 @@
   </div>
 </template>
 <script>
-  $(document).on('app_ready', function() {
+
   document.getElementsByClassName('w-full h-full flex-1 overflow-auto')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-  });
+
 </script>
 <script setup>
 import Calendar from '@/components/Calendar.vue'
