@@ -98,8 +98,6 @@ if (event.target.classList.contains("homestab")) {
 var transtarget = 0;
 var movement = transtarget - transnow;
 
-if (movement < 0)
-{
 
 document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
 	
@@ -114,7 +112,7 @@ const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].sp
 
 
 
-}
+
 }
 
 if (event.target.classList.contains("gradestab")) {
