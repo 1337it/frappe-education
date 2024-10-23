@@ -40,6 +40,11 @@ const routes = [
     component: () => import('@/pages/Post.vue'),
   },
   {
+    path: "/transport",
+    name: "Transport",
+    component: () => import('@/pages/Transport.vue'),
+  },
+  {
     path :'/:catchAll(.*)',
     redirect: '/home',
   }
