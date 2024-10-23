@@ -85,8 +85,23 @@
 	</div>
 </template>
 <script setup>
+	  import { useRoute } from 'vue-router'
+import {
+  ListView,
+  ListHeader,
+  ListHeaderItem,
+  ListRow,
+  ListRowItem,
+  Badge,
+  createResource,
+  Toast,
+  FeatherIcon,
+} from 'frappe-ui'
+import { reactive, ref } from 'vue'
+import FeesPaymentDialog from '@/components/FeesPaymentDialog.vue'
+import MissingData from '@/components/MissingData.vue'
+import { createToast } from '@/utils'
 import Calendar from '@/components/Calendar.vue'
-import { createResource } from 'frappe-ui'
 import { ref } from 'vue'
 import { studentStore } from '@/stores/student'
 const { getCurrentProgram, getStudentGroups } = studentStore()
@@ -129,23 +144,7 @@ const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].sp
    }, 100);
 
 
-  import { useRoute } from 'vue-router'
-import {
-  ListView,
-  ListHeader,
-  ListHeaderItem,
-  ListRow,
-  ListRowItem,
-  Badge,
-  createResource,
-  Toast,
-  FeatherIcon,
-} from 'frappe-ui'
-import { reactive, ref } from 'vue'
-import FeesPaymentDialog from '@/components/FeesPaymentDialog.vue'
-import { studentStore } from '@/stores/student'
-import MissingData from '@/components/MissingData.vue'
-import { createToast } from '@/utils'
+
 
 const { getStudentInfo } = studentStore()
 let studentInfo = getStudentInfo().value
