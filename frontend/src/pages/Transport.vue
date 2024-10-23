@@ -122,8 +122,6 @@ const scheduleResource = createResource({
 
   document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-</script>
-<script setup>
 setTimeout(() => {
 const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
   const frame = document.getElementById("frame");
