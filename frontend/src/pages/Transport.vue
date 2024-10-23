@@ -102,7 +102,6 @@ import FeesPaymentDialog from '@/components/FeesPaymentDialog.vue'
 import MissingData from '@/components/MissingData.vue'
 import { createToast } from '@/utils'
 import Calendar from '@/components/Calendar.vue'
-import { ref } from 'vue'
 import { studentStore } from '@/stores/student'
 const { getCurrentProgram, getStudentGroups } = studentStore()
 
