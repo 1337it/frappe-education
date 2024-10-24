@@ -119,13 +119,6 @@ var movement = transtarget - transnow;
 if (movement > 0)
 {
 
-document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('gradessection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
-
-document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
-
-document.getElementById('gradessection').className = 'tabsection active';
 
 
 
@@ -133,13 +126,6 @@ document.getElementById('gradessection').className = 'tabsection active';
 if (movement < 0)
 {
 
-document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('gradessection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease':
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
-
-document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
-
-document.getElementById('gradessection').className = 'tabsection active';
 
 
 
@@ -227,19 +213,13 @@ var movement = transtarget - transnow;
 
 if (movement > 0)
 {
-	
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
 
-document.getElementsByClassName('menutabs')[2].click();
 
 
 }
 if (movement < 0)
 {
 
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
-
-document.getElementsByClassName('menutabs')[2].click();
 	
 
 
@@ -256,18 +236,14 @@ var movement = transtarget - transnow;
 if (movement > 0)
 {
 
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
 
-document.getElementsByClassName('menutabs')[6].click();
 
 	
 }
 if (movement < 0)
 {
 	
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
 
-document.getElementsByClassName('menutabs')[6].click();
 	
 
 	
