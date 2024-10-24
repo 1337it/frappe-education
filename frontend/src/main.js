@@ -119,18 +119,28 @@ var movement = transtarget - transnow;
 if (movement > 0)
 {
 
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
-	
-document.getElementsByClassName('menutabs')[1].click();
+document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('gradessection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+
+document.getElementsByClassName('tabsection active')[0].classList.remove("active");
+document.getElementsByClassName('round-button active')[0].classList.remove("active");
+document.getElementById('gradessection').classList.add("active");
+document.getElementsByClassName('round-button gradestab')[0].classList.add("active");
 
 
 }
 if (movement < 0)
 {
 
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
+document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
+document.getElementById('gradessection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease':
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('menutabs')[1].click();
+document.getElementsByClassName('tabsection active')[0].classList.remove("active");
+document.getElementsByClassName('round-button active')[0].classList.remove("active");
+document.getElementById('gradessection').classList.add("active");
+document.getElementsByClassName('round-button gradestab')[0].classList.add("active");
 
 
 
@@ -146,18 +156,28 @@ var movement = transtarget - transnow;
 if (movement > 0)
 {
 
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
+document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('schedulesection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('menutabs')[0].click();
+document.getElementsByClassName('tabsection active')[0].classList.remove("active");
+document.getElementsByClassName('round-button active')[0].classList.remove("active");
+document.getElementById('schedulesection').classList.add("active");
+document.getElementsByClassName('round-button scheduletab')[0].classList.add("active");
 
 
 }
 if (movement < 0)
 {
 	
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
+document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease;display:block;';
+document.getElementById('schedulesection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease':
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('menutabs')[0].click();
+document.getElementsByClassName('tabsection active')[0].classList.remove("active");
+document.getElementsByClassName('round-button active')[0].classList.remove("active");
+document.getElementById('schedulesection').classList.add("active");
+document.getElementsByClassName('round-button scheduletab')[0].classList.add("active");
 
 
 }
@@ -171,18 +191,27 @@ var movement = transtarget - transnow;
 
 if (movement > 0)
 {
-	
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
+document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease;display:block;';
+document.getElementById('postssection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('menutabs')[5].click()
+document.getElementsByClassName('tabsection active')[0].classList.remove("active");
+document.getElementsByClassName('round-button active')[0].classList.remove("active");
+document.getElementById('postssection').classList.add("active");
+document.getElementsByClassName('round-button raventab')[0].classList.add("active");
 
 
 }
 if (movement < 0)
 {
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
+document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease;display:block;';
+document.getElementById('postssection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('menutabs')[5].click()
+document.getElementsByClassName('tabsection active')[0].classList.remove("active");
+document.getElementsByClassName('round-button active')[0].classList.remove("active");
+document.getElementById('postssection').classList.add("active");
+document.getElementsByClassName('round-button raventab')[0].classList.add("active");
 	
 
 
