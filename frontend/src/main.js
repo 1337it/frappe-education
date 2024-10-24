@@ -97,13 +97,14 @@ if (event.target.classList.contains("homestab")) {
 	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
 var transtarget = 0;
 var movement = transtarget - transnow;
+	var currentsection = document.querySelectorAll('#app .active')[0].id;
 
 
 document.getElementsByClassName('tabsection active')[0].attributes.style = 'animation:page-slide-end-left 0.2s ease';
 document.getElementById('homesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+document.getElementById(currentsection).ClassName = 'tabsection';
 
 document.getElementById('homesection').className = 'tabsection active';
 document.getElementsByClassName('round-button homestab')[0].className = 'tabsection active';
@@ -146,7 +147,7 @@ document.getElementsByClassName('tabsection active')[0].attributes.style = 'anim
 document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName(currentsection)[0].ClassName = 'tabsection';
+document.getElementById(currentsection).ClassName = 'tabsection';
 
 document.getElementById('schedulesection').className = 'tabsection active';
 
@@ -160,7 +161,7 @@ document.getElementsByClassName('tabsection active')[0].attributes.style = 'anim
 document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-left 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName(currentsection)[0].ClassName = 'tabsection';
+document.getElementById(currentsection).ClassName = 'tabsection';
 
 document.getElementById('schedulesection').className = 'tabsection active';
 
