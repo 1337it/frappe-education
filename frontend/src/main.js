@@ -105,7 +105,7 @@ document.getElementById('homesection').attributes.style = 'animation:page-slide-
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementById(currentsection).ClassName = 'tabsection';
-
+document.getElementById(currentsection).attributes.style = 'display:none;';
 document.getElementById('homesection').className = 'tabsection active';
 document.getElementsByClassName('round-button homestab')[0].className = 'tabsection active';
 
@@ -148,7 +148,7 @@ document.getElementById('schedulesection').attributes.style = 'animation:page-sl
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementById(currentsection).ClassName = 'tabsection';
-
+document.getElementById(currentsection).attributes.style = 'display:none;';
 document.getElementById('schedulesection').className = 'tabsection active';
 
 
@@ -162,7 +162,7 @@ document.getElementById('schedulesection').attributes.style = 'animation:page-sl
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementById(currentsection).ClassName = 'tabsection';
-
+document.getElementById(currentsection).attributes.style = 'display:none;';
 document.getElementById('schedulesection').className = 'tabsection active';
 
 
@@ -280,9 +280,7 @@ if (movement < 0)
   }
 
 });
-setTimeout(() => {
-document.getElementById('homesection').className = 'tabsection active';
-	    }, 200);
+
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
