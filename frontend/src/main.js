@@ -100,7 +100,7 @@ var movement = transtarget - transnow;
 
 
 document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('homesection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
+document.getElementById('homesection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
@@ -143,7 +143,7 @@ if (movement > 0)
 {
 
 document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('schedulesection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
+document.getElementById('schedulesection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
@@ -157,7 +157,7 @@ if (movement < 0)
 {
 	
 document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-right 0.2s ease;display:block;';
-document.getElementById('schedulesection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease':
+document.getElementById('schedulesection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
@@ -178,7 +178,7 @@ var movement = transtarget - transnow;
 if (movement > 0)
 {
 document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease;display:block;';
-document.getElementById('postssection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
+document.getElementById('postssection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
@@ -191,7 +191,7 @@ document.getElementsByClassName('round-button raventab')[0].className = 'tabsect
 if (movement < 0)
 {
 document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease;display:block;';
-document.getElementById('postssection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
+document.getElementById('postssection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
