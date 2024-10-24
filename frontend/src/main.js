@@ -278,7 +278,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 
 });
 
-body.onload = JSmetronome.init();
+window.onload = JSmetronome.init();
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
