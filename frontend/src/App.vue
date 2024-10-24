@@ -10,7 +10,6 @@
           />
       </div>
     </div>
-  </div>
   <Toasts />
 </template>
 
