@@ -626,12 +626,26 @@ border-top-right-radius: 0;
 display:none;
 }
 
-.tabsection.active {
-	display:block;
-	top:0;
+[style^="--translate-main-slider: 0"] #homesection {
+    display: block !important;
 }
 
+[style^="--translate-main-slider: 100"] #gradesection {
+    display: block !important;
+}
 
+[style^="--translate-main-slider: 200"] #schedulesection {
+    display: block !important;
+}
+[style^="--translate-main-slider: 300"] #postssection {
+    display: block !important;
+}
+[style^="--translate-main-slider: 100"] #feessection {
+    display: block !important;
+}
+[style^="--translate-main-slider: 100"] #transportsection {
+    display: block !important;
+}
 
 .filters-container {
   overflow: hidden;
