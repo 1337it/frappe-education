@@ -149,7 +149,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
 
 document.getElementById('schedulesection').className = 'tabsection active';
-document.getElementsByClassName('round-button scheduletab')[0].className = 'tabsection active';
+
 
 
 }
@@ -163,7 +163,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
 
 document.getElementById('schedulesection').className = 'tabsection active';
-document.getElementsByClassName('round-button scheduletab')[0].className = 'tabsection active';
+
 
 
 }
@@ -184,7 +184,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
 
 document.getElementById('postssection').className = 'tabsection active';
-document.getElementsByClassName('round-button raventab')[0].className = 'tabsection active';
+
 
 
 }
@@ -197,7 +197,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
 
 document.getElementById('postssection').className = 'tabsection active';
-document.getElementsByClassName('round-button raventab')[0].className = 'tabsection active';
+
 	
 
 
