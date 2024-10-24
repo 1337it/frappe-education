@@ -280,7 +280,7 @@ if (movement < 0)
   }
 
 });
-
+document.getElementById('homesection').className = 'tabsection active';
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
