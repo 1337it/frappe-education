@@ -22,7 +22,6 @@
 			<source src="https://caljer1.github.io/MetronomeLite/sounds/bell.mp3" type="audio/mp3" />
 		</audio>
 	</div>
-</div>
     <div class="flex h-screen w-screen" style="background-size: 100vw auto;height:100vh !important;background-repeat: no-repeat;background-position: center;background-image:url('/files/image.jpg');">
       <div class="h-full border-r bg-gray-50">
         <Sidebar />
