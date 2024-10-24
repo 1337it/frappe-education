@@ -143,16 +143,14 @@ import { studentStore } from '@/stores/student'
 } from 'frappe-ui'
 import { groupBy } from '@/utils'
 
-const { getCurrentProgram, getStudentInfo } = studentStore()
 
-let studentInfo = getStudentInfo().value
-let currentProgram = getCurrentProgram().value
+
 
 const allPrograms = ref([])
 const selectedProgram = ref('')
 
 const tableData = ref({
-	 columns: [
+	columns: [
     {
       label: 'Course',
       key: 'course',
@@ -164,8 +162,9 @@ const tableData = ref({
   ],
   rows: [],
 })
-const { getCurrentProgram, getStudentGroups } = studentStore()
-
+const { getCurrentProgram, getStudentGroups, getStudentInfo } = studentStore()
+let studentInfo = getStudentInfo().value
+let currentProgram = getCurrentProgram().value
 const programName = ref(getCurrentProgram()?.value?.program)
 const studentGroup = ref(getStudentGroups().value)
 const events = ref([])
