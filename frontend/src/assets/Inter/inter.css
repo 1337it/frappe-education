@@ -624,6 +624,8 @@ border-top-right-radius: 0;
 
 .tabsection {
 display:none;
+	height:100vh;
+	width:100vw;
 }
 
 [style^="--translate-main-slider: 0"] #homesection {
