@@ -118,7 +118,7 @@ var movement = transtarget - transnow;
 if (movement > 0)
 {
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -128,7 +128,7 @@ if (movement < 0)
 {
 
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-left 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -146,7 +146,7 @@ if (movement > 0)
 {
 
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -156,7 +156,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 if (movement < 0)
 {
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-left 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -174,7 +174,7 @@ if (movement > 0)
 {
 
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('postssection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('postssection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -184,7 +184,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 if (movement < 0)
 {
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('postssection').attributes.style = 'animation:page-slide-start-left 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('postssection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -202,7 +202,7 @@ if (movement > 0)
 {
 
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('feessection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('feessection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -212,7 +212,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 if (movement < 0)
 {
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('feessection').attributes.style = 'animation:page-slide-start-left 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('feessection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -230,7 +230,7 @@ if (movement > 0)
 {
 
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('transportsection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('transportsection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -240,7 +240,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 if (movement < 0)
 {
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('transportsection').attributes.style = 'animation:page-slide-start-left 0.2s ease;animation-delay: 0.2s;';
+document.getElementById('transportsection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -265,11 +265,11 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
     mainSliderCircle.classList.remove("animate-jello");
     void mainSliderCircle.offsetWidth;
     mainSliderCircle.classList.add("animate-jello");
-
+    setTimeout(() => {
     root.style.setProperty("--translate-main-slider", targetTranslateValue);
     root.style.setProperty("--main-slider-color", getColor(targetColor, 50));
     root.style.setProperty("--background-color", getColor(targetColor, 100));
-
+    }, 200);
     handleActiveTab(roundButtons, event, "active");
 
     
