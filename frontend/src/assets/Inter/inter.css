@@ -642,10 +642,10 @@ display:none;
 [style^="--translate-main-slider: 300"] #postssection {
     display: block !important;
 }
-[style^="--translate-main-slider: 100"] #feessection {
+[style^="--translate-main-slider: 400"] #feessection {
     display: block !important;
 }
-[style^="--translate-main-slider: 100"] #transportsection {
+[style^="--translate-main-slider: 500"] #transportsection {
     display: block !important;
 }
 
