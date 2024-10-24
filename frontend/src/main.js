@@ -140,7 +140,7 @@ var currentsection = document.querySelectorAll('#app .active')[0].id;
 if (movement > 0)
 {
 
-ddocument.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
 document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -150,7 +150,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 }
 if (movement < 0)
 {
-ddocument.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
 document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
