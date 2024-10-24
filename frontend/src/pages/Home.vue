@@ -152,6 +152,18 @@ const allPrograms = ref([])
 const selectedProgram = ref('')
 
 const tableData = ref({
+	 columns: [
+    {
+      label: 'Course',
+      key: 'course',
+    },
+    {
+      label: 'Batch',
+      key: 'batch',
+    },
+  ],
+  rows: [],
+})
 const { getCurrentProgram, getStudentGroups } = studentStore()
 
 const programName = ref(getCurrentProgram()?.value?.program)
@@ -192,18 +204,7 @@ const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].sp
    }, 100);
 
 
-  columns: [
-    {
-      label: 'Course',
-      key: 'course',
-    },
-    {
-      label: 'Batch',
-      key: 'batch',
-    },
-  ],
-  rows: [],
-})
+ 
 
 const student_programs = createResource({
   url: 'education.education.api.get_student_programs',
