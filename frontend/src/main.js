@@ -94,14 +94,14 @@ if(isMobile)  {
 
 
 if (event.target.classList.contains("homestab")) {
-	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
+	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 0;
 var movement = transtarget - transnow;
 	var currentsection = document.querySelectorAll('#app .active')[0].id;
 
 
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('homesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
+document.getElementById('homesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementsByClassName('round-button homestab')[0].className = 'tabsection active';
@@ -110,7 +110,7 @@ document.getElementsByClassName('round-button homestab')[0].className = 'tabsect
 }
 
 if (event.target.classList.contains("gradestab")) {
-	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
+	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 100;
 var movement = transtarget - transnow;
 	var currentsection = document.querySelectorAll('#app .active')[0].id;
@@ -118,7 +118,7 @@ var movement = transtarget - transnow;
 if (movement > 0)
 {
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
+document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -128,7 +128,7 @@ if (movement < 0)
 {
 
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
+document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -138,7 +138,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 }
 
 if (event.target.classList.contains("scheduletab")) {
-	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
+	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 200;
 var movement = transtarget - transnow;
 var currentsection = document.querySelectorAll('#app .active')[0].id;
@@ -166,7 +166,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 }
 
 if (event.target.classList.contains("raventab")) {
-	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
+	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 300;
 var movement = transtarget - transnow;
 var currentsection = document.querySelectorAll('#app .active')[0].id;
@@ -194,7 +194,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 }
 
 if (event.target.classList.contains("feestab")) {
-	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
+	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 400;
 var movement = transtarget - transnow;
 var currentsection = document.querySelectorAll('#app .active')[0].id;
@@ -222,7 +222,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 }
 
 if (event.target.classList.contains("transporttab")) {
-	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
+	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 500;
 var movement = transtarget - transnow;
 var currentsection = document.querySelectorAll('#app .active')[0].id;
@@ -278,6 +278,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 
 });
 
+body.onload = JSmetronome.init();
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
