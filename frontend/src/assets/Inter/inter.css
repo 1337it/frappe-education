@@ -622,6 +622,16 @@ border-top-right-radius: 0;
   }
 }
 
+.tabsection {
+display:none;
+}
+
+.tabsection.active {
+	display:block;
+	top:0;
+}
+
+
 
 .filters-container {
   overflow: hidden;
