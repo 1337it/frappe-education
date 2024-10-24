@@ -100,13 +100,10 @@ var movement = transtarget - transnow;
 	var currentsection = document.querySelectorAll('#app .active')[0].id;
 
 
-document.getElementsByClassName('tabsection active')[0].attributes.style = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
 document.getElementById('homesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementById(currentsection).ClassName = 'tabsection';
-document.getElementById(currentsection).attributes.style = 'display:none;';
-document.getElementById('homesection').className = 'tabsection active';
 document.getElementsByClassName('round-button homestab')[0].className = 'tabsection active';
 
 
@@ -143,27 +140,19 @@ var currentsection = document.querySelectorAll('#app .active')[0].id;
 if (movement > 0)
 {
 
-document.getElementsByClassName('tabsection active')[0].attributes.style = 'animation:page-slide-end-left 0.2s ease';
+ddocument.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
 document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementById(currentsection).ClassName = 'tabsection';
-document.getElementById(currentsection).attributes.style = 'display:none;';
-document.getElementById('schedulesection').className = 'tabsection active';
 
 
 
 }
 if (movement < 0)
 {
-	
-document.getElementsByClassName('tabsection active')[0].attributes.style = 'animation:page-slide-end-right 0.2s ease;display:block;';
-document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-left 0.2s ease';
+ddocument.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
-
-document.getElementById(currentsection).ClassName = 'tabsection';
-document.getElementById(currentsection).attributes.style = 'display:none;';
-document.getElementById('schedulesection').className = 'tabsection active';
 
 
 
