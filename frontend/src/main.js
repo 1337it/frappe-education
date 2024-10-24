@@ -99,18 +99,14 @@ var transtarget = 0;
 var movement = transtarget - transnow;
 
 
-document.getElementsByClassName('flex-1 flex flex-col h-full overflow-auto')[0].attributes.style.value = 'animation:page-slide-start-left 0.2s ease';
-	
+document.getElementsByClassName('tabsection active')[0].attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('homesection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('menutabs')[4].click()
-setTimeout(() => {
-const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].split('%', 1)[0];
-  const frame = document.getElementById("frame");
-  frame.src = person;
-   }, 100);
-
-
+document.getElementsByClassName('tabsection active')[0].classList.remove("active");
+document.getElementsByClassName('round-button active')[0].classList.remove("active");
+document.getElementById('homesection').classList.add("active");
+document.getElementsByClassName('round-button homestab')[0].classList.add("active");
 
 
 }
