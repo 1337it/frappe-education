@@ -162,7 +162,8 @@ const tableData = ref({
   ],
   rows: [],
 })
-const { getCurrentProgram, getStudentGroups, getStudentInfo } = studentStore()
+const { getCurrentProgram, getStudentGroups } = studentStore()
+const { getStudentInfo } = studentStore()
 let studentInfo = getStudentInfo().value
 let currentProgram = getCurrentProgram().value
 const programName = ref(getCurrentProgram()?.value?.program)
@@ -277,8 +278,7 @@ const updateColumns = (exams) => {
 }
 
 
-const { getStudentInfo } = studentStore()
-let studentInfo = getStudentInfo().value
+
 
 const feesResource = createResource({
   url: 'education.education.api.get_student_invoices',
