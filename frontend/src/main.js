@@ -138,7 +138,7 @@ if (event.target.classList.contains("scheduletab")) {
 	var transnow = document.getElementsByClassName('round-button active')[0].attributes[1].value.split('%')[0];
 var transtarget = 200;
 var movement = transtarget - transnow;
-
+var currentsection = document.querySelectorAll('#app .active')[0].id;
 if (movement > 0)
 {
 
@@ -146,7 +146,7 @@ document.getElementsByClassName('tabsection active')[0].attributes.style = 'anim
 document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+document.getElementsByClassName(currentsection)[0].ClassName = 'tabsection';
 
 document.getElementById('schedulesection').className = 'tabsection active';
 
@@ -160,7 +160,7 @@ document.getElementsByClassName('tabsection active')[0].attributes.style = 'anim
 document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-left 0.2s ease';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+document.getElementsByClassName(currentsection)[0].ClassName = 'tabsection';
 
 document.getElementById('schedulesection').className = 'tabsection active';
 
