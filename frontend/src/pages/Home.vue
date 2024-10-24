@@ -298,12 +298,12 @@ const feesResource = createResource({
         return statusA - statusB
       }
     })
-    tableData.rows = invoices
+    tableDataa.rows = invoices
   },
   auto: true,
 })
 
-const tableData = reactive({
+const tableDataa = reactive({
   rows: [],
   columns: [
     {
