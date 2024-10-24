@@ -103,10 +103,10 @@ document.getElementsByClassName('tabsection active')[0].attributes.style.value =
 document.getElementById('homesection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].classList.remove("active");
-document.getElementsByClassName('round-button active')[0].classList.remove("active");
-document.getElementById('homesection').classList.add("active");
-document.getElementsByClassName('round-button homestab')[0].classList.add("active");
+document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+
+document.getElementById('homesection').className = 'tabsection active';
+document.getElementsByClassName('round-button homestab')[0].className = 'tabsection active';
 
 
 }
@@ -123,10 +123,10 @@ document.getElementsByClassName('tabsection active')[0].attributes.style.value =
 document.getElementById('gradessection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].classList.remove("active");
-document.getElementsByClassName('round-button active')[0].classList.remove("active");
-document.getElementById('gradessection').classList.add("active");
-document.getElementsByClassName('round-button gradestab')[0].classList.add("active");
+document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+
+document.getElementById('gradessection').className = 'tabsection active';
+
 
 
 }
@@ -137,10 +137,10 @@ document.getElementsByClassName('tabsection active')[0].attributes.style.value =
 document.getElementById('gradessection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease':
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].classList.remove("active");
-document.getElementsByClassName('round-button active')[0].classList.remove("active");
-document.getElementById('gradessection').classList.add("active");
-document.getElementsByClassName('round-button gradestab')[0].classList.add("active");
+document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+
+document.getElementById('gradessection').className = 'tabsection active';
+
 
 
 
@@ -160,10 +160,10 @@ document.getElementsByClassName('tabsection active')[0].attributes.style.value =
 document.getElementById('schedulesection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].classList.remove("active");
-document.getElementsByClassName('round-button active')[0].classList.remove("active");
-document.getElementById('schedulesection').classList.add("active");
-document.getElementsByClassName('round-button scheduletab')[0].classList.add("active");
+document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+
+document.getElementById('schedulesection').className = 'tabsection active';
+document.getElementsByClassName('round-button scheduletab')[0].className = 'tabsection active';
 
 
 }
@@ -174,10 +174,10 @@ document.getElementsByClassName('tabsection active')[0].attributes.style.value =
 document.getElementById('schedulesection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease':
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].classList.remove("active");
-document.getElementsByClassName('round-button active')[0].classList.remove("active");
-document.getElementById('schedulesection').classList.add("active");
-document.getElementsByClassName('round-button scheduletab')[0].classList.add("active");
+document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+
+document.getElementById('schedulesection').className = 'tabsection active';
+document.getElementsByClassName('round-button scheduletab')[0].className = 'tabsection active';
 
 
 }
@@ -195,10 +195,10 @@ document.getElementsByClassName('tabsection active')[0].attributes.style.value =
 document.getElementById('postssection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].classList.remove("active");
-document.getElementsByClassName('round-button active')[0].classList.remove("active");
-document.getElementById('postssection').classList.add("active");
-document.getElementsByClassName('round-button raventab')[0].classList.add("active");
+document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+
+document.getElementById('postssection').className = 'tabsection active';
+document.getElementsByClassName('round-button raventab')[0].className = 'tabsection active';
 
 
 }
@@ -208,10 +208,10 @@ document.getElementsByClassName('tabsection active')[0].attributes.style.value =
 document.getElementById('postssection').attributes.style.value = 'animation:page-slide-start-right 0.2s ease':
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('tabsection active')[0].classList.remove("active");
-document.getElementsByClassName('round-button active')[0].classList.remove("active");
-document.getElementById('postssection').classList.add("active");
-document.getElementsByClassName('round-button raventab')[0].classList.add("active");
+document.getElementsByClassName('tabsection active')[0].ClassName = 'tabsection';
+
+document.getElementById('postssection').className = 'tabsection active';
+document.getElementsByClassName('round-button raventab')[0].className = 'tabsection active';
 	
 
 
