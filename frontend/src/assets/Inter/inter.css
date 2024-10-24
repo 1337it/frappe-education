@@ -870,13 +870,14 @@ display:none;
 }
 #JSMetroContainer{
 	position:absolute;
-	background-image:url('https://caljer1.github.io/MetronomeLite/img/JSMetronome.png');
+	background-image:url('/files/JSMetronome.png');
 	width:300px;
 	height:339px;
 	margin-left:0px;
 	margin-top:50vh;
 	cursor:default;
 	font-family: verdana,  Tahoma, Geneva, sans-serif;
+	z-index:999;
 }
 
 #tapBkg{
