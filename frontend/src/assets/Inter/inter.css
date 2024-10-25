@@ -289,7 +289,7 @@ display: none;
 #startup
 {
 height:100vh;
-	width:100vh;
+	width:100vw;
 	position:fixed;
 	background:white;
 	z-index:99999;
