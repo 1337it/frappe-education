@@ -884,6 +884,20 @@ position: absolute;
     background-position: top;
     padding-left: calc(50vw - 150px);
 }
+#metroclose
+{
+position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-image: url('/files/close-x.svg');
+    color: black;
+    font-size: 20px;
+
+
+}
 
 #tapBkg{
 	background-image:url('https://caljer1.github.io/MetronomeLite/img/tap_bkg.png');
