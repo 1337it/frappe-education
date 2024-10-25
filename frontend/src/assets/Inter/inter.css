@@ -914,7 +914,7 @@ position: absolute;
     background-position: top;
     padding-left: calc(50vw - 150px);
 }
-#opentanpura
+[style^="--translate-main-slider: 0"] #opentanpura
 {
 	height: 40px;
     width: 40px;
@@ -927,7 +927,7 @@ position: absolute;
     background-repeat: no-repeat;
 }
 
-#openmetro
+[style^="--translate-main-slider: 0"] #openmetro
 {
 	height: 40px;
     width: 40px;
