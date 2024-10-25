@@ -139,7 +139,9 @@ var movement = transtarget - transnow;
 
 document.getElementsByClassName("tabsection").attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
 	
-setTimeout(() => {  document.getElementById('homesection') = 'animation:page-slide-start-left 0.2s ease;';		 }, 200);
+setTimeout(() => {
+	document.getElementById('homesection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease;';
+		 }, 200);
 
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
