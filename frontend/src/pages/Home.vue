@@ -367,4 +367,13 @@ const success = () => {
     iconClasses: 'text-green-600',
   })
 }
+	document.getElementById("openmetro").addEventListener("click", (event) => {
+
+
+	document.getElementById("JSMetroContainer").attributes.style.value = '';
+document.getElementById("JSMetroContainer").attributes.style.value = 'animation:appear 0.2s ease';
+
+
+	
+});
 </script>
