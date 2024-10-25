@@ -199,19 +199,19 @@ body {
 }
 @keyframes roll {
   from {
-    opacity: 1;
+    transform: rotatez(0);
   }
-  100% {
-    opacity: 0;
+  to {
+    transform: rotatez(360deg);
   }
 }
 
 @keyframes disappear {
   from {
-    transform: rotatez(0);
+    opacity: 1;
   }
-  to {
-    transform: rotatez(360deg);
+  100% {
+    opacity: 0;
   }
 }
 
