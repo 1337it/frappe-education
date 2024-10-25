@@ -987,7 +987,7 @@ position: absolute;
     position: fixed;
     left: 0;
     width: 100vw;
-    height: 35vh;
+    height: 20vh;
     text-align: center;
     font-size: 12px;
     color: #a3a3a3;
@@ -1012,7 +1012,7 @@ position: absolute;
 }
 
 #power:hover{
-	background-image:url('https://caljer1.github.io/MetronomeLite/img/power_focus.png');
+	background-image:url('/files/poweroff.svg');
 }
 
 
