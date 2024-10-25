@@ -391,8 +391,8 @@ display:none !important;
 }
 .rounded-full {
 border-radius: 9999px;
-	width: 25vw !important;
-height: 25vw !important;
+	width: 40vw !important;
+height: 40vw !important;
 }
 .text-base.overflow-auto {
 overflow: auto;
