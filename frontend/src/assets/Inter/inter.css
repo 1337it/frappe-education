@@ -293,6 +293,10 @@ height:100vh;
 	position:fixed;
 	background:white;
 	z-index:99999;
+	top:0;
+	left:0;
+	    justify-items: center;
+    align-content: center;
 }
 .font-semibold {
 font-weight: 300;
