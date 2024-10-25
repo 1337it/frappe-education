@@ -215,6 +215,15 @@ body {
   }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .text {
   margin: 2.6rem auto 0;
   width: 200px;
