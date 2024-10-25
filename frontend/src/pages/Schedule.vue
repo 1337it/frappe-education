@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full" style="animation:page-slide-end-right 0.2s ease">
+  <div class="w-full h-full">
     <Calendar
       v-if="!scheduleResource.loading && scheduleResource.data"
       :events="events"
