@@ -79,13 +79,25 @@ const handleActiveTab = (tabs, event, className) => {
   }
 };
 
+document.getElementById("metroclose").addEventListener("click", (event) => {
+
+document.getElementById("metroclose").attributes.style.value = 'animation:disappear 0.2s ease';
+
+
+ setTimeout(() => {
+document.getElementById("metroclose").attributes.style.value = 'display:none;';
+	 }, 200);
+
+
+}
+
  setTimeout(() => {
 document.getElementById("startup").attributes.style.value = 'animation:disappear 0.2s ease';
-	   }, 1000);
+	   }, 2000);
 
  setTimeout(() => {
 document.getElementById("startup").attributes.style.value = 'display:none;';
-	 }, 1200);
+	 }, 2200);
 
 mainTabs.addEventListener("click", (event) => {
   const root = document.documentElement;
@@ -128,10 +140,8 @@ if (movement > 0)
 document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
 document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
-
-
-
 }
+	
 if (movement < 0)
 {
 
