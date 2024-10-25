@@ -81,10 +81,11 @@ const handleActiveTab = (tabs, event, className) => {
 
  setTimeout(() => {
 document.getElementById("startup").attributes.style = 'animation:disappear 0.2s ease';
+	   }, 1000);
+
  setTimeout(() => {
 document.getElementById("startup").attributes.style = 'display:none;';
-	 }, 200);
-	   }, 1000);
+	 }, 1200);
 
 mainTabs.addEventListener("click", (event) => {
   const root = document.documentElement;
