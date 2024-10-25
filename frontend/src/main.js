@@ -87,9 +87,7 @@ document.getElementById("metroclose").attributes.style.value = 'animation:disapp
  setTimeout(() => {
 document.getElementById("metroclose").attributes.style.value = 'display:none;';
 	 }, 200);
-
-
-}
+});
 
  setTimeout(() => {
 document.getElementById("startup").attributes.style.value = 'animation:disappear 0.2s ease';
