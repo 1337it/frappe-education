@@ -79,6 +79,13 @@ const handleActiveTab = (tabs, event, className) => {
   }
 };
 
+ setTimeout(() => {
+document.getElementById("startup").attributes.style = 'animation:disappear 0.2s ease';
+ setTimeout(() => {
+document.getElementById("startup").attributes.style = 'display:none;';
+	 }, 200);
+	   }, 1000);
+
 mainTabs.addEventListener("click", (event) => {
   const root = document.documentElement;
   const targetColor = event.target.dataset.color;
