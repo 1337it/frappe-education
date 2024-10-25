@@ -994,6 +994,7 @@ position: absolute;
     cursor: pointer;
     bottom: 0;
     align-content: center;
+	    background: #2f2f2f;
 }
 
 #tap:hover{
