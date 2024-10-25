@@ -272,7 +272,7 @@ document.getElementById(currentsection).attributes.style = 'animation:page-slide
 document.getElementById('transportsection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-console.log('fromright);
+console.log('fromright');
 
 }
 
