@@ -1,11 +1,11 @@
 <template>
-  <div id='homesection' class='tabsection active' style=''>
+  <div id='homesection' class='tabsection active' style='opacity:1;'>
 	  <iframe src='' id='frame' height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;background-image: linear-gradient(180deg, #f6d365 0%, #fd8785bd 100%);" title="Posts"></iframe>
 </div>
-	<div id='postssection' class='tabsection' style=''>
+	<div id='postssection' class='tabsection' style='opacity:1;'>
   <iframe src="/g/general/projects/3/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
 </div>
-	<div id='gradesection' class='tabsection' style=''>
+	<div id='gradesection' class='tabsection' style='opacity:1;'>
   <div v-if="grades.data?.length > 0">
     <div class="px-5 py-4">
       <Dropdown class="mb-4" :options="allPrograms">
@@ -37,7 +37,7 @@
     <MissingData message="No grades found" />
   </div>
 		</div>
-<div id='feessection' class='tabsection' style=''>
+<div id='feessection' class='tabsection' style='opacity:1;'>
   <div v-if="tableData.rows.length > 0" class="px-5 py-4">
     <ListView
       :columns="tableData.columns"
@@ -107,7 +107,7 @@
     <MissingData message="No Fees found" />
   </div>
 </div>
-<div id='schedulesection' class='tabsection' style=''>
+<div id='schedulesection' class='tabsection' style='opacity:1;'>
   <div class="w-full h-full">
     <Calendar
       v-if="!scheduleResource.loading && scheduleResource.data"
@@ -115,7 +115,7 @@
     />
   </div>
 	</div>
-	<div id='gradesection' class='tabsection' style=''>
+	<div id='gradesection' class='tabsection' style='opacity:1;'>
 		</div>
 </template>
 <script setup>
