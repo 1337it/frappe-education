@@ -137,9 +137,9 @@ var movement = transtarget - transnow;
 	
 
 
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease';
 	setTimeout(() => {
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;';
+document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;';
 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -154,7 +154,7 @@ var transtarget = 100;
 var movement = transtarget - transnow;
 	
 
-if (movement > 0)
+if (movement < 0)
 {
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
 setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
@@ -162,7 +162,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 	console.log('fromleft');
 }
 	
-if (movement < 0)
+if (movement > 0)
 {
 
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
@@ -181,7 +181,7 @@ var transtarget = 200;
 var movement = transtarget - transnow;
 
 	console.log(movement);
-if (movement > 0)
+if (movement < 0)
 {
 
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
@@ -192,7 +192,7 @@ console.log('fromleft');
 
 
 }
-if (movement < 0)
+if (movement > 0)
 {
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
 setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
@@ -209,7 +209,7 @@ if (event.target.classList.contains("raventab")) {
 var transtarget = 300;
 var movement = transtarget - transnow;
 	console.log(movement);
-if (movement > 0)
+if (movement < 0)
 {
 
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
@@ -217,7 +217,7 @@ setTimeout(() => { document.getElementById('app').attributes.style.value  = 'ani
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
-if (movement < 0)
+if (movement > 0)
 {
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
 setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
@@ -235,7 +235,7 @@ var transtarget = 400;
 var movement = transtarget - transnow;
 
 	console.log(movement);
-if (movement > 0)
+if (movement < 0)
 {
 
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
@@ -246,7 +246,7 @@ console.log('fromleft');
 
 
 }
-if (movement < 0)
+if (movement > 0)
 {
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
 setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
@@ -265,7 +265,7 @@ var movement = transtarget - transnow;
 
 	
 	console.log(movement);
-if (movement > 0)
+if (movement < 0)
 {
 
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
@@ -276,7 +276,7 @@ console.log('fromleft');
 
 
 }
-if (movement < 0)
+if (movement > 0)
 {
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
 setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
