@@ -138,10 +138,12 @@ var movement = transtarget - transnow;
 
 
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
+	setTimeout(() => {
+document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;';
+		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementsByClassName('round-button homestab')[0].className = 'tabsection active';
+
 
 
 }
@@ -155,7 +157,7 @@ var movement = transtarget - transnow;
 if (movement > 0)
 {
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
@@ -164,7 +166,7 @@ if (movement < 0)
 {
 
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -183,7 +185,7 @@ if (movement > 0)
 {
 
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('app').attributes.style.value = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromleft');
@@ -193,7 +195,7 @@ console.log('fromleft');
 if (movement < 0)
 {
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -211,14 +213,14 @@ if (movement > 0)
 {
 
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
 if (movement < 0)
 {
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -237,7 +239,7 @@ if (movement > 0)
 {
 
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromleft');
@@ -247,7 +249,7 @@ console.log('fromleft');
 if (movement < 0)
 {
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -267,7 +269,7 @@ if (movement > 0)
 {
 
 document.getElementById('app').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromleft');
@@ -277,7 +279,7 @@ console.log('fromleft');
 if (movement < 0)
 {
 document.getElementById('app').attributes.style.value = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
+setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromright');
