@@ -7,7 +7,7 @@
 </div>
 	<div id='gradesection' class='tabsection' style=''>
   <div v-if="grades.data?.length > 0">
-    <div class="px-5 py-4" style="animation:page-slide-end-right 0.2s ease">
+    <div class="px-5 py-4">
       <Dropdown class="mb-4" :options="allPrograms">
         <template #default="{ open }">
           <Button :label="selectedProgram">
@@ -38,7 +38,7 @@
   </div>
 		</div>
 <div id='feessection' class='tabsection' style=''>
-  <div v-if="tableData.rows.length > 0" class="px-5 py-4" style="animation:page-slide-end-right 0.2s ease">
+  <div v-if="tableData.rows.length > 0" class="px-5 py-4">
     <ListView
       :columns="tableData.columns"
       :rows="tableData.rows"
@@ -108,7 +108,7 @@
   </div>
 </div>
 <div id='schedulesection' class='tabsection' style=''>
-  <div class="w-full h-full" style="animation:page-slide-end-right 0.2s ease">
+  <div class="w-full h-full">
     <Calendar
       v-if="!scheduleResource.loading && scheduleResource.data"
       :events="events"
