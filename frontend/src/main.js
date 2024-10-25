@@ -81,11 +81,11 @@ const handleActiveTab = (tabs, event, className) => {
 
 document.getElementById("metroclose").addEventListener("click", (event) => {
 
-document.getElementById("metroclose").attributes.style.value = 'animation:disappear 0.2s ease';
+document.getElementById("JSMetroContainer").attributes.style.value = 'animation:disappear 0.2s ease';
 
 
  setTimeout(() => {
-document.getElementById("metroclose").attributes.style.value = 'display:none;';
+document.getElementById("JSMetroContainer").attributes.style.value = 'display:none;';
 	 }, 200);
 });
 
