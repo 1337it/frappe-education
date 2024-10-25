@@ -138,7 +138,7 @@ var movement = transtarget - transnow;
 
 
 for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
-}
+
 setTimeout(() => {
 	document.getElementById('homesection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease;';
 		 }, 200);
