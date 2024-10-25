@@ -3,7 +3,7 @@
 	  <iframe src='' id='frame' height="100%" width="100%" style="padding: 0px;margin: 0px;animation: page-slide-down 0.2s;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;background-image: linear-gradient(180deg, #f6d365 0%, #fd8785bd 100%);" title="Posts"></iframe>
 </div>
 	<div id='postssection' class='tabsection' style=''>
-  <iframe src="/g/general/projects/3/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;animation:page-slide-end-right 0.2s ease;" title="Posts"></iframe>
+  <iframe src="/g/general/projects/3/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
 </div>
 	<div id='gradesection' class='tabsection' style=''>
   <div v-if="grades.data?.length > 0">
