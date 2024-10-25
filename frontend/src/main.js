@@ -89,17 +89,7 @@ document.getElementById("JSMetroContainer").attributes.style.value = 'display:no
 	 }, 200);
 });
 
-document.getElementById("openmetro").addEventListener("click", (event) => {
 
-
-	document.getElementById("JSMetroContainer").attributes.style.value = '';
-document.getElementById("JSMetroContainer").attributes.style.value = 'animation:appear 0.2s ease';
-
-
-
-document.getElementById("JSMetroContainer").attributes.style.value = 'display:none;';
-	
-});
 
  setTimeout(() => {
 document.getElementById("startup").attributes.style.value = 'animation:disappear 0.2s ease';
