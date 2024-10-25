@@ -125,11 +125,11 @@ if (event.target.classList.contains("homestab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 0;
 var movement = transtarget - transnow;
-	var currentsection = document.querySelectorAll('#app .active')[0].id;
+	
 
 
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('homesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
+document.getElementById('app').attributes.style  = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 document.getElementsByClassName('round-button homestab')[0].className = 'tabsection active';
@@ -141,12 +141,12 @@ if (event.target.classList.contains("gradestab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 100;
 var movement = transtarget - transnow;
-	var currentsection = document.querySelectorAll('#app .active')[0].id;
+	
 
 if (movement > 0)
 {
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
+document.getElementById('app').attributes.style  = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
@@ -154,8 +154,8 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 if (movement < 0)
 {
 
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('gradesection').attributes.style = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
+document.getElementById('app').attributes.style = 'animation:page-slide-end-right 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -168,13 +168,13 @@ if (event.target.classList.contains("scheduletab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 200;
 var movement = transtarget - transnow;
-var currentsection = document.querySelectorAll('#app .active')[0].id;
+
 	console.log(movement);
 if (movement > 0)
 {
 
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
+document.getElementById('app').attributes.style = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('app').attributes.style = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromleft');
@@ -183,8 +183,8 @@ console.log('fromleft');
 }
 if (movement < 0)
 {
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('schedulesection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
+document.getElementById('app').attributes.style = 'animation:page-slide-end-right 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -197,20 +197,19 @@ if (event.target.classList.contains("raventab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 300;
 var movement = transtarget - transnow;
-var currentsection = document.querySelectorAll('#app .active')[0].id;
 	console.log(movement);
 if (movement > 0)
 {
 
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('postssection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
+document.getElementById('app').attributes.style  = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
 if (movement < 0)
 {
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('postssection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
+document.getElementById('app').attributes.style = 'animation:page-slide-end-right 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -223,13 +222,13 @@ if (event.target.classList.contains("feestab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 400;
 var movement = transtarget - transnow;
-var currentsection = document.querySelectorAll('#app .active')[0].id;
+
 	console.log(movement);
 if (movement > 0)
 {
 
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('feessection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
+document.getElementById('app').attributes.style  = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromleft');
@@ -238,8 +237,8 @@ console.log('fromleft');
 }
 if (movement < 0)
 {
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('feessection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
+document.getElementById('app').attributes.style = 'animation:page-slide-end-right 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -252,14 +251,14 @@ if (event.target.classList.contains("transporttab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 500;
 var movement = transtarget - transnow;
-var currentsection = document.querySelectorAll('#app .active')[0].id;
+
 	
 	console.log(movement);
 if (movement > 0)
 {
 
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-left 0.2s ease';
-document.getElementById('transportsection').attributes.style = 'animation:page-slide-start-right 0.2s ease;';
+document.getElementById('app').attributes.style  = 'animation:page-slide-end-left 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-right 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromleft');
@@ -268,8 +267,8 @@ console.log('fromleft');
 }
 if (movement < 0)
 {
-document.getElementById(currentsection).attributes.style = 'animation:page-slide-end-right 0.2s ease';
-document.getElementById('transportsection').attributes.style = 'animation:page-slide-start-left 0.2s ease;';
+document.getElementById('app').attributes.style = 'animation:page-slide-end-right 0.2s ease';
+document.getElementById('app').attributes.style  = 'animation:page-slide-start-left 0.2s ease;animation-delay:0.2s;';
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromright');
@@ -429,7 +428,6 @@ console.log('fromright');
 		}else{
 			this.vars.power = true;
 			this.tick();
-			navigator.vibrate(10);
 		};
 	},
 	init: function(){
