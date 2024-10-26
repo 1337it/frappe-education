@@ -1019,9 +1019,9 @@ display:none;
   src: url('Inter-BlackItalic.woff2?v=3.12') format('woff2'),
     url('Inter-BlackItalic.woff?v=3.12') format('woff');
 }
-#JSoContainer{
+#JSMetroContainer{
 position: absolute;
-    background-image: url(/files/JSonome.png);
+    background-image: url(/files/JSMetronome.png);
     width: 100vw;
     height: 100vh;
     margin-left: 0;
