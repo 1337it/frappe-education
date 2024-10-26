@@ -159,7 +159,7 @@ var movement = transtarget - transnow;
 if (movement < 0)
 {
 for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; }
-setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
@@ -168,7 +168,7 @@ if (movement > 0)
 {
 
 for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
-setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -187,7 +187,7 @@ if (movement < 0)
 {
 
 for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; }
-setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromleft');
@@ -197,7 +197,7 @@ console.log('fromleft');
 if (movement > 0)
 {
 for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
-setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -215,14 +215,14 @@ if (movement < 0)
 {
 
 for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; }
-setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
 if (movement > 0)
 {
 for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
-setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
