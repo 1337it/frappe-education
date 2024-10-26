@@ -131,7 +131,7 @@ if(isMobile)  {
 
 
 
-if (event.target.classList.contains("homestab")) {
+if (event.target.classList.contains("hometab")) {
 
 	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
 	document.getElementById(currentsection).classList.remove('active');
@@ -139,7 +139,7 @@ if (event.target.classList.contains("homestab")) {
 
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-
+setTimeout(() => { document.getElementById('homesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 200);
 
 
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
