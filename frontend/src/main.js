@@ -136,17 +136,18 @@ var transtarget = 0;
 var movement = transtarget - transnow;
 	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
 	document.getElementById(currentsection).classList.remove('active');
+	document.getElementById('homesection').classList.add('active');
 
 
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
 
 setTimeout(() => {
-	document.getElementById('homesection').attributes.style.value = 'animation:page-slide-end-right 0.2s ease;';
+	document.getElementById('homesection').attributes.style.value = 'animation:page-slide-end-left 0.2s ease;';
 		 }, 200);
 
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-document.getElementById('homesection').classList.add('active');
+
 
 
 }
