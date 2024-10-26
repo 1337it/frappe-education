@@ -139,7 +139,7 @@ if (event.target.classList.contains("hometab")) {
 
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('homesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('homesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
 
 
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
@@ -159,7 +159,7 @@ document.getElementById('gradesection').classList.add('active');
 if (movement < 0)
 {
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 	
@@ -169,7 +169,7 @@ if (movement > 0)
 {
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
-setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -190,7 +190,7 @@ if (movement < 0)
 {
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 console.log('fromleft');
@@ -200,7 +200,7 @@ console.log('fromleft');
 if (movement > 0)
 {
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
-setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -221,14 +221,14 @@ if (movement < 0)
 {
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
 if (movement > 0)
 {
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
-setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -249,14 +249,14 @@ if (movement < 0)
 {
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
 if (movement > 0)
 {
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
-setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -273,7 +273,7 @@ if (event.target.classList.contains("transporttab")) {
 	document.getElementById('feessection').classList.add('active');
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
-setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 200);
+setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -302,7 +302,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
     root.style.setProperty("--translate-main-slider", targetTranslateValue);
     root.style.setProperty("--main-slider-color", getColor(targetColor, 50));
     root.style.setProperty("--background-color", getColor(targetColor, 100));
-    }, 200);
+    }, 100);
     handleActiveTab(roundButtons, event, "active");
 
     
