@@ -1153,12 +1153,13 @@ position: absolute;
     width: 100vw;
     height: 20vh;
     text-align: center;
-    font-size: 12px;
+    font-size: 18px;
     color: #a3a3a3;
     cursor: pointer;
     bottom: 0;
     align-content: center;
 	    background: #2f2f2f;
+	letter-spacing:5px;
 }
 
 #tap:hover{
