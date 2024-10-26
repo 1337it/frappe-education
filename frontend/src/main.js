@@ -79,7 +79,7 @@ const handleActiveTab = (tabs, event, className) => {
   }
 };
 
-document.getElementById('homesection').classList.add('active');
+
 document.getElementById("metroclose").addEventListener("click", (event) => {
 
 document.getElementById("JSMetroContainer").attributes.style.value = 'animation:disappear 0.2s ease';
