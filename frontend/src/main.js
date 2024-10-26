@@ -134,10 +134,11 @@ if (event.target.classList.contains("homestab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 0;
 var movement = transtarget - transnow;
-	
+	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
+	document.getElementById(currentsection).classList.remove('active');
 
 
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
 
 setTimeout(() => {
 	document.getElementById('homesection').attributes.style.value = 'animation:page-slide-start-left 0.2s ease;';
@@ -145,7 +146,7 @@ setTimeout(() => {
 
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-
+document.getElementById('homesection').classList.add('active');
 
 
 }
@@ -154,20 +155,22 @@ if (event.target.classList.contains("gradestab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 100;
 var movement = transtarget - transnow;
-	
-
+	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
+	document.getElementById(currentsection).classList.remove('active');
+document.getElementById('gradesection').classList.add('active');
 if (movement < 0)
 {
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
+	
 }
 	
 if (movement > 0)
 {
 
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -181,12 +184,14 @@ if (event.target.classList.contains("scheduletab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 200;
 var movement = transtarget - transnow;
-
+var currentsection = document.getElementsByClassName("tabsection active")[0].id;
+	document.getElementById(currentsection).classList.remove('active');
 	console.log(movement);
+	document.getElementById('schedulesection').classList.add('active');
 if (movement < 0)
 {
 
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -196,7 +201,7 @@ console.log('fromleft');
 }
 if (movement > 0)
 {
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -210,18 +215,21 @@ if (event.target.classList.contains("raventab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 300;
 var movement = transtarget - transnow;
+	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
+	document.getElementById(currentsection).classList.remove('active');
 	console.log(movement);
+	document.getElementById('postssection').classList.add('active');
 if (movement < 0)
 {
 
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 	console.log('fromleft');
 }
 if (movement > 0)
 {
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -235,12 +243,14 @@ if (event.target.classList.contains("feestab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 400;
 var movement = transtarget - transnow;
-
+var currentsection = document.getElementsByClassName("tabsection active")[0].id;
+	document.getElementById(currentsection).classList.remove('active');
 	console.log(movement);
+	document.getElementById('feessection').classList.add('active');
 if (movement < 0)
 {
 
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -250,7 +260,7 @@ console.log('fromleft');
 }
 if (movement > 0)
 {
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -264,13 +274,14 @@ if (event.target.classList.contains("transporttab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 500;
 var movement = transtarget - transnow;
-
-	
+var currentsection = document.getElementsByClassName("tabsection active")[0].id;
+	document.getElementById(currentsection).classList.remove('active');
+	document.getElementById('transporttab').classList.add('active');
 	console.log(movement);
 if (movement < 0)
 {
 
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-left 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
@@ -280,7 +291,7 @@ console.log('fromleft');
 }
 if (movement > 0)
 {
-for (let i = 0; i < document.getElementsByClassName("tabsection")[i].length; i++) { document.getElementsByClassName("tabsection")[i].attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; }
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
