@@ -365,5 +365,5 @@ const success = () => {
     iconClasses: 'text-green-600',
   })
 }
-
+document.getElementById('homesection').classList.add('active');
 </script>
