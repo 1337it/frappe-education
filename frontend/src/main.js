@@ -120,7 +120,7 @@ mainTabs.addEventListener("click", (event) => {
   const root = document.documentElement;
   const targetColor = event.target.dataset.color;
   const targetTranslateValue = event.target.dataset.translateValue;
-	var isMobile = /iPhone|iPod|iPad|Android|BlackBerry/.test(navigator.userAgent)
+	var isMobile = /Android|BlackBerry/.test(navigator.userAgent)
  
 if(isMobile)  {
   navigator.vibrate(5)
@@ -131,9 +131,7 @@ if(isMobile)  {
 
 
 if (event.target.classList.contains("homestab")) {
-	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
-var transtarget = 0;
-var movement = transtarget - transnow;
+
 	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
 	document.getElementById(currentsection).classList.remove('active');
 	document.getElementById('homesection').classList.add('active');
