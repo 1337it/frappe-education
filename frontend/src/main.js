@@ -243,25 +243,22 @@ if (event.target.classList.contains("feestab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 400;
 var movement = transtarget - transnow;
-var currentsection = document.getElementsByClassName("tabsection active")[0].id;
+	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
 	document.getElementById(currentsection).classList.remove('active');
 	console.log(movement);
 	document.getElementById('feessection').classList.add('active');
 if (movement < 0)
 {
 
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
+setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
-
-console.log('fromleft');
-
-
+	console.log('fromleft');
 }
 if (movement > 0)
 {
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
+setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 
@@ -271,33 +268,19 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6
 }
 
 if (event.target.classList.contains("transporttab")) {
-	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
-var transtarget = 500;
-var movement = transtarget - transnow;
-var currentsection = document.getElementsByClassName("tabsection active")[0].id;
+
+	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
 	document.getElementById(currentsection).classList.remove('active');
-	document.getElementById('transporttab').classList.add('active');
 	console.log(movement);
-if (movement < 0)
-{
+	document.getElementById('feessection').classList.add('active');
 
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-right 0.2s ease;'; 		 }, 200);
+document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
+setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 200);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-console.log('fromleft');
 
 
-}
-if (movement > 0)
-{
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-end-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('app').attributes.style.value  = 'animation:page-slide-start-left 0.2s ease;'; 		 }, 200);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
-console.log('fromright');
-
-}
 
 }
 
