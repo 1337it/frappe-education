@@ -1176,9 +1176,7 @@ position: absolute;
 	 background-size: contain;
 }
 
-#power:hover{
-	background-image:url('/files/poweroff.svg');
-}
+
 
 
 #TempoContainer{
