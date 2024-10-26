@@ -1174,6 +1174,7 @@ position: absolute;
     height: 50px;
     cursor: pointer;
 	 background-size: contain;
+	filter: brightness(2);
 }
 
 
