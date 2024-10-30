@@ -282,8 +282,7 @@ const tableData = ref({
   rows: [],
 })
 
-const { getStudentInfo } = studentStore()
-let studentInfo = getStudentInfo().value
+
 let currentProgram = getCurrentProgram().value
 const programName = ref(getCurrentProgram()?.value?.program)
 const studentGroup = ref(getStudentGroups().value)
