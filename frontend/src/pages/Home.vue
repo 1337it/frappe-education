@@ -2,6 +2,15 @@
   <div id='homesection' class='tabsection active' style='opacity:1;'>
 	  <iframe src='' id='frame' height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;background-image: linear-gradient(180deg, #f6d365 0%, #fd8785bd 100%);" title="Posts"></iframe>
 </div>
+	 <div id='attendancemodal' class='homemodal' style='opacity:1;display:none;'>
+	  <div class="h-full">
+      <Calendar
+        v-if="!attendanceResource.loading && attendanceResource.data"
+        :events="attendanceResource.data"
+      />
+      <Calendar v-else :events="[]" />
+    </div>
+	 </div>
 	<div id='postssection' class='tabsection' style='opacity:1;'>
   <iframe src="/g/general/projects/3/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
 </div>
@@ -142,7 +151,117 @@ import { studentStore } from '@/stores/student'
   createListResource,
 } from 'frappe-ui'
 import { groupBy } from '@/utils'
+import { onMounted } from 'vue'
+import { leaveStore } from '@/stores/leave'
 
+import { Dialog } from 'frappe-ui'
+import { storeToRefs } from 'pinia'
+import NewLeave from '@/components/NewLeave.vue'
+
+const { getCurrentProgram, getStudentInfo, getStudentGroups } = studentStore()
+const programName = ref(getCurrentProgram().value?.program)
+
+let studentInfo = getStudentInfo().value
+
+// storeToRefs converts isAttendancePage to a ref, hence achieving reactivity
+const { isAttendancePage } = storeToRefs(leaveStore())
+
+onMounted(() => {
+  setStudentGroup()
+})
+
+const selectedGroup = ref('Select Student Group')
+const allStudentGroups = ref()
+function setStudentGroup() {
+  allStudentGroups.value = getStudentGroups().value
+  allStudentGroups.value.forEach(
+    (group) =>
+      (group.onClick = () => {
+        if (group.label === selectedGroup.value) return
+        selectedGroup.value = group.label
+        attendanceResource.reload()
+      })
+  )
+  selectedGroup.value =
+    allStudentGroups.value[0].label || 'Select Student Group'
+  attendanceResource.update({
+    params: {
+      student_group: selectedGroup.value,
+      student: studentInfo.name,
+    },
+  })
+  attendanceResource.reload()
+}
+
+const newLeave = reactive({
+  student: studentInfo.name,
+  student_name: studentInfo.student_name,
+  from_date: '',
+  to_date: '',
+  reason: '',
+  total_days: '',
+})
+
+const attendanceStatus = {
+  Present: 'bg-green-100',
+  Absent: 'bg-red-200',
+  Leave: 'bg-orange-100',
+}
+
+const attendanceResource = createResource({
+  url: 'education.education.api.get_student_attendance',
+  params: {
+    student_group: selectedGroup.value,
+    student: studentInfo.name,
+  },
+  transform: (attendance) => {
+    // filter attendance to remove duplicate attendance data
+    attendance = attendance.filter(
+      (attendance, index, self) =>
+        index === self.findIndex((t) => t.date === attendance.date)
+    )
+
+    let events = []
+
+    attendance.forEach((attendance) => {
+      events.push({
+        name: attendance.name,
+        title: attendance.status,
+        background_color: attendanceStatus[attendance.status],
+        date: attendance.date,
+        status: attendance.status,
+      })
+    })
+    return events
+  },
+  onError: (err) => {
+    console.log('Error', err)
+  },
+})
+
+const applyLeave = createResource({
+  url: 'education.education.api.apply_leave',
+  params: {
+    leave_data: newLeave,
+    program_name: programName.value,
+  },
+  onSuccess: () => {
+    isAttendancePage.value = false
+    attendanceResource.reload()
+    createToast({
+      title: 'Attendance Applied Successful',
+      icon: 'check',
+      iconClasses: 'text-green-600',
+    })
+  },
+  onError: (err) => {
+    createToast({
+      title: err.messages[0] ?? 'Error Occured',
+      icon: 'x',
+      iconClasses: 'text-red-600',
+    })
+  },
+})
 
 
 
