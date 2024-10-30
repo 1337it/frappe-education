@@ -154,7 +154,7 @@ const chart = new Chart("#attendancepie", {  // or a DOM element,
     title: "My Awesome Chart",
     data: data,
     type: 'pie', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
-    height: 10vh,
+    height: 150,
     colors: ['#7cd6fd', '#743ee2']
 })
 </script>
