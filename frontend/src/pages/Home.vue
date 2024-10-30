@@ -8,7 +8,7 @@
 		
 		</div>
 	<div id='attendancecont' class='cont' style='opacity:1;bottom: 90px;'>
-		<div id="attendancepie"></div>
+		
 		<button id='attendancebutton'></button>
 	 <div id='attendancemodal' class='homemodal' style='opacity:1;display:none;'>
 	  <div class="h-full">
