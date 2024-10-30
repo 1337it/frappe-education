@@ -239,29 +239,7 @@ const attendanceResource = createResource({
   },
 })
 
-const applyLeave = createResource({
-  url: 'education.education.api.apply_leave',
-  params: {
-    leave_data: newLeave,
-    program_name: programName.value,
-  },
-  onSuccess: () => {
-    isAttendancePage.value = false
-    attendanceResource.reload()
-    createToast({
-      title: 'Attendance Applied Successful',
-      icon: 'check',
-      iconClasses: 'text-green-600',
-    })
-  },
-  onError: (err) => {
-    createToast({
-      title: err.messages[0] ?? 'Error Occured',
-      icon: 'x',
-      iconClasses: 'text-red-600',
-    })
-  },
-})
+
 
 
 
