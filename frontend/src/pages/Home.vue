@@ -159,7 +159,7 @@ import { storeToRefs } from 'pinia'
 import NewLeave from '@/components/NewLeave.vue'
 
 const { getCurrentProgram, getStudentInfo, getStudentGroups } = studentStore()
-const programName = ref(getCurrentProgram().value?.program)
+
 
 let studentInfo = getStudentInfo().value
 
@@ -281,7 +281,7 @@ const tableData = ref({
   ],
   rows: [],
 })
-const { getCurrentProgram, getStudentGroups } = studentStore()
+
 const { getStudentInfo } = studentStore()
 let studentInfo = getStudentInfo().value
 let currentProgram = getCurrentProgram().value
