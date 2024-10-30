@@ -220,7 +220,7 @@ const attendanceResource = createResource({
       (attendance, index, self) =>
         index === self.findIndex((t) => t.date === attendance.date)
     )
-
+console.log(attendance);
     let events = []
 
     attendance.forEach((attendance) => {
@@ -238,7 +238,7 @@ const attendanceResource = createResource({
     console.log('Error', err)
   },
 })
-
+console.log(attendanceResource);
 
 
 
