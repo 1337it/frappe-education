@@ -151,10 +151,10 @@
 
 const chart = new Chart("#attendancepie", {  // or a DOM element,
                                             // new Chart() in case of ES6 module with above usage
-    title: "My Awesome Chart",
+    title: "",
     data: data,
     type: 'pie', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
-    height: 150,
+    height: 250,
     colors: ['#7cd6fd', '#743ee2']
 })
 </script>
