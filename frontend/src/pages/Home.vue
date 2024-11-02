@@ -1,13 +1,13 @@
 <template>
   <div id='homesection' class='tabsection active' style='opacity:1;'>
 	  <iframe src='' id='frame' height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;background-image: linear-gradient(180deg, #f6d365 0%, #fd8785bd 100%);" title="Posts"></iframe>
-<div id='badgescont' class='cont' style='opacity:1;bottom: calc(130px + 30vh);'>
+<div id='badgescont' class='cont' style='opacity: 1;top: calc(3vh + 30vh);'>
 		
 		</div>
-	  <div id='upcont' class='cont' style='opacity:1;bottom: calc(110px + 15vh);'>
+	  <div id='upcont' class='cont' style='opacity: 1; top: calc(6vh + 45vh);'>
 		
 		</div>
-	<div id='attendancecont' class='cont' style='opacity:1;bottom: 90px;'>
+	<div id='attendancecont' class='cont' style='opacity: 1; top: 69vh;'>
 		
 		<button id='attendancebutton'></button>
 	 <div id='attendancemodal' class='homemodal' style='opacity:1;display:none;'>
