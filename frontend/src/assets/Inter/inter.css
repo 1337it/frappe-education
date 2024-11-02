@@ -844,12 +844,11 @@ display:none;
     height: 15vh;
     background: white;
     position: absolute;
-    
-    width: calc(100% - 0px);
+    width: calc(100% - 20px);
     z-index: 99;
-    /* left: 20px; */
-    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.1), 0 0 0 1px hsla(230, 13%, 9%, 0.075), 0 0.3px 0.4px hsla(230, 13%, 9%, 0.02), 0 0.9px 1.5px hsla(230, 13%, 9%, 0.045), 0 3.5px 6px hsla(230, 13%, 9%, 0.09);
-border-radius: 20px;
+    box-shadow: inset 0 0 .5px 1px #ffffff1a, 0 0 0 1px #14151a13, 0 .3px .4px #14151a05, 0 .9px 1.5px #14151a0b, 0 3.5px 6px #14151a17;
+    border-radius: 10px;
+    margin: 0px 10px 0px 10px;
 }
 
 .filter-tabs li {
