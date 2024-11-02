@@ -137,27 +137,6 @@
 	<div id='gradesection' class='tabsection' style='opacity:1;'>
 		</div>
 </template>
-<script type="text/javascript">
-	const data = {
-    labels: ["Present", "Absent", "Remaining"
-    ],
-    datasets: [
-        {
-            name: "Some Data", type: "pie",
-            values: [2, 3, 3]
-        }
-    ]
-}
-
-const chart = new Chart("#attendancepie", {  // or a DOM element,
-                                            // new Chart() in case of ES6 module with above usage
-    title: "",
-    data: data,
-    type: 'pie', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
-    height: 250,
-    colors: ['#7cd6fd', '#743ee2']
-})
-</script>
 <script setup>
 	  import { useRoute } from 'vue-router'
 import {
