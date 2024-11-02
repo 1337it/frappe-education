@@ -1,5 +1,5 @@
 <template>
-    <div class="flex h-screen w-screen" style="background-size: 100vw auto;height:100vh !important;background-repeat: no-repeat;background-position: center;background-image:url('/files/image.jpg');">
+    <div class="flex h-screen w-screen" style="background-size: 100vw auto;height:100vh !important;background-repeat: no-repeat;background-position: center;">
       <div class="h-full border-r bg-gray-50">
         <Sidebar />
       </div>
