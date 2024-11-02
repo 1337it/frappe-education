@@ -157,15 +157,15 @@ body {
   }
 }
 #dplottie {
-    width: 100vw !important;
-    height: 50vh !important;
+       width: 20vh !important;
+    height: 20vh !important;
     align-items: center;
     flex-direction: column;
     padding-top: 0 !important;
     z-index: 9999;
     position: fixed !important;
-    top: -50px !important;
-    left: 0 !important;
+    /* top: 0.5vh !important; */
+    left: calc(50vw - 10vh) !important;
 
 }
 @keyframes movex {
