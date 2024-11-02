@@ -839,16 +839,18 @@ display:none;
   background-color: var(--orange-50);
 }
 .cont 
-{
-	    opacity: 1;
+{    opacity: 1;
     height: 15vh;
-    background: white;
+    background: #ffffffbd;
     position: absolute;
     width: calc(100% - 20px);
     z-index: 99;
     box-shadow: inset 0 0 .5px 1px #ffffff1a, 0 0 0 1px #14151a13, 0 .3px .4px #14151a05, 0 .9px 1.5px #14151a0b, 0 3.5px 6px #14151a17;
     border-radius: 10px;
-    margin: 0px 10px 0px 10px;
+    margin: 0 10px;
+ 
+    z-index: 2;
+    backdrop-filter: blur(1px);
 }
 
 .filter-tabs li {
