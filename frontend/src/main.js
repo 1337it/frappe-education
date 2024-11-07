@@ -337,6 +337,7 @@ var revealPosition = function(position) {
   var markerTitle = "You are here";
 
   var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+	console.log(latlng);
   var myOptions = {
     zoom: 16,
     center: latlng,
