@@ -8,10 +8,10 @@
 
 					<div class="flex flex-col whitespace-nowrap w-fit overflow-hidden">
 						<p class="font-medium text-sm text-gray-800 text-ellipsis">
-							{{ event.title }}
+						
 						</p>
 						<p class="font-normal text-xs text-gray-800 text-ellipsis" v-if="event.from_time">
-							{{ event.from_time }} - {{ event.to_time }}
+							
 						</p>
 					</div>
 				</div>
