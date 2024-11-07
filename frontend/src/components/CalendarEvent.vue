@@ -7,12 +7,6 @@
 					<FeatherIcon name="circle" class="h-4 text-black" />
 
 					<div class="flex flex-col whitespace-nowrap w-fit overflow-hidden">
-						<p class="font-medium text-sm text-gray-800 text-ellipsis">
-						
-						</p>
-						<p class="font-normal text-xs text-gray-800 text-ellipsis" v-if="event.from_time">
-							
-						</p>
 					</div>
 				</div>
 			</div>
