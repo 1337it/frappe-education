@@ -537,6 +537,7 @@ padding: 20px;
 filter: blur(0px) saturate(3);
 border-radius: 50px;
 	border: 1px solid skyblue;
+	background-color: transparent !important;
 }
 .min-w-\[600px\] {
 min-width: 0!important;
