@@ -337,7 +337,7 @@ var revealPosition = function(position) {
   var markerTitle = "You are here";
 
   var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-	console.log(latlng);
+	
   var myOptions = {
     zoom: 16,
     center: latlng,
@@ -351,6 +351,9 @@ var revealPosition = function(position) {
     map: map,
     title: markerTitle
   });
+	setTimeout(() => {
+	console.log(latlng);
+		 }, 100);
 }
 
 // test for geolocation support, provide geolocation settings, determine location of the user's device
