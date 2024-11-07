@@ -502,14 +502,41 @@ column-gap: .25rem;
 	.border-gray-200 {
 border-color: #dadada00!important;
 }
+[style^="--translate-main-slider: 0"] #dpart {
+display:block;
+
+}
+#dpart {
+display:none;
+
+}
+[style^="--translate-main-slider: 0"] #attendancepie {
+display:block;
+
+}
+#attendancepie {
+display:none;
+
+}
+
 #schedulesection .flex .py-1 {
     padding-top: .25rem;
     padding-bottom: .25rem;
-    color: #424588;
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
-    font-family: "Montserrat", sans-serif;
+  color: #424588;
+font-size: 17px;
+font-weight: 400;
+cursor: pointer;
+font-family: Montserrat,sans-serif;
+	z-index: 1!important;
+}
+#schedulesection .flex.mb-2 {
+margin-bottom: 0 !important;
+}
+#schedulesection .flex .p-2 {
+padding: 20px;
+filter: blur(0px) saturate(3);
+border-radius: 50px;
+	border: 1px solid skyblue;
 }
 .min-w-\[600px\] {
 min-width: 0!important;
@@ -792,8 +819,13 @@ display:none;
     height: auto;
     /* margin: 27px; */
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+	margin: 20px;
+border-radius: 15px;
 }
+.text-gray-200 {
 
+display: none !important;
+}
 
 #schedulesection .border-l-\[1px\] {
     border-left-width: 0px!important;
