@@ -356,22 +356,9 @@ var revealPosition = function(position) {
     title: markerTitle
   });
 
-	fetch(`https://app.kairaliartscentre.com:9999/hooks/getlocation`, {
-    method: 'GET',  }).then(r => 
-    r.text()) .then(r => {
-        const latcut = r.split("lat=", 100000);
-        const loncut = r.split("lon=", 100000);
-        const timecut = r.split("timestamp=", 100000);
-        var lat = latcut[latcut.length - 1].slice(0, 9);
-        var lon = loncut[loncut.length - 1].slice(0, 9);
-        var timestamp = timecut[timecut.length - 1].slice(0, 19);
-        root_element.getElementById('item').innerHTML = ''; 
-        root_element.getElementById('item').src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ&origin="+lat+","+lon+"&destination="+latlng+"&maptype=roadmap"
-        root_element.getElementById('time').innerText = 'Last Updated on '+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a');
-        console.log('Lat='+lat+' Lon='+lon+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
-        })
-}
 
+
+}
 // test for geolocation support, provide geolocation settings, determine location of the user's device
 
 
@@ -416,6 +403,23 @@ function report(state) {
 }
 
 handlePermission();
+
+	fetch(`https://app.kairaliartscentre.com:9999/hooks/getlocation`, {
+    method: 'GET',  }).then(r => 
+    r.text()) .then(r => {
+        const latcut = r.split("lat=", 100000);
+        const loncut = r.split("lon=", 100000);
+        const timecut = r.split("timestamp=", 100000);
+        var lat = latcut[latcut.length - 1].slice(0, 9);
+        var lon = loncut[loncut.length - 1].slice(0, 9);
+        var timestamp = timecut[timecut.length - 1].slice(0, 19);
+        root_element.getElementById('item').innerHTML = ''; 
+        root_element.getElementById('item').src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ&origin="+lat+","+lon+"&destination="+latlng+"&maptype=roadmap"
+        root_element.getElementById('time').innerText = 'Last Updated on '+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a');
+        console.log('Lat='+lat+' Lon='+lon+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
+        })
+
+	
 }
   var JSmetronome = {
 	GUI:{
