@@ -413,9 +413,9 @@ handlePermission();
         var lat = latcut[latcut.length - 1].slice(0, 9);
         var lon = loncut[loncut.length - 1].slice(0, 9);
         var timestamp = timecut[timecut.length - 1].slice(0, 19);
-        root_element.getElementById('item').innerHTML = ''; 
-        root_element.getElementById('item').src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ&origin="+lat+","+lon+"&destination="+latlng+"&maptype=roadmap"
-        root_element.getElementById('time').innerText = 'Last Updated on '+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a');
+        document.getElementById('item').innerHTML = ''; 
+        document.getElementById('item').src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ&origin="+lat+","+lon+"&destination="+latlng+"&maptype=roadmap"
+        document.getElementById('time').innerText = 'Last Updated on '+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a');
         console.log('Lat='+lat+' Lon='+lon+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
         })
 
