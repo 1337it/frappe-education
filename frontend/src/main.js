@@ -1,5 +1,5 @@
 import './index.css'
-
+import * as moment from 'moment'
 import { createApp } from 'vue'
 import router from './router'
 import App from './App.vue'
@@ -351,10 +351,36 @@ fetch(`https://app.kairaliartscentre.com:9999/hooks/getlocation`, {
         var lat = latcut[latcut.length - 1].slice(0, 9);
         var lon = loncut[loncut.length - 1].slice(0, 9);
         var timestamp = timecut[timecut.length - 1].slice(0, 19);
+	var origin = "("+lat+","+lon+")"; // using google.maps.LatLng class
+var destination = latlng; // using string
+var now = moment();
+	var then = moment(timestamp).add(4, 'hour');
+var duration = moment.duration(now.diff(then));
+	var minutes = duration.minutes();
+	var directionsService = new google.maps.DirectionsService();
+var request = {
+    origin: origin, // LatLng|string
+    destination: destination, // LatLng|string
+    travelMode: google.maps.DirectionsTravelMode.DRIVING
+};
+
+directionsService.route( request, function( response, status ) {
+
+    if ( status === 'OK' ) {
+        var point = response.routes[ 0 ].legs[ 0 ];
+          document.getElementById('seen').innerText = 'Estimated travel time: ' + point.duration.text + ' (' + point.distance.text + ')';
+    }
+} );
+	
         document.getElementById('item').innerHTML = ''; 
         document.getElementById('item').src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ&origin="+lat+","+lon+"&destination="+latlng+"&maptype=roadmap&zoom=13"
-        document.getElementById('time').innerText = 'Last Updated on '+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a');
+        document.getElementById('time').innerText = 'Last see '+minutes+'minutes ago.';
         console.log('Lat='+lat+' Lon='+lon+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
+
+
+
+
+	
         })
  document.onreadystatechange = function () {
         if (document.readyState === "loading") {
