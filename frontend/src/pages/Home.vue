@@ -25,7 +25,8 @@
 	<button class="enable">Enable Geolocation</button>
 <button class="revoke">Revoke permission</button>
 
-<div id="map_canvas"></div>
+<div id="map"></div>
+<iframe id="item" width="100%" height="100vh" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade" src allowfullscreen></iframe>
 		</div>
 	<div id='postssection' class='tabsection' style='opacity:1;'>
   <iframe src="/g/general/projects/3/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
