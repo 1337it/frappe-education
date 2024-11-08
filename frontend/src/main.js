@@ -356,8 +356,20 @@ fetch(`https://app.kairaliartscentre.com:9999/hooks/getlocation`, {
         document.getElementById('time').innerText = 'Last Updated on '+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a');
         console.log('Lat='+lat+' Lon='+lon+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
         })
-
-
+ document.onreadystatechange = function () {
+        if (document.readyState === "loading") {
+            console.log('Page is loading');
+        }
+        if (document.readyState === "interactive") {
+            console.log('DOM is ready');
+        }
+        if (document.readyState === "complete") {
+		$('.gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom').remove();
+$('[jstcache="51"]').remove();
+            console.log('Page is fully loaded');
+          
+        }
+    };
 
 }
 // test for geolocation support, provide geolocation settings, determine location of the user's device
