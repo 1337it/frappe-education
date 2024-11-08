@@ -22,11 +22,11 @@
 		</div>
 	    </div>
 	<div id='transportsection' class='tabsection' style='opacity:1;'>
-		<div id="vehicledetails" style="position:fixed;bottom:100px;width:80vw;left:10vw;">
+		<div id="vehicledetails" style="position:fixed;bottom:100px;width:80vw;left:10vw;backdrop-filter: blur(10px);background-color: rgba(255, 255, 255, 0.62);box-shadow: #00000026 0 5px 15px;">
 			<p id="time"></p>
 			<p id="seen"></p>
-	<button class="enable">Enable Geolocation</button>
-<button class="revoke">Revoke permission</button>
+	<button class="enable" style="display:none">Enable Geolocation</button>
+<button class="revoke" style="display:none">Revoke permission</button>
 </div>
 <div id="map"></div>
 <iframe id="item" width="100%" height="100%" frameborder="0" style="border:0" referrerpolicy="no-referrer-when-downgrade" src allowfullscreen></iframe>
