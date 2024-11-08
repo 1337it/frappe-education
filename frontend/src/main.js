@@ -337,24 +337,11 @@ var positionDenied = function() {
 };
   
 var revealPosition = function(position) {
-  geoBtn.style.display = 'none';
-  var markerTitle = "You are here";
+
 
   var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 	
-  var myOptions = {
-    zoom: 16,
-    center: latlng,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  
-  var map = new google.maps.Map(mapCanvas, myOptions);
 
-  var marker = new google.maps.Marker({
-    position: latlng,
-    map: map,
-    title: markerTitle
-  });
 fetch(`https://app.kairaliartscentre.com:9999/hooks/getlocation`, {
     method: 'GET',  }).then(r => 
     r.text()) .then(r => {
