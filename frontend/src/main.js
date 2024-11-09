@@ -179,6 +179,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff
 }
 
 if (event.target.classList.contains("scheduletab")) {
+	$('#schedulesection .w-full.h-full').append($('#frappeui-popper-root'));
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
 var transtarget = 200;
 var movement = transtarget - transnow;
