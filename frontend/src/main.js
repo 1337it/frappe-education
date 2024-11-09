@@ -374,7 +374,7 @@ directionsService.route( request, function( response, status ) {
 	
         document.getElementById('item').innerHTML = ''; 
         document.getElementById('item').src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ&origin="+lat+","+lon+"&destination="+latlng+"&maptype=roadmap&zoom=13"
-        document.getElementById('time').innerText = 'Last see '+minutes+'minutes ago.';
+        document.getElementById('time').innerText = 'Last see '+minutes+' minutes ago.';
         console.log('Lat='+lat+' Lon='+lon+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
 
 
@@ -446,6 +446,9 @@ handlePermission();
 	
 	
 }
+
+
+transport();
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
