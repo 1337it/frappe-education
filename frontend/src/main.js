@@ -448,7 +448,7 @@ handlePermission();
 }
 
 
-transport();
+
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
