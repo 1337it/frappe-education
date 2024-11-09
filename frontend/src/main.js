@@ -142,7 +142,7 @@ document.getElementById(currentsection).attributes.style.value = 'animation:page
 setTimeout(() => { document.getElementById('homesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
 
 
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 
 
@@ -160,7 +160,7 @@ if (movement < 0)
 {
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 	console.log('fromleft');
 	
 }
@@ -170,7 +170,7 @@ if (movement > 0)
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 
 
@@ -191,7 +191,7 @@ if (movement < 0)
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 console.log('fromleft');
 
@@ -201,7 +201,7 @@ if (movement > 0)
 {
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 
 
@@ -222,14 +222,14 @@ if (movement < 0)
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 	console.log('fromleft');
 }
 if (movement > 0)
 {
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('postssection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 
 
@@ -250,14 +250,14 @@ if (movement < 0)
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 	console.log('fromleft');
 }
 if (movement > 0)
 {
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 
 
@@ -274,7 +274,7 @@ if (event.target.classList.contains("transporttab")) {
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
+document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 
 
