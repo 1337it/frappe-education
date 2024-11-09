@@ -29,7 +29,7 @@
 <button class="revoke" style="display:none">Revoke permission</button>
 </div>
 <div id="map"></div>
-<iframe id="item" width="100%" height="100%" frameborder="0" style="border: 1px solid white;width: 90vw;left: 5vw;position: fixed;top: 5vw;height: 66vh;box-shadow: #00000026 0 5px 15px;" referrerpolicy="no-referrer-when-downgrade" src allowfullscreen></iframe>
+<iframe id="item" width="100%" height="100%" frameborder="0" style="border-radius: 15px;border: 1px solid white;width: 90vw;left: 5vw;position: fixed;top: 5vw;height: 66vh;box-shadow: #00000026 0 5px 15px;" referrerpolicy="no-referrer-when-downgrade" src allowfullscreen></iframe>
 		</div>
 	<div id='postssection' class='tabsection' style='opacity:1;'>
   <iframe src="/g/general/projects/3/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
