@@ -529,10 +529,13 @@ font-family: Montserrat,sans-serif;
 	
 }
 #schedulesection .font-semibold {
-font-weight: 600;
+font-weight: 500;
 /* text-align: center; */
 /* align-items: center; */
 width: 100%;
+	letter-spacing: 2px;
+	margin-top: 10px;
+margin-bottom: 10px;
 }
 #schedulesection .pt-5 {
 padding-top: 1.25rem;
@@ -687,6 +690,9 @@ border: none !important;
 	
 background-color: rgba(255, 255, 255, 0.68);
 backdrop-filter: blur(10px);
+	box-shadow: #00000026 0 5px 15px;
+
+border-radius: 15px;
 }
 .popover-container .rounded-lg {
 border-radius: .75rem;
