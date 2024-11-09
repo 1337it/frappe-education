@@ -835,6 +835,10 @@ position: fixed;
 	margin: 20px;
 border-radius: 15px;
 }
+#schedulesection .gap-4 {
+
+align-items: start !important;
+}
 .text-gray-200 {
 
 display: none !important;
