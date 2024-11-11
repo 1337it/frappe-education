@@ -1,5 +1,4 @@
 import './index.css'
-import moment from 'moment'
 import { createApp } from 'vue'
 import router from './router'
 import App from './App.vue'
