@@ -185,7 +185,6 @@ import { leaveStore } from '@/stores/leave'
 import { Dialog } from 'frappe-ui'
 import { storeToRefs } from 'pinia'
 import NewLeave from '@/components/NewLeave.vue'
-import { Chart } from "frappe-charts/dist/frappe-charts.min.esm"
 const { getCurrentProgram, getStudentInfo, getStudentGroups } = studentStore()
 
 
