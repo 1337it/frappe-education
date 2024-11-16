@@ -5,8 +5,6 @@
     <link rel="icon" href="/favicon.png" />
 	  <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 	   <script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
-  <!-- or -->
-  <script src="https://unpkg.com/frappe-charts@1.2.4/dist/frappe-charts.min.iife.js"></script>
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	  <meta name="theme-color" content="#ffffff">
@@ -155,25 +153,7 @@
     </script>
     <script type="module" src="/src/main.js"></script>
 	  <script type="text/javascript">
-	const data = {
-    labels: ["Present", "Absent", "Remaining"
-    ],
-    datasets: [
-        {
-            name: "Some Data", type: "pie",
-            values: [2, 3, 3]
-        }
-    ]
-}
 
-const chart = new Chart("#attendancepie", {  // or a DOM element,
-                                            // new Chart() in case of ES6 module with above usage
-    title: "",
-    data: data,
-    type: 'pie', // or 'bar', 'line', 'scatter', 'pie', 'percentage'
-    height: 250,
-    colors: ['#7cd6fd', '#743ee2']
-})
 
 	 
 </script>
