@@ -470,7 +470,7 @@ function getAccel(){
                
                 
                 dot = document.getElementsByClassName("mainbg")[0];
-                dot.setAttribute('style', "background-image: url('/files/mainbg.png'); background-size: contain; width: 66%; height: 66%; background-repeat: no-repeat; background-position: 50% 50%; mask-image: url('/files/mainbg2.png'); mask-size: 100%;top:" + event.beta);
+                dot.setAttribute('style', "background-image: url('/files/mainbg.png'); background-size: contain; width: 66%; height: 66%; mask-repeat: no-repeat; mask-position: 50% 50%; mask-image: url('/files/mainbg2.png'); mask-size: 100%;top:" + event.beta);
                 
             });
         }
