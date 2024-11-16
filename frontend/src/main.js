@@ -295,6 +295,7 @@ transport();
 	
 
   if (event.target.classList.contains("round-button")) {
+	  getAccel();
     mainSliderCircle.classList.remove("animate-jello");
     void mainSliderCircle.offsetWidth;
     mainSliderCircle.classList.add("animate-jello");
@@ -490,7 +491,7 @@ function getAccel(){
     });
 }
 
-getAccel();
+
   var JSmetronome = {
 	GUI:{
 		power : document.getElementById("power"),
