@@ -522,7 +522,6 @@ handlePermission();
 		//reset and restart.
 		clearTimeout(this.vars._timeoutID);
 		this.tick();
-		navigator.vibrate(10);
 		return true;
 	},
 	setTempo: function(newTempo,operator){
@@ -535,7 +534,6 @@ handlePermission();
 		this.vars.CurrentBeatSubdivision = 0;
 		clearTimeout(this.vars._timeoutID);
 		this.tick();
-		navigator.vibrate(10);
 		return true;
 	},
 	tick: function(){
@@ -550,6 +548,9 @@ handlePermission();
 		this.GUI.metronomeTick.play();
 		this.GUI.beatDisplay.innerHTML = this.vars.currentBeat;
 		this.vars._timeoutID = setTimeout(function(){this.tick()}.bind(this), 1000/(this.vars.tempo/60));
+if(isMobile)  {
+  navigator.vibrate(5)
+}
 		return true;
 	},
 	tap: function(){
