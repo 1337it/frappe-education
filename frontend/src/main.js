@@ -462,14 +462,14 @@ function getAccel(){
             window.addEventListener('deviceorientation',(event) => {
                 // Expose each orientation angle in a more readable way
 
-                frontToBack_degrees = event.beta + "px";
+                var frontToBack_degrees = event.beta + "px";
                
                 
                 // Update velocity according to how tilted the phone is
                 // Since phones are narrower than they are long, double the increase to the x velocity
                
                 
-                dot = document.getElementsByClassName("mainbg")[0];
+                var dot = document.getElementsByClassName("mainbg")[0];
                 dot.attributes.style.value = "position:fixed;background-image: url('/files/mainbg.png'); background-size: contain; width: 66%; height: 66%; mask-repeat: no-repeat; mask-position: 50% 50%; mask-image: url('/files/mainbg2.png');top:" + frontToBack_degrees;
                 console.log(frontToBack_degrees);
             });
