@@ -573,13 +573,22 @@ function getAccel(){
 		this.GUI.metronomeBell.currentTime = 0;
 		this.GUI.metronomeTick.pause();
 		this.GUI.metronomeTick.currentTime = 0;
-		//if(this.vars.currentBeat == 1) this.GUI.metronomeBell.play();
+		if(this.vars.currentBeat == 1)
+		{ this.GUI.metronomeBell.play();
+		 if(isMobile)  {
+  navigator.vibrate(10)
+}
+		}
+		else
+		{
 		this.GUI.metronomeTick.play();
-		this.GUI.beatDisplay.innerHTML = this.vars.currentBeat;
-		this.vars._timeoutID = setTimeout(function(){this.tick()}.bind(this), 1000/(this.vars.tempo/60));
-if(isMobile)  {
+			if(isMobile)  {
   navigator.vibrate(5)
 }
+		}
+		this.GUI.beatDisplay.innerHTML = this.vars.currentBeat;
+		this.vars._timeoutID = setTimeout(function(){this.tick()}.bind(this), 1000/(this.vars.tempo/60));
+
 		return true;
 	},
 	tap: function(){
