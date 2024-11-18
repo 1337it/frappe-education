@@ -471,7 +471,7 @@ function getAccel(){
                
                 
                 var dot = document.getElementsByClassName("mainbg")[0];
-                dot.attributes.style.value = "height: 100%; width: 100%;-webkit-mask:url(/files/main1.png) no-repeat 50% 50%;background-image:url(/files/main2.png);mask:url(/files/main1.png) no-repeat 50% 50%;-webkit-mask-size:contain;mask-size:contain;background-size:500px 500px;background-repeat:no-repeat;background-position:"+ sidetoside_degrees + "% "+ frontToBack_degrees + "%;";
+                dot.attributes.style.value = "height: 100%; width: 100%;-webkit-mask:url(/files/main1.png) no-repeat 50% 50%;background-image:url(/files/main2.png);mask:url(/files/main1.png) no-repeat 50% 50%;-webkit-mask-size:cover;mask-size:contain;background-size:100% 100%;background-repeat:no-repeat;background-position:"+ sidetoside_degrees + "% "+ frontToBack_degrees + "%;";
                 console.log(frontToBack_degrees);
             });
         }
