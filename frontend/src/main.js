@@ -470,7 +470,7 @@ function getAccel(){
                
                 
                 var dot = document.getElementsByClassName("mainbg")[0];
-                dot.attributes.style.value = "height: 100%; width: 100%;-webkit-mask:url(/files/image.svg) no-repeat 50% 50%;background-image:url(/files/mainbg1.png);mask:url(/files/image.svg) no-repeat 50% ;50%;-webkit-mask-size:contain;mask-size:contain;background-size:300px 300px;background-repeat:no-repeat;background-position:50% "+ frontToBack_degrees + ";";
+                dot.attributes.style.value = "height: 100%; width: 100%;-webkit-mask:url(/files/image.svg) no-repeat 50% 50%;background-image:url(/files/mainbg1.png);mask:url(/files/image.svg) no-repeat 50% 50%;-webkit-mask-size:contain;mask-size:contain;background-size:300px 300px;background-repeat:no-repeat;background-position:50% "+ frontToBack_degrees + "%;";
                 console.log(frontToBack_degrees);
             });
         }
