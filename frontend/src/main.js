@@ -471,47 +471,47 @@ function getAccel(){
                
                 
                 var dot = document.getElementsByClassName("mainbg")[0];
-               document.getElementById('pos0').attributes.x2.value = (sidetoside_degrees - 5) + "%";
-		    document.getElementById('pos0').attributes.y2.value = (frontToBack_degrees - 5) + "%";
+               document.getElementById('pos0').attributes.x2.value = (sidetoside_degrees + 5) + "%";
+		    document.getElementById('pos0').attributes.y2.value = (frontToBack_degrees + 5) + "%";
 		    
-		    document.getElementById('pos1').attributes.x2.value = (sidetoside_degrees - 10)+ "%";
-		    document.getElementById('pos1').attributes.y2.value = (frontToBack_degrees - 10)+ "%";
+		    document.getElementById('pos1').attributes.x2.value = (sidetoside_degrees + 10)+ "%";
+		    document.getElementById('pos1').attributes.y2.value = (frontToBack_degrees + 10)+ "%";
 
-		    document.getElementById('pos2').attributes.x2.value = (sidetoside_degrees - 15)+ "%";
-		    document.getElementById('pos2').attributes.y2.value = (frontToBack_degrees - 15)+ "%";
+		    document.getElementById('pos2').attributes.x2.value = (sidetoside_degrees + 15)+ "%";
+		    document.getElementById('pos2').attributes.y2.value = (frontToBack_degrees + 15)+ "%";
 
-		    document.getElementById('pos3').attributes.x2.value = (sidetoside_degrees - 20)+ "%";
-		    document.getElementById('pos3').attributes.y2.value = (frontToBack_degrees - 20)+ "%";
+		    document.getElementById('pos3').attributes.x2.value = (sidetoside_degrees + 20)+ "%";
+		    document.getElementById('pos3').attributes.y2.value = (frontToBack_degrees + 20)+ "%";
 
-		    document.getElementById('pos4').attributes.x2.value = (sidetoside_degrees - 25)+ "%";
-		    document.getElementById('pos4').attributes.y2.value = (frontToBack_degrees - 25)+ "%";
+		    document.getElementById('pos4').attributes.x2.value = (sidetoside_degrees + 25)+ "%";
+		    document.getElementById('pos4').attributes.y2.value = (frontToBack_degrees + 25)+ "%";
 
-		    document.getElementById('pos5').attributes.x2.value = (sidetoside_degrees - 30)+ "%";
-		    document.getElementById('pos5').attributes.y2.value = (frontToBack_degrees - 30)+ "%";
+		    document.getElementById('pos5').attributes.x2.value = (sidetoside_degrees + 30)+ "%";
+		    document.getElementById('pos5').attributes.y2.value = (frontToBack_degrees + 30)+ "%";
 
-		    document.getElementById('pos6').attributes.x2.value = (sidetoside_degrees - 35)+ "%";
-		    document.getElementById('pos6').attributes.y2.value = (frontToBack_degrees - 35)+ "%";
+		    document.getElementById('pos6').attributes.x2.value = (sidetoside_degrees + 35)+ "%";
+		    document.getElementById('pos6').attributes.y2.value = (frontToBack_degrees + 35)+ "%";
 
-		    document.getElementById('pos7').attributes.x2.value = (sidetoside_degrees - 40)+ "%";
-		    document.getElementById('pos7').attributes.y2.value = (frontToBack_degrees - 40)+ "%";
+		    document.getElementById('pos7').attributes.x2.value = (sidetoside_degrees + 40)+ "%";
+		    document.getElementById('pos7').attributes.y2.value = (frontToBack_degrees + 40)+ "%";
 
-		    document.getElementById('pos8').attributes.x2.value = (sidetoside_degrees - 45)+ "%";
-		    document.getElementById('pos8').attributes.y2.value = (frontToBack_degrees - 45)+ "%";
+		    document.getElementById('pos8').attributes.x2.value = (sidetoside_degrees + 45)+ "%";
+		    document.getElementById('pos8').attributes.y2.value = (frontToBack_degrees + 45)+ "%";
 
-		    document.getElementById('pos9').attributes.x2.value = (sidetoside_degrees - 50)+ "%";
-		    document.getElementById('pos9').attributes.y2.value = (frontToBack_degrees - 50)+ "%";
+		    document.getElementById('pos9').attributes.x2.value = (sidetoside_degrees + 50)+ "%";
+		    document.getElementById('pos9').attributes.y2.value = (frontToBack_degrees + 50)+ "%";
 
-		    document.getElementById('pos10').attributes.x2.value = (sidetoside_degrees - 55)+ "%";
-		    document.getElementById('pos10').attributes.y2.value = (frontToBack_degrees - 55)+ "%";
+		    document.getElementById('pos10').attributes.x2.value = (sidetoside_degrees + 55)+ "%";
+		    document.getElementById('pos10').attributes.y2.value = (frontToBack_degrees + 55)+ "%";
 
-		    document.getElementById('pos11').attributes.x2.value = (sidetoside_degrees - 60)+ "%";
-		    document.getElementById('pos11').attributes.y2.value = (frontToBack_degrees  - 60)+ "%";
+		    document.getElementById('pos11').attributes.x2.value = (sidetoside_degrees + 60)+ "%";
+		    document.getElementById('pos11').attributes.y2.value = (frontToBack_degrees  + 60)+ "%";
 
-		    document.getElementById('pos12').attributes.x2.value = ((sidetoside_degrees - 65) + "%";
-		    document.getElementById('pos12').attributes.y2.value = (frontToBack_degrees - 65)+ "%";
+		    document.getElementById('pos12').attributes.x2.value = ((sidetoside_degrees + 65) + "%";
+		    document.getElementById('pos12').attributes.y2.value = (frontToBack_degrees + 65)+ "%";
 
-		    document.getElementById('pos13').attributes.x2.value = (sidetoside_degrees - 70)+ "%";
-		    document.getElementById('pos13').attributes.y2.value = (frontToBack_degrees - 70)+ "%";
+		    document.getElementById('pos13').attributes.x2.value = (sidetoside_degrees + 70)+ "%";
+		    document.getElementById('pos13').attributes.y2.value = (frontToBack_degrees + 70)+ "%";
 
                 console.log((frontToBack_degrees);
             });
