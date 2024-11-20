@@ -513,7 +513,7 @@ function getAccel(){
 		    document.getElementById('pos13').attributes.x2.value = (sidetoside_degrees + 70)+ "%";
 		    document.getElementById('pos13').attributes.y2.value = (frontToBack_degrees + 70)+ "%";
 
-                console.log((frontToBack_degrees);
+                console.log(frontToBack_degrees);
             });
         }
     });
