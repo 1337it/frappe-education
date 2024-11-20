@@ -507,7 +507,7 @@ function getAccel(){
 		    document.getElementById('pos11').attributes.x2.value = (sidetoside_degrees + 60)+ "%";
 		    document.getElementById('pos11').attributes.y2.value = (frontToBack_degrees  + 60)+ "%";
 
-		    document.getElementById('pos12').attributes.x2.value = ((sidetoside_degrees + 65) + "%";
+		    document.getElementById('pos12').attributes.x2.value = (sidetoside_degrees + 65) + "%";
 		    document.getElementById('pos12').attributes.y2.value = (frontToBack_degrees + 65)+ "%";
 
 		    document.getElementById('pos13').attributes.x2.value = (sidetoside_degrees + 70)+ "%";
