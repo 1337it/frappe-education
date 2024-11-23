@@ -462,7 +462,7 @@ function getAccel(){
             window.addEventListener('deviceorientation',(event) => {
                 // Expose each orientation angle in a more readable way
 
-                var frontToBack_degrees = (event.beta + event.gamma) % 5;
+                var frontToBack_degrees = parseInt((event.beta + event.gamma) % 5);
 		   
                console.log(frontToBack_degrees);
                 
