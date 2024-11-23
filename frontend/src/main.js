@@ -476,13 +476,13 @@ function getAccel(){
 		   for(var i = 0;i < document.querySelectorAll('.active[fill][style]').length;i++)
     {
        document.querySelectorAll('.active[fill][style]')[i].attributes.fill.value = "#CBCACA";
-	    document.querySelectorAll('.active[fill][style]')[i].attributes.style.value = "scale:1;";
+
 
 
     }
 
 	 document.querySelectorAll('.active[fill][style]')[frontToBack_degrees].attributes.fill.value = "var(--orange-A700)";	
-		    document.querySelectorAll('.active[fill][style]')[frontToBack_degrees].attributes.style.value = "scale:1.1;";
+
                 console.log(frontToBack_degrees);
             });
         }
