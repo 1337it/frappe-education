@@ -464,7 +464,7 @@ function getAccel(){
 
                 var frontToBack_degrees = (event.beta + event.gamma) % 5;
 		   
-               
+               console.log(frontToBack_degrees);
                 
                 // Update velocity according to how tilted the phone is
                 // Since phones are narrower than they are long, double the increase to the x velocity
