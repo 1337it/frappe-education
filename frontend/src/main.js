@@ -476,10 +476,13 @@ function getAccel(){
 		   for(var i = 0;i < document.querySelectorAll('#main .active').length;i++)
     {
        document.querySelectorAll('#main .active')[i].attributes.fill.value = "#CBCACA";
+	    document.querySelectorAll('#main .active')[i].attributes.style.value = "scale:1;";
+
 
     }
 
-	 document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.fill.value = "#71F54A";	 
+	 document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.fill.value = "#71F54A";	
+		    document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.style.value = "scale:1.1;";
                 console.log(frontToBack_degrees);
             });
         }
