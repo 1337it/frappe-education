@@ -462,8 +462,8 @@ function getAccel(){
             window.addEventListener('deviceorientation',(event) => {
                 // Expose each orientation angle in a more readable way
 
-                var frontToBack_degrees = event.beta;
-		    var sidetoside_degrees = event.gamma;
+                var frontToBack_degrees = event.beta * 2;
+		    var sidetoside_degrees = event.gamma * 2;
                
                 
                 // Update velocity according to how tilted the phone is
