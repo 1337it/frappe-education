@@ -473,16 +473,16 @@ function getAccel(){
                 var dot = document.getElementsByClassName("mainbg")[0];
              
 		    
-		   for(var i = 0;i < document.querySelectorAll('#main .active').length;i++)
+		   for(var i = 0;i < document.querySelectorAll('.active[fill][style]').length;i++)
     {
-       document.querySelectorAll('#main .active')[i].attributes.fill.value = "#CBCACA";
-	    document.querySelectorAll('#main .active')[i].attributes.style.value = "scale:1;";
+       document.querySelectorAll('.active[fill][style]')[i].attributes.fill.value = "#CBCACA";
+	    document.querySelectorAll('.active[fill][style]')[i].attributes.style.value = "scale:1;";
 
 
     }
 
-	 document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.fill.value = "var(--orange-A700)";	
-		    document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.style.value = "scale:1.1;";
+	 document.querySelectorAll('.active[fill][style]')[frontToBack_degrees].attributes.fill.value = "var(--orange-A700)";	
+		    document.querySelectorAll('.active[fill][style]')[frontToBack_degrees].attributes.style.value = "scale:1.1;";
                 console.log(frontToBack_degrees);
             });
         }
