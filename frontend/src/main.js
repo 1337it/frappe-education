@@ -462,8 +462,8 @@ function getAccel(){
             window.addEventListener('deviceorientation',(event) => {
                 // Expose each orientation angle in a more readable way
 
-                var frontToBack_degrees = event.beta * 2;
-		    var sidetoside_degrees = event.gamma * 2;
+                var frontToBack_degrees = (event.beta + event.gamma) % 5;
+		   
                
                 
                 // Update velocity according to how tilted the phone is
@@ -473,22 +473,13 @@ function getAccel(){
                 var dot = document.getElementsByClassName("mainbg")[0];
              
 		    
-		    document.getElementById('pos1').attributes.x2.value = (sidetoside_degrees + 50)+ "%";
-		    document.getElementById('pos1').attributes.y2.value = (frontToBack_degrees + 50)+ "%";
+		   for(var i = 0;i < document.querySelectorAll('#main .active').length;i++)
+    {
+       document.querySelectorAll('#main .active')[i].attributes.fill.value = "#CBCACA";
 
-		    document.getElementById('pos2').attributes.x2.value = (sidetoside_degrees + 100)+ "%";
-		    document.getElementById('pos2').attributes.y2.value = (frontToBack_degrees + 100)+ "%";
+    }
 
-		    document.getElementById('pos3').attributes.x2.value = (sidetoside_degrees + 150)+ "%";
-		    document.getElementById('pos3').attributes.y2.value = (frontToBack_degrees + 150)+ "%";
-
-		    document.getElementById('pos4').attributes.x2.value = (sidetoside_degrees + 250)+ "%";
-		    document.getElementById('pos4').attributes.y2.value = (frontToBack_degrees + 250)+ "%";
-
-		    document.getElementById('pos5').attributes.x2.value = (sidetoside_degrees + 300)+ "%";
-		    document.getElementById('pos5').attributes.y2.value = (frontToBack_degrees + 300)+ "%";
-
-		 
+	 document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.fill.value = "#71F54A";	 
                 console.log(frontToBack_degrees);
             });
         }
