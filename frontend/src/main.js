@@ -481,7 +481,7 @@ function getAccel(){
 
     }
 
-	 document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.fill.value = "#71F54A";	
+	 document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.fill.value = "var(--orange-A700)";	
 		    document.querySelectorAll('#main .active')[frontToBack_degrees].attributes.style.value = "scale:1.1;";
                 console.log(frontToBack_degrees);
             });
