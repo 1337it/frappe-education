@@ -462,9 +462,10 @@ function getAccel(){
             window.addEventListener('deviceorientation',(event) => {
                 // Expose each orientation angle in a more readable way
 
-                var frontToBack_degrees = parseInt((event.beta + event.gamma) % 5);
+                var vertical = event.beta;
+		var horizontal = event.gamma;
 		   
-               console.log(frontToBack_degrees);
+            
                 
                 // Update velocity according to how tilted the phone is
                 // Since phones are narrower than they are long, double the increase to the x velocity
@@ -472,18 +473,11 @@ function getAccel(){
                 
                 var dot = document.getElementsByClassName("mainbg")[0];
              
-		    
-		   for(var i = 0;i < document.querySelectorAll('.active[fill][style]').length;i++)
-    {
-       document.querySelectorAll('.active[fill][style]')[i].attributes.fill.value = "#CBCACA";
+		document.querySelector('#bgpart .card').attributes.style.value = "--posx:" + horizontal + "%; --posy: " + vertical + "%; --hyp: 0; --o: 1; --mx: 81%; --my: 60%;";  
 
 
+	
 
-    }
-
-	 document.querySelectorAll('.active[fill][style]')[frontToBack_degrees].attributes.fill.value = "var(--orange-A700)";	
-
-                console.log(frontToBack_degrees);
             });
         }
     });
