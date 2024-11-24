@@ -462,8 +462,8 @@ function getAccel(){
             window.addEventListener('deviceorientation',(event) => {
                 // Expose each orientation angle in a more readable way
 
-                var vertical = event.beta;
-		var horizontal = event.gamma;
+                var vertical = parseInt(event.beta);
+		var horizontal = parseInt(event.gamma);
 		   
             
                 
