@@ -473,7 +473,7 @@ function getAccel(){
                 
                 var dot = document.getElementsByClassName("mainbg")[0];
              
-		document.querySelector('#bgpart .card').attributes.style.value = "--posx:" + horizontal + "%; --posy: " + vertical + "%; --hyp: 0; --o: 1; --mx: 81%; --my: 60%;";  
+		document.querySelector('#bgpart .card').attributes.style.value = "--posx:50%; --posy: " + vertical + "%; --hyp: 0; --o: 1; --mx: 0%; --my: 0%;";  
 
 
 	
