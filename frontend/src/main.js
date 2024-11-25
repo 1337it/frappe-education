@@ -484,7 +484,7 @@ const $style = document.querySelector(".hover");
   var w = window.getComputedStyle(document.querySelector(".card.active")).width.split('px')[0];
   var lp = Math.abs(Math.floor(100 / w * l)-100);
   var tp = Math.abs(Math.floor(100 / h * t)-100);
-  var bg = `background-position: ${lp}% ${tp}%;`;
+  var bg = `background-position: ${l}% ${t}%;`;
   var style = `.card.active:before { ${bg} }`;
 
   $style.innerHTML = style;
