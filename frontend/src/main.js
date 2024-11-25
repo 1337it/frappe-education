@@ -521,8 +521,7 @@ const onOut = ev => {
 
 // setup cards interaction
 [...$cards.toArray()].forEach(card => {
-  card.addEventListener("click", onHover);
-  card.addEventListener("click", onOut);
+  card.addEventListener("deviceorientation", onHover);
 });
 
 
