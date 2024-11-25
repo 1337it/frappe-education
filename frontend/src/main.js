@@ -473,7 +473,7 @@ function getAccel(){
 
 
 		    const $card = document.querySelector(".card.active");
-const $style = $(".hover");
+const $style = document.querySelector(".hover");
 
 
 
@@ -484,8 +484,8 @@ const $style = $(".hover");
   var w = window.getComputedStyle(document.querySelector(".card.active")).width.split('px')[0];
   var lp = Math.abs(Math.floor(100 / w * l)-100);
   var tp = Math.abs(Math.floor(100 / h * t)-100);
-  var bg = `background-position: ${lp}% ${tp}%;`
-  var style = `.card.active:before { ${bg} }`
+  var bg = 'background-position: ${lp}% ${tp}%;';
+  var style = '.card.active:before { ${bg} }';
   $cards.removeClass("active");
   $card.addClass("active");
   $style.html(style);
