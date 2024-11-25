@@ -510,15 +510,12 @@ const perspective =
       .replace("px", "") || 800;
 
 const onCardMove = ev => onMove(ev, ev.target);
-const onHover = ev => ev.target.addEventListener("deviceorientation", onCardMove);
-const onOut = ev => {
-  resetTransform(ev.target, perspective); // reset card
-  ev.target.removeEventListener("mousemove", onCardMove);
-};
+
+
 
 // setup cards interaction
 
-  $cards.addEventListener("deviceorientation", onHover);
+  $cards.addEventListener("deviceorientation", onCardMove);
 
 
 
