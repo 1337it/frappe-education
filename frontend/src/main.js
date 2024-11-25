@@ -477,7 +477,7 @@ const $style = document.querySelector(".hover");
 
 
 
-  var l = parseInt(event.beta * (100/360));
+  var l = parseInt(event.beta);
   var t = parseInt(event.gamma);
 
   var h = window.getComputedStyle(document.querySelector(".card.active")).height.split('px')[0];
