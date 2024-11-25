@@ -494,7 +494,7 @@ const $style = document.querySelector(".hover");
 
 
 
-
+console.log(bg);
 
 
 
