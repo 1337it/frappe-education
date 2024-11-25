@@ -491,7 +491,7 @@ const resetTransform = (el, perspective = 800) =>
 
 const onMove = (ev, el) => {
   const { pageX, pageY } = ev;
-  const { offsetWidth, offsetHeight } = el;
+  const { offsetWidth, offsetHeight } = el.getBoundingClientRect();
   const { left, top } = el.getBoundingClientRect();
 
   const cardX = left + offsetWidth / 2;
