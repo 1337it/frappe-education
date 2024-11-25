@@ -515,7 +515,7 @@ const onCardMove = ev => onMove(ev, ev.target);
 
 // setup cards interaction
 
-  $cards.addEventListener("deviceorientation", onCardMove);
+  document.querySelectorAll(".card").addEventListener("deviceorientation", onCardMove);
 
 
 
