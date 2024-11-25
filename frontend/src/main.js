@@ -473,49 +473,36 @@ function getAccel(){
 
 
 		    const $card = document.querySelector(".card.active");
-
+const $style = $(".hover");
 
 
 
   var l = parseInt(event.beta);
   var t = parseInt(event.gamma);
 
-
+  var h = window.getComputedStyle(document.querySelector(".card.active")).height.split('px')[0];
+  var w = window.getComputedStyle(document.querySelector(".card.active")).width.split('px')[0];
+  var lp = Math.abs(Math.floor(100 / w * l)-100);
+  var tp = Math.abs(Math.floor(100 / h * t)-100);
+  var bg = `background-position: ${lp}% ${tp}%;`
+  var style = `.card.active:before { ${bg} }`
+  $cards.removeClass("active");
+  $card.addClass("active");
+  $style.html(style);
 
 //
 // 3d hover magic
-//
-const resetTransform = (el, perspective = 800) =>
-  (el.style.transform = `translate3d(0%, 0%, -${perspective /
-    2}px) rotateX(0deg) rotateY(0deg)`);
 
-const onMove = (ev, el) => {
-  const { pageX, pageY } = ev;
-  const { offsetWidth, offsetHeight } = el.getBoundingClientRect();
-  const { left, top } = el.getBoundingClientRect();
 
-  const cardX = left + offsetWidth / 2;
-  const cardY = top + offsetHeight / 2;
 
-  const angle = 25;
-  const rotX = (cardY - pageY) / angle;
-  const rotY = (cardX - pageX) / -angle;
 
-  el.style.transform = `translate3d(0%, 0%, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
-};
 
-const perspective =
-    getComputedStyle($cards[0].parentElement)
-      .getPropertyValue("perspective")
-      .replace("px", "") || 800;
-
-const onCardMove = ev => onMove(ev, ev.target);
 
 
 
 // setup cards interaction
 
-  document.querySelector(".card.active").addEventListener("deviceorientation", onCardMove);
+ 
 
 
 
