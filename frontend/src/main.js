@@ -471,10 +471,10 @@ function getAccel(){
         const $cards = document.querySelectorAll(".card");
 
 
-$cards.on("deviceorientation", function(e) {
+
   var $card = $(this);
-  var l = e.offsetX;
-  var t = e.offsetY;
+  var l = parseInt(event.beta);
+  var t = parseInt(event.gamma);
   var h = $card.height();
   var w = $card.width();
   var lp = Math.abs(Math.floor(100 / w * l)-100);
@@ -484,9 +484,6 @@ $cards.on("deviceorientation", function(e) {
   $cards.removeClass("active");
   $card.addClass("active");
 
-}).on("mouseout", function() {
-  $cards.removeClass("active");
-});
 
 //
 // 3d hover magic
@@ -507,7 +504,7 @@ const onMove = (ev, el) => {
   const rotX = (cardY - pageY) / angle;
   const rotY = (cardX - pageX) / -angle;
 
-  el.style.transform = `translate3d(0%, 0%, 0) rotateX(${horizontal}deg) rotateY(${vertical}deg)`;
+  el.style.transform = `translate3d(0%, 0%, 0) rotateX(${rotX}deg) rotateY(${rotY}deg)`;
 };
 
 const perspective =
