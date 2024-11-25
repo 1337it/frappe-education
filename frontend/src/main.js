@@ -479,14 +479,7 @@ function getAccel(){
 
   var l = parseInt(event.beta);
   var t = parseInt(event.gamma);
-  var h = $card.height();
-  var w = $card.width();
-  var lp = Math.abs(Math.floor(100 / w * l)-100);
-  var tp = Math.abs(Math.floor(100 / h * t)-100);
-  var bg = `background-position: ${lp}% ${tp}%;`
-  var style = `.card.active:before { ${bg} }`
-  $cards.removeClass("active");
-  $card.addClass("active");
+
 
 
 //
@@ -517,7 +510,7 @@ const perspective =
       .replace("px", "") || 800;
 
 const onCardMove = ev => onMove(ev, ev.target);
-const onHover = ev => ev.target.addEventListener("mousemove", onCardMove);
+const onHover = ev => ev.target.addEventListener("deviceorientation", onCardMove);
 const onOut = ev => {
   resetTransform(ev.target, perspective); // reset card
   ev.target.removeEventListener("mousemove", onCardMove);
