@@ -468,7 +468,7 @@ function getAccel(){
                 
                 // Update velocity according to how tilted the phone is
                 // Since phones are narrower than they are long, double the increase to the x velocity
-        const $cards = $(".card");
+        const $cards = document.querySelectorAll(".card");
 
 
 $cards.on("deviceorientation", function(e) {
