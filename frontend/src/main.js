@@ -472,6 +472,10 @@ function getAccel(){
 
 
 
+		    const $card = document.querySelector(".card.active");
+
+
+
 
   var l = parseInt(event.beta);
   var t = parseInt(event.gamma);
