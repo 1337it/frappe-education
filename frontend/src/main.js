@@ -469,7 +469,7 @@ function getAccel(){
                 // Update velocity according to how tilted the phone is
                 // Since phones are narrower than they are long, double the increase to the x velocity
         const $cards = $(".card");
-const $style = $(".hover");
+
 
 $cards.on("deviceorientation", function(e) {
   var $card = $(this);
@@ -483,7 +483,7 @@ $cards.on("deviceorientation", function(e) {
   var style = `.card.active:before { ${bg} }`
   $cards.removeClass("active");
   $card.addClass("active");
-  $style.html(style);
+
 }).on("mouseout", function() {
   $cards.removeClass("active");
 });
