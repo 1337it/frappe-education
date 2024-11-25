@@ -472,7 +472,7 @@ function getAccel(){
 
 
 
-  var $card = $(this);
+
   var l = parseInt(event.beta);
   var t = parseInt(event.gamma);
   var h = $card.height();
