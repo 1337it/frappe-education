@@ -464,8 +464,8 @@ function getAccel(){
                 var vertical = parseInt(event.beta);
 		var horizontal = parseInt(event.gamma);
 		   
-            
-                
+            var cardon = document.querySelectorAll('.card') !== null;
+                if(cardon) {
                 // Update velocity according to how tilted the phone is
                 // Since phones are narrower than they are long, double the increase to the x velocity
         const $cards = document.querySelectorAll(".card");
@@ -494,16 +494,12 @@ const $style = document.querySelector(".hover");
 
 
 
-console.log(bg);
-
-
-
 
 // setup cards interaction
 
  
 
-
+		}
 
 	
 
