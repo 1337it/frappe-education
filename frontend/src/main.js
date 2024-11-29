@@ -296,7 +296,15 @@ transport();
 	
 
   if (event.target.classList.contains("round-button")) {
+
+const mobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (mobile) {
+  /* your code here */
+
+	  
 	  getAccel();
+}
+
     mainSliderCircle.classList.remove("animate-jello");
     void mainSliderCircle.offsetWidth;
     mainSliderCircle.classList.add("animate-jello");
