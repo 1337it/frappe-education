@@ -1,23 +1,11 @@
 <template>
   <div id='homesection' class='tabsection active' style='opacity:1;'>
 	  <iframe src='' id='frame' height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
-<div id='badgescont' class='cont' style='opacity: 1;top: calc(3vh + 30vh);'>
+<div id='badgescont' class='' style='opacity: 1;top: calc(3vh + 30vh);'>
 		
 		</div>
-	  <div id="streakcont" class="sq" style="opacity: 1; top: calc(51vh); display: flex; position: relative; left: 0; justify-content: center;"><div class="sq"></div><div class="sq"></div></div>
-	<div id='attendancecont' class='cont' style='opacity: 1; top: 69vh;'>
-		
-		<button id='attendancebutton'></button>
-	 <div id='attendancemodal' class='homemodal' style='opacity:1;display:none;'>
-	  <div class="h-full">
-      <Calendar
-        v-if="!attendanceResource.loading && attendanceResource.data"
-        :events="attendanceResource.data"
-      />
-      <Calendar v-else :events="[]" />
-    </div>
-	 </div>
-		</div>
+	  <div id="streakcont" style="opacity: 1; top: calc(51vh); display: flex; position: relative; left: 0; justify-content: center;"><div class="sq"></div><div class="sq"></div></div>
+
 	    </div>
 	<div id='transportsection' class='tabsection' style='opacity:1;'>
 		<div id="vehicledetails" style="position:fixed;bottom:100px;width:80vw;left:10vw;backdrop-filter: blur(10px);background-color: rgba(255, 255, 255, 0.62);box-shadow: #00000026 0 5px 15px;">
