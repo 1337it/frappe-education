@@ -444,14 +444,14 @@ body {
   }
 }
 .sq {
-width: calc(50vw - 10px);
-height: calc(50vw - 10px);
+width: calc(50vw - 15px);
+height: calc(50vw - 15px);
 background: #ffffffbd;
 /* position: absolute; */
 /* width: calc(100% - 10px); */
 box-shadow: #00000026 0 5px 15px;
 border-radius: 15px;
-margin: 0 10px;
+
 z-index: 2;
 -webkit-backdrop-filter: blur(1px);
 }
