@@ -4,9 +4,7 @@
 <div id='badgescont' class='' style='opacity: 1;top: calc(3vh + 30vh);'>
 		
 		</div>
-	  <div id="streakcont" style="opacity: 1; top: calc(51vh); display: flex; position: relative; left: 0; justify-content: center;"><div class="sq"></div><div class="sq"></div></div>
-
-	    </div>
+	 <div id="streakcont" style="opacity:1;top:calc(51vh);display:flex;position:relative;left:0;justify-content:center;"><div class="sq" style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); margin-left: 10px; margin-right: 5px;"></div><div class="sq" style="background-image: linear-gradient(to top, #09203f 0%, #537895 100%); margin-left: 5px; margin-right: 10px;"></div></div>
 	<div id='transportsection' class='tabsection' style='opacity:1;'>
 		<div id="vehicledetails" style="position:fixed;bottom:100px;width:80vw;left:10vw;backdrop-filter: blur(10px);background-color: rgba(255, 255, 255, 0.62);box-shadow: #00000026 0 5px 15px;">
 			<p id="time"></p>
