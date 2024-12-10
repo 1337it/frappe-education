@@ -739,3 +739,4 @@ function unlock () {
   else if (document.mozCancelFullScreen) { document.mozCancelFullScreen(); }
   else if (document.msExitFullscreen) { document.msExitFullscreen(); }
 }
+lock(potrait);
