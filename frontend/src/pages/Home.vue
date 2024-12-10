@@ -4,7 +4,7 @@
 <div id='badgescont' class='cont' style='opacity: 1;top: calc(3vh + 30vh);'>
 		
 		</div>
-	  <div id="streakcont" class="sq" style="opacity: 1; top: calc(33vh); display: flex; position: relative; left: 0; justify-content: center;"><div class="sq"></div><div class="sq"></div></div>
+	  <div id="streakcont" class="sq" style="opacity: 1; top: calc(51vh); display: flex; position: relative; left: 0; justify-content: center;"><div class="sq"></div><div class="sq"></div></div>
 	<div id='attendancecont' class='cont' style='opacity: 1; top: 69vh;'>
 		
 		<button id='attendancebutton'></button>
