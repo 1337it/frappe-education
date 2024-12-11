@@ -5,7 +5,7 @@
 		
 		</div>
 	 <div id="streakcont" style="opacity:1;top:calc(51vh);display:flex;position:relative;left:0;justify-content:center;"><div class="sq" style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); margin-left: 10px; margin-right: 5px;"></div><div class="sq" style="background-image: linear-gradient(to top, #09203f 0%, #537895 100%); margin-left: 5px; margin-right: 10px;"></div></div>
-	<div class="w-full h-full">
+	<div class="w-full h-full" style="position: relative; top: calc(55vh); box-shadow: #00000026 0 5px 15px; margin: 0 10px 0 10px; width: calc(100vw - 20px); height: fit-content; border-radius: 15px;">
     <Calendar
       v-if="!scheduleResource.loading && scheduleResource.data"
       :events="events"
