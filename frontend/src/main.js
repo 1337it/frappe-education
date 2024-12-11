@@ -139,7 +139,7 @@ if (event.target.classList.contains("hometab")) {
 
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('homesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
+setTimeout(() => { document.getElementById('homesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;overflow:scroll;'; 		 }, 100);
 
 
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
