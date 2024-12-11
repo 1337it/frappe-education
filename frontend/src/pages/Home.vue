@@ -1,11 +1,17 @@
 <template>
-  <div id='homesection' class='tabsection active' style='opacity:1;'>
+  <div id='homesection' class='tabsection active' style='opacity:1;overflow:scroll;'>
 	  <iframe src='' id='frame' height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
 <div id='badgescont' class='' style='opacity: 1;top: calc(3vh + 30vh);'>
 		
 		</div>
 	 <div id="streakcont" style="opacity:1;top:calc(51vh);display:flex;position:relative;left:0;justify-content:center;"><div class="sq" style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); margin-left: 10px; margin-right: 5px;"></div><div class="sq" style="background-image: linear-gradient(to top, #09203f 0%, #537895 100%); margin-left: 5px; margin-right: 10px;"></div></div>
-	  </div>
+	<div class="w-full h-full">
+    <Calendar
+      v-if="!scheduleResource.loading && scheduleResource.data"
+      :events="events"
+    />
+  </div>  
+  </div>
 	<div id='transportsection' class='tabsection' style='opacity:1;'>
 		<div id="vehicledetails" style="position:fixed;bottom:100px;width:80vw;left:10vw;backdrop-filter: blur(10px);background-color: rgba(255, 255, 255, 0.62);box-shadow: #00000026 0 5px 15px;">
 			<p id="time"></p>
