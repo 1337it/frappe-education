@@ -715,4 +715,3 @@ router.isReady().then(() => {
 	app.mount("#app")
 })
 
-screen.orientation.lock(potrait-primary);
