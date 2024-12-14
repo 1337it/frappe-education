@@ -846,7 +846,7 @@ ul.main-tabs li {
     padding-top: 10px;
     z-index: 1;
     justify-content: center;
-    width: calc(1/6 * 100vw);
+    width: calc(1/4 * 100vw);
     padding-right: 10px;
 }
 
@@ -893,8 +893,8 @@ max-width: 100%;
 margin: 20px;
 }
 .round-button {
-height: calc((1/18 * 100vw) + 10px);
-width: calc(1/6 * 100vw);
+height: calc((1/12 * 100vw) + 10px);
+width: calc(1/4 * 100vw);
 border-radius: 50%;
 display: inline-flex;
 align-items: center;
@@ -906,7 +906,7 @@ color: #000;
 position: absolute;
 height: 70px;
 bottom: 0;
-padding:20px calc(1/36 * 100%) 40px calc(1/36 * 100%);
+padding:20px calc(1/16 * 100%) 40px calc(1/16 * 100%);
 }
 
 .round-button:hover,
