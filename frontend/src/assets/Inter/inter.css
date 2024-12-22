@@ -1304,7 +1304,7 @@ display: none !important;
 }
 #JSMetroContainer{
 position: absolute;
-    background-image: url(/files/JSMetronome.png);
+
     width: 100vw;
     height: 100vh;
     margin-left: 0;
