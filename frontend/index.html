@@ -13,7 +13,7 @@ a<!DOCTYPE html>
 	  <meta name="theme-color" content="#ffffff">
     <title>Kairali Arts</title>
   </head>
-  <body onload='JSmetronome.init()'>
+  <body>
 	  <div id="attendancepie"></div>
 	  <button id="openmetro" class="" style="display:none;"></button>
 		<button id="opentanpura" class="" style="display:none;"></button>
@@ -26,29 +26,7 @@ a<!DOCTYPE html>
 		  <button id="tanpuraclose" class="" style=""></button>
 	  </div>
 	  	<div id="JSMetroContainer" class="unselectable" style="display:none;">
-		<button id="metroclose" class="" style=""></button>
-		<div id="tempoUp" class="unselectable"></div>
-		<div id="tempoDown" class="unselectable"></div>
-		<div id="Beat" class="unselectable">0</div>
-		<div id="timeSignature" class="unselectable"></div>
-		<div id="TempoContainer" class="unselectable">
-			<span id="tempoDisplay" class="unselectable"></span>
-			<span id="tempoTag" class="unselectable">bpm</span>
-		</div>
-		<div id="tapBkg" class="unselectable"></div>
-		<div id="tap" class="unselectable">TAP</div>
-		<div id="power" class="unselectable"></div>
-		<div id="BellButton" class="unselectable"></div>
-		<audio id="metronomeTick_1" preload="auto">
-	     <source src="https://caljer1.github.io/MetronomeLite/sounds/click.mp3" type="audio/mp3" />
-<!--       <source src="https://caljer1.github.io/MetronomeLite/sounds/clave.mp3" type="audio/mp3" /> -->
-<!--       <source src="https://caljer1.github.io/MetronomeLite/sounds/clap.mp3" type="audio/mp3" /> -->
-<!--       <source src="https://caljer1.github.io/MetronomeLite/sounds/rimshot.mp3" type="audio/mp3" /> -->
-		</audio>
-		<audio id="metronomeBell" preload="auto">
-			<source src="https://caljer1.github.io/MetronomeLite/sounds/bell.mp3" type="audio/mp3" />
-		</audio>
-	    <script src="https://app.kairaliartscentre.com/JSmetronome.js"></script>
+		  <iframe src="app.kairaliartscentre.com:3000/metronome" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;"></iframe>
 	</div>
     <div id="app" style="z-index: 2;background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);"></div>
     <div id="modals"></div>
