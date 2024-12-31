@@ -342,6 +342,12 @@ body {
     left: calc(50vw - 10vh) !important;
 
 }
+.border-l-\[1px\] {
+border-left-width: 0px !important;
+}
+.border-t, .border-t-\[1px\] {
+border-top-width: 0px !important;
+}
 @keyframes movex {
   from {
     transform: translate(0, 0);
