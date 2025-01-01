@@ -477,36 +477,5 @@ const success = () => {
   })
 }
 
-	 frappe.call({
-            method: "education.api.student.get_student_id",
-            callback: function(response) {
-                if (response.message) {
-                    // If a student ID is found, fetch the streak details
-                    var student_id = response.message;
-                    fetchStreakDetails(student_id);
-                } else {
-                    // If no student ID is found, display an error
-                    document.getElementById("current-streak").innerText = "0";
-                    document.getElementById("highest-streak").innerText = "0";
-                }
-            }
-        });
 
-        // Fetch attendance streak details for the given student ID
-        function fetchStreakDetails(student_id) {
-            frappe.call({
-                method: "education.api.student.get_streak_for_student",
-                args: { "student_id": student_id },
-                callback: function(response) {
-                    if (response.message) {
-                        document.getElementById("current-streak").innerText = response.message.current_streak;
-                        document.getElementById("highest-streak").innerText = response.message.highest_streak;
-                    } else {
-                        document.getElementById("current-streak").innerText = "0";
-                        document.getElementById("highest-streak").innerText = "0";
-                    }
-                }
-            });
-        }
-  
 </script>
