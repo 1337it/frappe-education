@@ -478,7 +478,7 @@ const success = () => {
 }
 
 	 frappe.call({
-            method: "your_custom_app.api.student.get_student_id",
+            method: "education.api.student.get_student_id",
             callback: function(response) {
                 if (response.message) {
                     // If a student ID is found, fetch the streak details
@@ -495,7 +495,7 @@ const success = () => {
         // Fetch attendance streak details for the given student ID
         function fetchStreakDetails(student_id) {
             frappe.call({
-                method: "your_custom_app.api.student.get_streak_for_student",
+                method: "education.api.student.get_streak_for_student",
                 args: { "student_id": student_id },
                 callback: function(response) {
                     if (response.message) {
