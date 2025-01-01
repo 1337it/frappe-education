@@ -52,3 +52,16 @@ def get_attendance_streaks(student_id):
         previous_day = record['date']
     
     return {"current_streak": current_streak, "highest_streak": highest_streak}
+
+def get_student_id():
+    # Get the logged-in user
+    user = frappe.session.user
+
+    # Fetch the associated student ID
+    student = frappe.get_value('Student', {'user_id': user}, 'name')
+
+    # Return the Student ID
+    if student:
+        return student
+    else:
+        return None
