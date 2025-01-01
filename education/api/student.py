@@ -53,6 +53,7 @@ def get_attendance_streaks(student_id):
     
     return {"current_streak": current_streak, "highest_streak": highest_streak}
 
+@frappe.whitelist(allow_guest=True)
 def get_student_id():
     # Get the logged-in user
     user = frappe.session.user
