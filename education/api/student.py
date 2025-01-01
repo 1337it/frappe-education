@@ -17,8 +17,8 @@ def get_attendance_streaks(student_id):
     attendance_records = frappe.get_all(
         'Student Attendance',
         filters={'student': student_id},
-        fields=['attendance_date', 'status'],
-        order_by='attendance_date desc'
+        fields=['date', 'status'],
+        order_by='date desc'
     )
     
     if not attendance_records:
@@ -34,7 +34,7 @@ def get_attendance_streaks(student_id):
     for record in attendance_records:
         if record['status'] == 'Present':
             # Increment the current streak
-            if previous_day is None or (previous_day - record['attendance_date']).days == 1:
+            if previous_day is None or (previous_day - record['date']).days == 1:
                 current_streak += 1
                 temp_streak += 1  # Track temporary streak for the highest streak calculation
             else:
@@ -49,6 +49,6 @@ def get_attendance_streaks(student_id):
             highest_streak = temp_streak
         
         # Set the previous_day as the current attendance date for the next iteration
-        previous_day = record['attendance_date']
+        previous_day = record['date']
     
     return {"current_streak": current_streak, "highest_streak": highest_streak}
