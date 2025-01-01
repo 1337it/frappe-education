@@ -394,13 +394,10 @@ const streaks = createResource({
     student_id: studentInfo.id,
   },
 onSuccess: (response) => {
-if (response.message) {
+{
                         document.getElementById("current-streak").innerText = response.message.current_streak;
                         document.getElementById("highest-streak").innerText = response.message.highest_streak;
-                    } else {
-                        document.getElementById("current-streak").innerText = "0";
-                        document.getElementById("highest-streak").innerText = "0";
-                    }
+      
 }
 });
 
