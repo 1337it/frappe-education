@@ -1,5 +1,4 @@
 import './index.css'
-import frappe
 import './cards.scss'
 import { createApp } from 'vue'
 import router from './router'
