@@ -391,7 +391,7 @@ const updateColumns = (exams) => {
 const streaks = createResource({
   url: 'education.api.student.get_streak_for_student',
   params: {
-    student_id: studentInfo.id,
+    student_id: studentInfo.name,
   },
 onSuccess: (response) => {
 
