@@ -399,7 +399,7 @@ onSuccess: (response) => {
                         document.getElementById("highest-streak").innerText = response.message.highest_streak;
       
 }
-});
+})
 
 const feesResource = createResource({
   url: 'education.education.api.get_student_invoices',
