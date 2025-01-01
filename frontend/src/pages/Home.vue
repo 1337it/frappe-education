@@ -394,7 +394,7 @@ const streaks = createResource({
     student_id: studentInfo.name,
   },
 onSuccess: (response) => {
-
+console.log(response.message);
                         document.getElementById("current-streak").innerText = response.message.current_streak;
                         document.getElementById("highest-streak").innerText = response.message.highest_streak;
       
