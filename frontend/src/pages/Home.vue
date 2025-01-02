@@ -5,7 +5,7 @@
 		
 		</div>
 	  <p style="top: calc(51vh); position: relative; text-align: left; margin-left: 10px; font-size: 16px; font-weight: 500; margin-bottom: 5px; line-height: 1.3333733333; font-weight: 400; letter-spacing: -0.01em; font-family: &quot;SF Pro Text&quot;,&quot;Myriad Set Pro&quot;,&quot;SF Pro Icons&quot;,&quot;Apple Legacy Chevron&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,&quot;Arial&quot;,sans-serif; font-weight: 600; color: gray !important;">Streaks</p>
-	 <div id="streakcont" streaks style="opacity:1;top:calc(51vh);display:flex;position:relative;left:0;justify-content:center;">
+	 <div id="streakcont" style="opacity:1;top:calc(51vh);display:flex;position:relative;left:0;justify-content:center;">
 		 <div class="sq" style="background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%); margin-left: 10px; margin-right: 5px;"><p style="position: relative; text-align: center; font-size: 16px; font-weight: 500; margin-top: 15px; line-height: 1.3333733333; font-weight: 400; letter-spacing: -0.01em; font-family: &quot;SF Pro Text&quot;,&quot;Myriad Set Pro&quot;,&quot;SF Pro Icons&quot;,&quot;Apple Legacy Chevron&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,&quot;Arial&quot;,sans-serif; font-weight: 600; color: white!important;">Current Streak</p><h1 id="current-streak"></h1></div>
 		 <div class="sq" style="background-image: linear-gradient(to top, #09203f 0%, #537895 100%); margin-left: 5px; margin-right: 10px;"><p style="position: relative; text-align: center; font-size: 16px; font-weight: 500; margin-top: 15px; line-height: 1.3333733333; font-weight: 400; letter-spacing: -0.01em; font-family: &quot;SF Pro Text&quot;,&quot;Myriad Set Pro&quot;,&quot;SF Pro Icons&quot;,&quot;Apple Legacy Chevron&quot;,&quot;Helvetica Neue&quot;,&quot;Helvetica&quot;,&quot;Arial&quot;,sans-serif; font-weight: 600; color: white!important;">Longest Streak</p><h1 id="highest-streak"></h1></div>
 	 </div>
@@ -395,10 +395,12 @@ const streaks = createResource({
   },
 onSuccess: (response) => {
 console.log(response.message);
-                        document.getElementById("current-streak").innerText = response.message.current_streak;
-                        document.getElementById("highest-streak").innerText = response.message.highest_streak;
-      
+     const current = document.getElementById("current-streak").innerText;
+                   const highest = document.getElementById("highest-streak").innerText;
+      current = response.message.current_streak;
+	highest = response.message.highest_streak;
 }
+	auto: true,
 })
 
 const feesResource = createResource({
