@@ -969,7 +969,7 @@ letter-spacing: 0px!important;
 .main-slider-circle
 {
  height: 2px;
-width: calc((1 / 6)* 100vw);
+width: calc((1 / 4)* 100vw);
 border-radius: 44px;
 transition: background-color .4s ease-in-out;
 background-color: #8bce45;
