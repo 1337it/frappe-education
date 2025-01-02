@@ -399,7 +399,7 @@ console.log(response.message);
                    const highest = document.getElementById("highest-streak").innerText;
       current = response.message.current_streak;
 	highest = response.message.highest_streak;
-}
+},
 	auto: true,
 })
 
