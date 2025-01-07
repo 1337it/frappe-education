@@ -924,7 +924,7 @@ text-align: center !important;
 border-radius: .75rem;
 padding: 10px;
 }
-.rounded-lg {
+.p-2.rounded-lg {
     border-radius: 21px;
     height: 40px;
     /* background: black; */
