@@ -141,70 +141,12 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff
 
 }
 
-if (event.target.classList.contains("gradestab")) {
-	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
-var transtarget = 100;
-var movement = transtarget - transnow;
-	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
-	document.getElementById(currentsection).classList.remove('active');
-document.getElementById('gradesection').classList.add('active');
-if (movement < 0)
-{
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
-	console.log('fromleft');
-	
-}
-	
-if (movement > 0)
-{
-
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
-setTimeout(() => { document.getElementById('gradesection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 
-
-}
-
-}
-
-if (event.target.classList.contains("scheduletab")) {
-	document.querySelector('#schedulesection .w-full.h-full').append(document.getElementById('frappeui-popper-root'));
-	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
-var transtarget = 200;
-var movement = transtarget - transnow;
-var currentsection = document.getElementsByClassName("tabsection active")[0].id;
-	document.getElementById(currentsection).classList.remove('active');
-	console.log(movement);
-	document.getElementById('schedulesection').classList.add('active');
-if (movement < 0)
-{
-
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
-setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
-
-console.log('fromleft');
-
-
-}
-if (movement > 0)
-{
-document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
-setTimeout(() => { document.getElementById('schedulesection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
-document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
-
-
-
-}
-
-}
 
 if (event.target.classList.contains("raventab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
-var transtarget = 300;
+var transtarget = 100;
 var movement = transtarget - transnow;
 	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
 	document.getElementById(currentsection).classList.remove('active');
@@ -232,7 +174,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff
 
 if (event.target.classList.contains("feestab")) {
 	var transnow = document.querySelectorAll('html')[0].attributes.style.value.split(';')[0].split(':')[1].split('%')[0];
-var transtarget = 400;
+var transtarget = 200;
 var movement = transtarget - transnow;
 	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
 	document.getElementById(currentsection).classList.remove('active');
@@ -263,7 +205,7 @@ if (event.target.classList.contains("transporttab")) {
 	var currentsection = document.getElementsByClassName("tabsection active")[0].id;
 	document.getElementById(currentsection).classList.remove('active');
 	console.log(movement);
-	document.getElementById('feessection').classList.add('active');
+	document.getElementById('transportsection').classList.add('active');
 
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
