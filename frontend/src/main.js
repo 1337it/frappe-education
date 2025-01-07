@@ -99,15 +99,7 @@ document.getElementById("JSMetroContainer").attributes.style.value = 'animation:
 
 	
 });
-	document.getElementById("opentanpura").addEventListener("click", (event) => {
 
-
-	document.getElementById("tanpura").attributes.style.value = '';
-document.getElementById("tanpura").attributes.style.value = 'animation:appear 0.2s ease';
-
-
-	
-});
 
  setTimeout(() => {
 document.getElementById("startup").attributes.style.value = 'animation:disappear 0.2s ease';
