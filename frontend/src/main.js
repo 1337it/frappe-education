@@ -477,7 +477,7 @@ var ProgInterval = {
 }
 
 
-document.getElementsByClassName(' p-5 h-full')[0].append(document.getElementById('frappeui-popper-root'));
+
 
 
 let app = createApp(App)
