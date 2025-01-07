@@ -314,7 +314,7 @@ setTimeout(() => {
 const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].replace('%40', '@');
   const frame = document.getElementById("frame");
   frame.src = person;
-	document.getElementsByClassName(' p-5 h-full')[0].append(document.getElementById('frappeui-popper-root'));
+	
    }, 100);
 
 
