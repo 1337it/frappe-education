@@ -390,7 +390,7 @@ const updateColumns = (exams) => {
   })
 }
 
-const streaks = createResource({
+const streaks = fetch({
   url: 'education.api.student.get_streak_for_student',
   params: {
     student_id: studentInfo.name,
