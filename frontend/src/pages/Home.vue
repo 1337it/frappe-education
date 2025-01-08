@@ -269,10 +269,24 @@ const scheduleResource = createResource({
   document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#f6d365');
 
 setTimeout(() => {
-const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].replace('%40', '@');
-  const frame = document.getElementById("frame");
-  frame.src = person;
 
+  
+document.addEventListener("DOMContentLoaded", function () {
+    fetch("/api/method/my_app.api.education_portal.get_student_username")
+        .then((response) => response.json())
+        .then((data) => {
+            if (data && data.message) {
+
+            } else if (data && data.username) {
+                const person = '/g/people/'+data.username;
+		    const frame = document.getElementById("frame");
+  frame.src = person;
+            }
+        })
+        .catch((error) => {
+            console.error("Error fetching username:", error);
+        });
+});
 const streaks = createResource({
   url: 'education.api.student.get_streak_for_student',
   params: {
