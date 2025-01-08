@@ -897,7 +897,7 @@ ul.main-tabs li {
   object-fit: cover;
 }
 .py-1 {
-padding-top: 18px !important;
+padding-top: 15px !important;
 padding-bottom: 18px !important;
 position: fixed!important;
 
@@ -923,7 +923,7 @@ padding: 10px;
 }
 .p-2.rounded-lg {
     border-radius: 21px;
-    height: 40px;
+    height: 50px;
     /* background: black; */
     opacity: 1;
     border: 1px dotted var(--background-color);
@@ -1094,7 +1094,9 @@ align-items: start !important;
 
 display: none !important;
 }
-
+.flex.justify-center.h-full.font-normal.mx-2.text-gray-500 {
+height: auto;
+}
 #schedulesection .border-l-\[1px\] {
     border-left-width: 0px!important;
 }
