@@ -27,7 +27,9 @@ app_include_js = "education.bundle.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "education/public/scss/website"
-
+api_methods = {
+    "my_app.api.education_portal.get_student_username": "GET"
+}
 # website
 update_website_context = []
 
