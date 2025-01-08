@@ -282,17 +282,30 @@ var revealPosition = function(position) {
 
 
   var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-	
+	       "Authorization": "Basic " + btoa("username" + ":" + "pwd")
+        },
+        contentType:"application/json",
+        data:JSON.stringify({
+            name:"Name",
+            deviceId:"13"
+          }),
+        success: function (response) {
+            console.log(response);
+            latitude = response[0]["latitude"];
+            longitude = response[0]["longitude"];
+            
+        }
+      });
 
-fetch(`https://app.kairaliartscentre.com:9999/hooks/getlocation`, {
+fetch(`http://locate.kairaliartscentre.com/api/positions/`, {
     method: 'GET',  }).then(r => 
     r.text()) .then(r => {
         const latcut = r.split("lat=", 100000);
         const loncut = r.split("lon=", 100000);
         const timecut = r.split("timestamp=", 100000);
-        var lat = latcut[latcut.length - 1].slice(0, 9);
-        var lon = loncut[loncut.length - 1].slice(0, 9);
-        var timestamp = timecut[timecut.length - 1].slice(0, 19);
+        var lat = r[0].latitude;
+        var lon = r[0].longitude
+        var timestamp = r[0].deviceTime;
 	var origin = "("+lat+","+lon+")"; // using google.maps.LatLng class
 var destination = latlng; // using string
 var now = moment();
