@@ -14,4 +14,4 @@ def get_student_username():
     if not student:
         return {"message": "No student profile found for the logged-in user."}
 
-    return {"username": student.get("username")}
+    return {"username": student}
