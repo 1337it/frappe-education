@@ -282,9 +282,9 @@ onSuccess: (response) => {
 console.log(response)
 
 console.log(response.current_streak + "-" + response.highest_streak)
-     const current = document.getElementById("current-streak").innerText
-                   const highest = document.getElementById("highest-streak").innerText
-      current = response.current_streak
+     document.getElementById("current-streak").innerText = response.current_streak;
+  document.getElementById("highest-streak").innerText = response.highest_streak;
+
 if(response.current_streak == 1){
 document.getElementsByClassName("days")[0].innerText = "Day";
 }
@@ -292,7 +292,7 @@ document.getElementsByClassName("days")[0].innerText = "Day";
 document.getElementsByClassName("days")[1].innerText = "Day";
 }
 
-	highest = response.highest_streak
+	
 },
 	auto: true,
 })
