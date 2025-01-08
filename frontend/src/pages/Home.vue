@@ -32,38 +32,6 @@
 	<div id='postssection' class='tabsection' style='opacity:1;'>
   <iframe src="/g/general/projects/12/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
 </div>
-	<div id='gradesection' class='tabsection' style='opacity:1;'>
-  <div v-if="grades.data?.length > 0">
-    <div class="px-5 py-4">
-      <Dropdown class="mb-4" :options="allPrograms">
-        <template #default="{ open }">
-          <Button :label="selectedProgram">
-            <template #suffix>
-              <FeatherIcon
-                :name="open ? 'chevron-up' : 'chevron-down'"
-                class="h-4 text-gray-600"
-              />
-            </template>
-          </Button>
-        </template>
-      </Dropdown>
-      <ListView
-        class="h-[250px]"
-        :columns="tableData.columns"
-        :rows="tableData.rows"
-        :options="{
-          selectable: false,
-          showTooltip: false,
-          onRowClick: () => {},
-        }"
-        row-key="id"
-      />
-    </div>
-  </div>
-  <div v-else>
-    <MissingData message="No grades found" />
-  </div>
-		</div>
 <div id='feessection' class='tabsection' style='opacity:1;'>
   <div v-if="tableData.rows.length > 0" class="px-5 py-4">
     <ListView
@@ -134,16 +102,7 @@
     <MissingData message="No Fees found" />
   </div>
 </div>
-<div id='schedulesection' class='tabsection' style='opacity:1;'>
-  <div class="w-full h-full">
-    <Calendar
-      v-if="!scheduleResource.loading && scheduleResource.data"
-      :events="events"
-    />
-  </div>
 	</div>
-	<div id='gradesection' class='tabsection' style='opacity:1;'>
-		</div>
 </template>
 <script setup>
 	  import { useRoute } from 'vue-router'
