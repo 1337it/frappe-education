@@ -10,7 +10,7 @@ def get_student_username():
         return {"message": "You must be logged in to access this feature."}
 
     # Fetch the linked Student profile based on the logged-in User
-    student = frappe.db.get_value("Student", {"user_id": user}, ["name", "username"], as_dict=True)
+    student = frappe.db.get_value("User", {"email": user}, ["name", "username"])
     if not student:
         return {"message": "No student profile found for the logged-in user."}
 
