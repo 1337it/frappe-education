@@ -914,6 +914,9 @@ text-align: center !important;
     /* backdrop-filter: blur(10px); */
     box-shadow: none;
     z-index: 99999999 !important;
+	box-shadow:0 35px 50px -30px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 100vw;
 }
 .popover-container .rounded-lg {
 border-radius: .75rem;
