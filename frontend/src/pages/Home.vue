@@ -398,10 +398,12 @@ const streaks = createResource({
   },
 onSuccess: (response) => {
 console.log(response.message);
+let data = response.json()
+
      const current = document.getElementById("current-streak").innerText;
                    const highest = document.getElementById("highest-streak").innerText;
-      current = response.message.current_streak;
-	highest = response.message.highest_streak;
+      current = data.message.current_streak;
+	highest = data.message.highest_streak;
 },
 	auto: true,
 })
