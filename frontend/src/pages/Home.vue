@@ -271,26 +271,14 @@ const scheduleResource = createResource({
 setTimeout(() => {
 
   
-document.addEventListener("DOMContentLoaded", function () {
-    fetch("/api/method/education.api.education_portal.get_student_username")
-        .then((response) => response.json())
-        .then((data) => {
-            if (data && data.message) {
 
-            } else if (data && data.username) {
-                const person = '/g/people/'+data.username;
-		    const frame = document.getElementById("frame");
-  frame.src = person;
-            }
-        })
-        .catch((error) => {
-            console.error("Error fetching username:", error);
-        });
-});
 
 
 	const gameplanuser = createResource({
   url: 'education.api.education_portal.get_student_username',
+		  params: {
+    student_id: studentInfo.name,
+  },
 onSuccess: (response) => {
 console.log(response)
 
