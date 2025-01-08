@@ -402,8 +402,8 @@ let data = response
 
      const current = document.getElementById("current-streak").innerText
                    const highest = document.getElementById("highest-streak").innerText
-      current = data.message.current_streak
-	highest = data.message.highest_streak
+      current = data.current_streak
+	highest = data.highest_streak
 },
 	auto: true,
 })
