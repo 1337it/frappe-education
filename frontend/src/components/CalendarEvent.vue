@@ -121,7 +121,6 @@ function parseDate() {
 	let eventDate = date[1] + " " + date[2]
 	return `${day}, ${eventDate}`
 }
-document.getElementsByClassName('p-5 h-full')[0].append(document.getElementById('frappeui-popper-root'));
 </script>
 
 <style></style>
