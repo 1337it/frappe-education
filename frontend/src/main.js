@@ -282,23 +282,18 @@ var revealPosition = function(position) {
 
 
   var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-	       "Authorization": "Basic " + btoa("username" + ":" + "pwd")
+	 
+
+fetch(`http://locate.kairaliartscentre.com/api/positions/`, {
+    method: 'GET',
+headers: {
+            "Authorization": "Basic " + btoa("admin" + ":" + "@Sianet211211")
         },
         contentType:"application/json",
         data:JSON.stringify({
-            name:"Name",
-            deviceId:"13"
-          }),
-        success: function (response) {
-            console.log(response);
-            latitude = response[0]["latitude"];
-            longitude = response[0]["longitude"];
-            
-        }
-      });
-
-fetch(`http://locate.kairaliartscentre.com/api/positions/`, {
-    method: 'GET',  }).then(r => 
+            name:"Dhanish",
+            deviceId:"4"
+          }),}).then(r => 
     r.text()) .then(r => {
         const latcut = r.split("lat=", 100000);
         const loncut = r.split("lon=", 100000);
