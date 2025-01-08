@@ -1101,21 +1101,13 @@ display: none !important;
 [style^="--translate-main-slider: 0"] #homesection {
     display: block !important;
 }
-
-[style^="--translate-main-slider: 100"] #gradesection {
+[style^="--translate-main-slider: 100"] #postssection {
     display: block !important;
 }
-
-[style^="--translate-main-slider: 200"] #schedulesection {
+[style^="--translate-main-slider: 200"] #feessection {
     display: block !important;
 }
-[style^="--translate-main-slider: 300"] #postssection {
-    display: block !important;
-}
-[style^="--translate-main-slider: 400"] #feessection {
-    display: block !important;
-}
-[style^="--translate-main-slider: 500"] #transportsection {
+[style^="--translate-main-slider: 300"] #transportsection {
     display: block !important;
 }
 
