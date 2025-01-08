@@ -272,6 +272,30 @@ setTimeout(() => {
 const person = '/g/people/'+document.cookie.split('=', 4)[3].split(';', 1)[0].replace('%40', '@');
   const frame = document.getElementById("frame");
   frame.src = person;
+
+const streaks = createResource({
+  url: 'education.api.student.get_streak_for_student',
+  params: {
+    student_id: studentInfo.name,
+  },
+onSuccess: (response) => {
+console.log(response)
+
+console.log(response.current_streak + "-" + response.highest_streak)
+     const current = document.getElementById("current-streak").innerText
+                   const highest = document.getElementById("highest-streak").innerText
+      current = response.current_streak
+if(response.current_streak == 1){
+document.getElementsByClassName("days")[0].innerText = "Day";
+}
+	if(response.highest_streak == 1){
+document.getElementsByClassName("days")[1].innerText = "Day";
+}
+
+	highest = response.highest_streak
+},
+	auto: true,
+})
 	
    }, 100);
 
@@ -349,22 +373,7 @@ const updateColumns = (exams) => {
   })
 }
 
-const streaks = createResource({
-  url: 'education.api.student.get_streak_for_student',
-  params: {
-    student_id: studentInfo.name,
-  },
-onSuccess: (response) => {
-console.log(response)
 
-console.log(response.current_streak + "-" + response.highest_streak)
-     const current = document.getElementById("current-streak").innerText
-                   const highest = document.getElementById("highest-streak").innerText
-      current = response.current_streak
-	highest = response.highest_streak
-},
-	auto: true,
-})
 
 const feesResource = createResource({
   url: 'education.education.api.get_student_invoices',
