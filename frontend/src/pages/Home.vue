@@ -287,6 +287,21 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Error fetching username:", error);
         });
 });
+
+
+	const gameplanuser = createResource({
+  url: 'education.api.education_portal.get_student_username',
+onSuccess: (response) => {
+console.log(response)
+
+ const person = '/g/people/'+response.username;
+		    const frame = document.getElementById("frame");
+  frame.src = person;
+
+	
+},
+	auto: true,
+})
 const streaks = createResource({
   url: 'education.api.student.get_streak_for_student',
   params: {
