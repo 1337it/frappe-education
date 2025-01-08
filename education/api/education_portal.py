@@ -1,11 +1,11 @@
 import frappe
 
 @frappe.whitelist()
-def get_student_username():
+def get_student_username(student_id):
     """
     Fetches the username of the logged-in student.
     """
-    user = frappe.session.user
+    user = frappe.db.get_value("Student", {"name": student_id}, ["student_email_id"])
     if user == "Guest":
         return {"message": "You must be logged in to access this feature."}
 
