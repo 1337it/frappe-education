@@ -919,6 +919,10 @@ text-align: center !important;
     margin: 10px;
     width: 100vw;
 }
+.bg-blue-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 109 0 / 31%)!important;
+}
 .popover-container .rounded-lg {
 border-radius: .75rem;
 padding: 10px;
@@ -926,13 +930,12 @@ padding: 10px;
     border: none;
 }
 .p-2.rounded-lg {
-    border-radius: 21px;
+  border-radius: 11px;
     height: 50px;
-    /* background: black; */
     opacity: 1;
-    border: 1px dotted var(--background-color);
+    border: 1px solid #ff8100;
     width: 40px;
-	    mix-blend-mode: multiply;
+    mix-blend-mode: multiply;
 }
 
 
