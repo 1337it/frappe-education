@@ -282,7 +282,7 @@ setTimeout(() => {
 onSuccess: (response) => {
 console.log(response)
 
- const person = '/g/people/'+response.username;
+ const person = '/g/people/'+response.username[0];
 		    const frame = document.getElementById("frame");
   frame.src = person;
 
