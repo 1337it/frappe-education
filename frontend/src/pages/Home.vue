@@ -272,7 +272,7 @@ setTimeout(() => {
 
   
 document.addEventListener("DOMContentLoaded", function () {
-    fetch("/api/method/my_app.api.education_portal.get_student_username")
+    fetch("/api/method/education.api.education_portal.get_student_username")
         .then((response) => response.json())
         .then((data) => {
             if (data && data.message) {
