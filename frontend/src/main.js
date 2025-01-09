@@ -295,7 +295,7 @@ headers: {
             deviceId:"4"
           }),}).then(r => 
     r.text()) .then(r => {
-        const latcut = r.split('"latitude=":', 100000)[1];
+        const latcut = r.split('"latitude":', 100000)[1];
         const loncut = r.split('"longitude":', 100000)[1];
         const timecut = r.split('"deviceTime":', 100000)[1];
         var lat = latcut.slice(0,10);
