@@ -284,7 +284,7 @@ var revealPosition = function(position) {
   var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 	 
 
-fetch(`http://locate.kairaliartscentre.com/api/positions/`, {
+fetch(`https://locate.kairaliartscentre.com/api/positions/`, {
     method: 'GET',
 headers: {
             "Authorization": "Basic " + btoa("admin" + ":" + "@Sianet211211")
