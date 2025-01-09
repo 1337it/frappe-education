@@ -298,9 +298,9 @@ headers: {
         const latcut = r.split('"latitude=":', 100000)[1];
         const loncut = r.split('"longitude":', 100000)[1];
         const timecut = r.split('"deviceTime":', 100000)[1];
-        var lat = latcut.splice(0,10);
-        var lon = loncut.splice(0,10);
-        var timestamp = timecut.splice(0,19);
+        var lat = latcut.slice(0,10);
+        var lon = loncut.slice(0,10);
+        var timestamp = timecut.slice(0,19);
 	var origin = "("+lat+","+lon+")"; // using google.maps.LatLng class
 var destination = latlng; // using string
 var now = moment();
