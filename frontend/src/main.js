@@ -129,14 +129,14 @@ if (event.target.classList.contains("hometab")) {
 	document.getElementById(currentsection).classList.remove('active');
 	document.getElementById('homesection').classList.add('active');
 
-
+if(currentsection != 'homesection'){
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-right 0.2s ease'; 
 setTimeout(() => { document.getElementById('homesection').attributes.style.value  = 'animation:page-slide-end-left 0.2s ease;overflow:scroll;'; 		 }, 100);
 
 
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
-
+}
 
 
 }
@@ -206,12 +206,12 @@ if (event.target.classList.contains("transporttab")) {
 	document.getElementById(currentsection).classList.remove('active');
 	console.log(movement);
 	document.getElementById('transportsection').classList.add('active');
-
+if(currentsection != 'transportsection'){
 document.getElementById(currentsection).attributes.style.value = 'animation:page-slide-start-left 0.2s ease'; 
 setTimeout(() => { document.getElementById('feessection').attributes.style.value  = 'animation:page-slide-end-right 0.2s ease;'; 		 }, 100);
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
-
+}
 
 transport();
 
@@ -283,6 +283,8 @@ var revealPosition = function(position) {
 
   var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 	 
+function updatelocation(){
+setTimeout(() => { 
 
 fetch(`https://locate.kairaliartscentre.com/api/positions/`, {
     method: 'GET',
@@ -332,6 +334,13 @@ directionsService.route( request, function( response, status ) {
 
 	
         })
+ }, 5000);
+updatelocation();
+
+}
+
+updatelocation();
+	
  document.onreadystatechange = function () {
         if (document.readyState === "loading") {
             console.log('Page is loading');
