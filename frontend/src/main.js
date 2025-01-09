@@ -297,7 +297,7 @@ headers: {
     r.text()) .then(r => {
         const latcut = r.split('"latitude":', 100000)[1];
         const loncut = r.split('"longitude":', 100000)[1];
-        const timecut = r.split('"deviceTime":', 100000)[1];
+        const timecut = r.split('"deviceTime":"', 100000)[1];
         var lat = latcut.slice(0,10);
         var lon = loncut.slice(0,10);
         var timestamp = timecut.slice(0,19);
