@@ -284,7 +284,7 @@ var revealPosition = function(position) {
   var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
 	 
 function updatelocation(){
-setTimeout(() => { 
+
 
 fetch(`https://locate.kairaliartscentre.com/api/positions/`, {
     method: 'GET',
@@ -334,11 +334,12 @@ directionsService.route( request, function( response, status ) {
 
 	
         })
- }, 5000);
+ 
+setTimeout(() => { 
 updatelocation();
+}, 5000);
 
 }
-
 updatelocation();
 	
  document.onreadystatechange = function () {
