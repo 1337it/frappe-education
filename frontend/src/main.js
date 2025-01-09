@@ -307,7 +307,7 @@ headers: {
 var destination = latlng; // using string
 var now = moment();
 	var then = moment(timestamp).add(4, 'hour');
-var duration = moment.duration(now.diff(then));
+var duration = moment.duration(moment().diff(then));
 	var minutes = duration.minutes();
 	var directionsService = new google.maps.DirectionsService();
 var request = {
@@ -327,7 +327,7 @@ directionsService.route( request, function( response, status ) {
         document.getElementById('item').innerHTML = ''; 
         document.getElementById('item').src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ&origin="+lat+","+lon+"&destination="+latlng+"&maptype=roadmap&zoom=13"
         document.getElementById('time').innerText = 'Last seen '+minutes+' minutes ago.';
-        console.log('Lat='+lat+' Lon='+lon+' Now='+moment(now)+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
+        console.log('Lat='+lat+' Lon='+lon+' Now='+moment()+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
 
 
 
