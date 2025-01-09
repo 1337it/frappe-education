@@ -295,12 +295,12 @@ headers: {
             deviceId:"4"
           }),}).then(r => 
     r.text()) .then(r => {
-        const latcut = r.split("lat=", 100000);
-        const loncut = r.split("lon=", 100000);
-        const timecut = r.split("timestamp=", 100000);
-        var lat = r[0].latitude;
-        var lon = r[0].longitude
-        var timestamp = r[0].deviceTime;
+        const latcut = r.split('"latitude=":', 100000)[1];
+        const loncut = r.split('"longitude":', 100000)[1];
+        const timecut = r.split('"deviceTime":', 100000)[1];
+        var lat = latcut.splice(0,10);
+        var lon = loncut.splice(0,10);
+        var timestamp = timecut.splice(0,19);
 	var origin = "("+lat+","+lon+")"; // using google.maps.LatLng class
 var destination = latlng; // using string
 var now = moment();
