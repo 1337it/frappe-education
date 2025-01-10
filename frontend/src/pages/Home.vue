@@ -30,7 +30,7 @@
 <iframe id="item" width="100%" height="100%" frameborder="0" style="border-radius-bottom-left: 15px;border-radius-bottom-right: 15px;border: 1px solid white;width: 100vw;left: 0vw;position: fixed;top: 0vw;height: calc(100% - 90px);box-shadow: #00000026 0 5px 15px;" referrerpolicy="no-referrer-when-downgrade" src allowfullscreen></iframe>
 		</div>
 	<div id='postssection' class='tabsection' style='opacity:1;'>
-  <iframe src="g/general/projects/13/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
+  <iframe src="/g/general/projects/13/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
 </div>
 <div id='feessection' class='tabsection' style='opacity:1;'>
   <div v-if="tableData.rows.length > 0" class="px-5 py-4">
