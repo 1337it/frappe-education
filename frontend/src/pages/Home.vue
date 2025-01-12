@@ -20,24 +20,6 @@
   </div>  
   </div>
 	<div id='transportsection' class='tabsection' style='opacity:1;'>
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ"></script>
-    <style>
-        #map {
-            height: 100vh;
-            width: 100%;
-        }
-        #info {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-        }
-    </style>
-</head>
-<body>
     <div id="info">
         <h2>Live Tracking</h2>
         <p id="distance">Calculating...</p>
