@@ -20,14 +20,35 @@
   </div>  
   </div>
 	<div id='transportsection' class='tabsection' style='opacity:1;'>
+		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+        #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <h2>Live Tracking</h2>
+        <p id="distance">Calculating...</p>
+        <p id="time">Calculating...</p>
+    </div>
+    <div id="map"></div>
 		<div id="vehicledetails" style="height:20px;position:fixed;bottom:70px;width:100vw;left:0vw;backdrop-filter: blur(10px);background-color: rgba(255, 255, 255, 0.62);box-shadow: #00000026 0 5px 15px;">
-			<p id="time"></p>
-			<p id="seen"></p>
 	<button class="enable" style="display:none">Enable Geolocation</button>
 <button class="revoke" style="display:none">Revoke permission</button>
 </div>
-<div id="map"></div>
-<iframe id="item" width="100%" height="100%" frameborder="0" style="border-radius-bottom-left: 15px;border-radius-bottom-right: 15px;border: 1px solid white;width: 100vw;left: 0vw;position: fixed;top: 0vw;height: calc(100% - 90px);box-shadow: #00000026 0 5px 15px;" referrerpolicy="no-referrer-when-downgrade" src allowfullscreen></iframe>
+
 		</div>
 	<div id='postssection' class='tabsection' style='opacity:1;'>
   <iframe src="/g/general/projects/13/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
