@@ -129,7 +129,15 @@ h2 {
   font-family: 'Roboto', sans-serif;
   color: white;
 }
-
+    #info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
 
 .inputs {
   visibility: visible;
