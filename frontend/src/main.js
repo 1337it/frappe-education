@@ -213,7 +213,7 @@ document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ff
 
 }
 
-     initMap();
+
 
 }
 
@@ -506,136 +506,7 @@ var ProgInterval = {
 }
 
               		  
-  const traccarApiUrl = "https://locate.kairaliartscentre.com/api/positions"; // Replace with your Traccar API endpoint
-        const traccarAuthToken = "KYUs5rZVH5k4ZvNrxrGfKo1ptQEaJjkf"; // Replace with your Traccar API token
 
-        let map;
-        let clientMarker, userMarker, routeLine;
-        let clientLocation = { lat: 0, lng: 0 };
-        let userLocation = { lat: 0, lng: 0 };
-
-        // Initialize Google Map
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: 0, lng: 0 },
-                zoom: 14,
-            });
-
-            // Add markers for user and client
-            clientMarker = new google.maps.Marker({
-                map,
-                label: "Client",
-                icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
-            });
-
-            userMarker = new google.maps.Marker({
-                map,
-                label: "You",
-                icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-            });
-
-            routeLine = new google.maps.Polyline({
-                map,
-                strokeColor: "#FF0000",
-                strokeOpacity: 0.7,
-                strokeWeight: 4
-            });
-
-            updateLocations();
-            setInterval(updateLocations, 5000); // Update every 5 seconds
-        }
-
-        // Fetch client location from Traccar API
-function fetchClientLocation() {
-     
-
-
-fetch(`https://locate.kairaliartscentre.com/api/positions/`, {
-    method: 'GET',
-headers: {
-            "Authorization": "Basic " + btoa("admin" + ":" + "@Sianet211211")
-        },
-        contentType:"application/json",
-        data:JSON.stringify({
-            name:"Dhanish",
-            deviceId:"4"
-          }),}).then(r => 
-    r.text()) .then(r => {
-        const latcut = r.split('"latitude":', 100000)[1];
-        const loncut = r.split('"longitude":', 100000)[1];
-        const timecut = r.split('"deviceTime":"', 100000)[1];
-        var lat = latcut.slice(0,10);
-        var lon = loncut.slice(0,10);
-
-
-     //   var point = response.routes[ 0 ].legs[ 0 ];
-     //    document.getElementById('seen').innerText = 'Estimated travel time: ' + point.duration.text + ' (' + point.distance.text + ')';
-	    clientLocation.lat = Number(lat);
-	    clientLocation.lng = Number(lon);
-
-})
-    //  document.getElementById('item').innerHTML = ''; 
-
-        }
-
-        // Fetch user location
-        function fetchUserLocation() {
-            return new Promise((resolve, reject) => {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        userLocation.lat = position.coords.latitude;
-                        userLocation.lng = position.coords.longitude;
-                        resolve();
-                    },
-                    (error) => reject(error)
-                );
-            });
-        }
-
-        // Update locations and map
-        async function updateLocations() {
-            await fetchClientLocation();
-            await fetchUserLocation();
-
-            // Update markers
-            clientMarker.setPosition(clientLocation);
-            userMarker.setPosition(userLocation);
-
-            // Update route line
-            routeLine.setPath([clientLocation, userLocation]);
-
-            // Center map
-            const bounds = new google.maps.LatLngBounds();
-            bounds.extend(clientLocation);
-            bounds.extend(userLocation);
-            map.fitBounds(bounds);
-
-            // Calculate distance and time
-            calculateDistanceAndTime();
-        }
-
-        // Calculate distance and time using Google Maps Distance Matrix API
-        function calculateDistanceAndTime() {
-            const service = new google.maps.DistanceMatrixService();
-            service.getDistanceMatrix(
-                {
-                    origins: [userLocation],
-                    destinations: [clientLocation],
-                    travelMode: "DRIVING",
-                },
-                (response, status) => {
-                    if (status === "OK") {
-                        const element = response.rows[0].elements[0];
-                        const distance = element.distance.text;
-                        const duration = element.duration.text;
-                        document.getElementById("distance").textContent = `Distance: ${distance}`;
-                        document.getElementById("time").textContent = `Travel Time: ${duration}`;
-                    } else {
-                        console.error("Error with Distance Matrix API:", status);
-                    }
-                }
-            );
-        }
 
         // Load the map
    
