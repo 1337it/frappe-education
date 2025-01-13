@@ -506,7 +506,7 @@ var ProgInterval = {
 }
 
               		  
-  const traccarApiUrl = "http://locate.kairaliartscentre.com/api/positions"; // Replace with your Traccar API endpoint
+  const traccarApiUrl = "https://locate.kairaliartscentre.com/api/positions"; // Replace with your Traccar API endpoint
         const traccarAuthToken = "KYUs5rZVH5k4ZvNrxrGfKo1ptQEaJjkf"; // Replace with your Traccar API token
 
         let map;
