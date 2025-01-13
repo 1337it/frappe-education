@@ -212,7 +212,7 @@ setTimeout(() => { document.getElementById('feessection').attributes.style.value
 document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ffffff');
 
 }
-
+transport();
 
 
 }
@@ -351,7 +351,7 @@ updatelocation();
 }, 10000);
 
 }
-
+updatelocation();
 	
  document.onreadystatechange = function () {
         if (document.readyState === "loading") {
