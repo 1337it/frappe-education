@@ -570,8 +570,8 @@ headers: {
 
      //   var point = response.routes[ 0 ].legs[ 0 ];
      //    document.getElementById('seen').innerText = 'Estimated travel time: ' + point.duration.text + ' (' + point.distance.text + ')';
-	    clientLocation.lat = number(lat);
-	    clientLocation.lng = number(lon);
+	    clientLocation.lat = Number(lat);
+	    clientLocation.lng = Number(lon);
 
 })
     //  document.getElementById('item').innerHTML = ''; 
