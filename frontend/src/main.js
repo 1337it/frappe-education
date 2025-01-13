@@ -548,15 +548,69 @@ var ProgInterval = {
         // Fetch client location from Traccar API
         async function fetchClientLocation() {
             try {
-                const response = await fetch(traccarApiUrl, {
-                    headers: { Authorization: `Bearer ${traccarAuthToken}` }
-                });
-                const data = await response.json();
-                clientLocation.lat = data[0].latitude; // Adjust index/structure based on response
-                clientLocation.lng = data[0].longitude;
-            } catch (error) {
-                console.error("Error fetching client location:", error);
-            }
+
+
+fetch(`https://locate.kairaliartscentre.com/api/positions/`, {
+    method: 'GET',
+headers: {
+            "Authorization": "Basic " + btoa("admin" + ":" + "@Sianet211211")
+        },
+        contentType:"application/json",
+        data:JSON.stringify({
+            name:"Dhanish",
+            deviceId:"4"
+          }),}).then(r => 
+    r.text()) .then(r => {
+        const latcut = r.split('"latitude":', 100000)[1];
+        const loncut = r.split('"longitude":', 100000)[1];
+        const timecut = r.split('"deviceTime":"', 100000)[1];
+        var lat = latcut.slice(0,10);
+        var lon = loncut.slice(0,10);
+        var timestamp = timecut.slice(0,19);
+	var origin = "("+lat+","+lon+")"; // using google.maps.LatLng class
+var destination = latlng; // using string
+var now = moment();
+	var then = moment(timestamp).add(4, 'hour');
+var duration = moment.duration(moment().diff(then));
+	var minutes = duration.minutes();
+	var directionsService = new google.maps.DirectionsService();
+var request = {
+    origin: origin, // LatLng|string
+    destination: destination, // LatLng|string
+    travelMode: google.maps.DirectionsTravelMode.DRIVING
+};
+
+directionsService.route( request, function( response, status ) {
+
+    if ( status === 'OK' ) {
+     //   var point = response.routes[ 0 ].legs[ 0 ];
+     //    document.getElementById('seen').innerText = 'Estimated travel time: ' + point.duration.text + ' (' + point.distance.text + ')';
+	    clientLocation.lat = lat;
+	    clientLocation.lng = lng;
+    }
+} );
+	
+    //  document.getElementById('item').innerHTML = ''; 
+     //   document.getElementById('item').src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBMTueLj6IEJA1eEePKjmA3tYNw-lnd3TQ&origin="+lat+","+lon+"&destination="+latlng+"&maptype=roadmap&zoom=13"
+       if(moment.duration(moment().diff(then))._milliseconds <= 120000){
+// document.getElementById('time').innerText = 'Online';
+//document.getElementById('time').parentNode.style.backgroundColor = "rgba(0,255,0,0.5)";
+       }
+	else
+       {
+//document.getElementById('time').innerText = 'Offline';
+//document.getElementById('time').parentNode.style.backgroundColor = "rgba(255,0,0,0.5)";
+       }
+
+
+
+        console.log('Lat='+lat+' Lon='+lon+' Now='+moment()+' Timestamp='+moment(timestamp).add(4, 'hour').format('dddd, MMMM Do YYYY, h:mm:ss a'));
+
+
+
+
+	
+        })
         }
 
         // Fetch user location
