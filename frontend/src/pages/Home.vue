@@ -20,17 +20,11 @@
   </div>  
   </div>
 	<div id='transportsection' class='tabsection' style='opacity:1;'>
-    <div id="info">
-        <h2>Live Tracking</h2>
-        <p id="distance">Calculating...</p>
-        <p id="time">Calculating...</p>
-    </div>
     <div id="map"></div>
 		<div id="vehicledetails" style="height:20px;position:fixed;bottom:70px;width:100vw;left:0vw;backdrop-filter: blur(10px);background-color: rgba(255, 255, 255, 0.62);box-shadow: #00000026 0 5px 15px;">
 	<button class="enable" style="display:none">Enable Geolocation</button>
 <button class="revoke" style="display:none">Revoke permission</button>
-</div>
-
+		</div>
 		</div>
 	<div id='postssection' class='tabsection' style='opacity:1;'>
   <iframe src="/g/general/projects/13/discussions" height="100%" width="100%" style="padding: 0px;margin: 0px;z-index: 9;width: 100vw;position: absolute;left: 0;height:100vh;top:0;" title="Posts"></iframe>
