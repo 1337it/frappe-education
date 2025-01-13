@@ -71,7 +71,7 @@
         </li>
         <li>
 		<p style="position: absolute; /* text-align: center; */ /* width: auto; */ bottom:10px;">Transport</p>
-          <button class="round-button transporttab" style="--round-button-active-color: #ff6d00;" data-translate-value="300%" data-color="gray" id="transport" onclick="">
+          <button class="round-button transporttab" style="--round-button-active-color: #ff6d00;" data-translate-value="300%" data-color="gray" id="transport" onclick="initMap();">
             <svg xmlns="http://www.w3.org/2000/svg" width="0px" height="0px" viewBox="0 0 24 24" fill="none">
 <path d="M14.5 19.9815C16.0728 19.9415 17.1771 19.815 18 19.4151V20.9999C18 21.5522 17.5523 21.9999 17 21.9999H15.5C14.9477 21.9999 14.5 21.5522 14.5 20.9999V19.9815Z" fill="#1C274C"/>
 <path d="M6 19.415C6.82289 19.815 7.9272 19.9415 9.5 19.9815V20.9999C9.5 21.5522 9.05228 21.9999 8.5 21.9999H7C6.44772 21.9999 6 21.5522 6 20.9999V19.415Z" fill="#1C274C"/>
@@ -104,7 +104,136 @@
     </script>
     <script type="module" src="/src/main.js"></script>
 	  <script type="text/javascript">
+  const traccarApiUrl = "https://locate.kairaliartscentre.com/api/positions"; // Replace with your Traccar API endpoint
+        const traccarAuthToken = "KYUs5rZVH5k4ZvNrxrGfKo1ptQEaJjkf"; // Replace with your Traccar API token
 
+        let map;
+        let clientMarker, userMarker, routeLine;
+        let clientLocation = { lat: 0, lng: 0 };
+        let userLocation = { lat: 0, lng: 0 };
+
+        // Initialize Google Map
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 0, lng: 0 },
+                zoom: 14,
+            });
+
+            // Add markers for user and client
+            clientMarker = new google.maps.Marker({
+                map,
+                label: "Client",
+                icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+            });
+
+            userMarker = new google.maps.Marker({
+                map,
+                label: "You",
+                icon: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+            });
+
+            routeLine = new google.maps.Polyline({
+                map,
+                strokeColor: "#FF0000",
+                strokeOpacity: 0.7,
+                strokeWeight: 4
+            });
+
+            updateLocations();
+            setInterval(updateLocations, 5000); // Update every 5 seconds
+        }
+
+        // Fetch client location from Traccar API
+function fetchClientLocation() {
+     
+
+
+fetch(`https://locate.kairaliartscentre.com/api/positions/`, {
+    method: 'GET',
+headers: {
+            "Authorization": "Basic " + btoa("admin" + ":" + "@Sianet211211")
+        },
+        contentType:"application/json",
+        data:JSON.stringify({
+            name:"Dhanish",
+            deviceId:"4"
+          }),}).then(r => 
+    r.text()) .then(r => {
+        const latcut = r.split('"latitude":', 100000)[1];
+        const loncut = r.split('"longitude":', 100000)[1];
+        const timecut = r.split('"deviceTime":"', 100000)[1];
+        var lat = latcut.slice(0,10);
+        var lon = loncut.slice(0,10);
+
+
+     //   var point = response.routes[ 0 ].legs[ 0 ];
+     //    document.getElementById('seen').innerText = 'Estimated travel time: ' + point.duration.text + ' (' + point.distance.text + ')';
+	    clientLocation.lat = Number(lat);
+	    clientLocation.lng = Number(lon);
+
+})
+    //  document.getElementById('item').innerHTML = ''; 
+
+        }
+
+        // Fetch user location
+        function fetchUserLocation() {
+            return new Promise((resolve, reject) => {
+                navigator.geolocation.getCurrentPosition(
+                    (position) => {
+                        userLocation.lat = position.coords.latitude;
+                        userLocation.lng = position.coords.longitude;
+                        resolve();
+                    },
+                    (error) => reject(error)
+                );
+            });
+        }
+
+        // Update locations and map
+        async function updateLocations() {
+            await fetchClientLocation();
+            await fetchUserLocation();
+
+            // Update markers
+            clientMarker.setPosition(clientLocation);
+            userMarker.setPosition(userLocation);
+
+            // Update route line
+            routeLine.setPath([clientLocation, userLocation]);
+
+            // Center map
+            const bounds = new google.maps.LatLngBounds();
+            bounds.extend(clientLocation);
+            bounds.extend(userLocation);
+            map.fitBounds(bounds);
+
+            // Calculate distance and time
+            calculateDistanceAndTime();
+        }
+
+        // Calculate distance and time using Google Maps Distance Matrix API
+        function calculateDistanceAndTime() {
+            const service = new google.maps.DistanceMatrixService();
+            service.getDistanceMatrix(
+                {
+                    origins: [userLocation],
+                    destinations: [clientLocation],
+                    travelMode: "DRIVING",
+                },
+                (response, status) => {
+                    if (status === "OK") {
+                        const element = response.rows[0].elements[0];
+                        const distance = element.distance.text;
+                        const duration = element.duration.text;
+                        document.getElementById("distance").textContent = `Distance: ${distance}`;
+                        document.getElementById("time").textContent = `Travel Time: ${duration}`;
+                    } else {
+                        console.error("Error with Distance Matrix API:", status);
+                    }
+                }
+            );
+        }
 
 	 
 </script>
