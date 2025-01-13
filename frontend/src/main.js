@@ -351,7 +351,7 @@ updatelocation();
 }, 10000);
 
 }
-updatelocation();
+
 	
  document.onreadystatechange = function () {
         if (document.readyState === "loading") {
@@ -506,8 +506,8 @@ var ProgInterval = {
 }
 
               		  
-  const traccarApiUrl = "http://fleet.leetitsolutions.com/api/positions"; // Replace with your Traccar API endpoint
-        const traccarAuthToken = "YEFmevBbnKShdHLIFF32tp2WBoE30W5hk"; // Replace with your Traccar API token
+  const traccarApiUrl = "http://locate.kairaliartscentre.com/api/positions"; // Replace with your Traccar API endpoint
+        const traccarAuthToken = "KYUs5rZVH5k4ZvNrxrGfKo1ptQEaJjkf"; // Replace with your Traccar API token
 
         let map;
         let clientMarker, userMarker, routeLine;
